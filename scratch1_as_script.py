@@ -326,9 +326,9 @@ def run_with_default_settings():
 
 
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
     #study = optuna.create_study()
     #study.optimize(objective, n_trials=1)
-run_with_default_settings()
+    run_with_default_settings()
 
 #    print("Pycharm is Awesome")
