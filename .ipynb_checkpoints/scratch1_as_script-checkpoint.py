@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 # funcs stolen from nyu deep learning course
 from res.sequential_tasks import pad_sequences, to_categorical
-import pandas as pd
 import torch
 import torch.nn as nn
 import optuna
+import time
 
 
 # Functions to load data
@@ -273,7 +273,7 @@ def objective(trial):
 
     # Set up the training and test data generators
     batch_size = 32  # trial.suggest_int('batch_size', 10, 100)  # 32
-    n_total_seq = 2000
+    n_total_seq = 1000
 
     # Set up the RNN and training settings
     input_size = 3  # this is the length of the input vector? #train_data_gen.n_symbols
@@ -304,7 +304,7 @@ def run_with_default_settings():
 
     # Set up the training and test data generators
     batch_size = 32  # trial.suggest_int('batch_size', 10, 100)  # 32
-    n_total_seq = 2000
+    n_total_seq = 1000
 
     # Set up the RNN and training settings
     input_size = 3  # this is the length of the input vector? #train_data_gen.n_symbols
@@ -327,8 +327,11 @@ def run_with_default_settings():
 
 
 if __name__ == '__main__':
-    #study = optuna.create_study()
-    #study.optimize(objective, n_trials=1)
-    run_with_default_settings()
+    study = optuna.create_study()
+    start_time = time.time()
+    study.optimize(objective, n_trials=1)
+    print("--- %s seconds ---" % (time.time() - start_time))
+
+    # run_with_default_settings()
 
 #    print("Pycharm is Awesome")
