@@ -7,7 +7,11 @@ import torch
 import torch.nn as nn
 import optuna
 import time
+import os
+import pickle
 
+on_cluster = True
+n_optuna_trials = 200
 
 # Functions to load data
 def load_sim_data(train_data_file_path, test_data_file_path):
@@ -277,7 +281,7 @@ def objective(trial):
 
     # Set up the RNN and training settings
     input_size = 3  # this is the length of the input vector? #train_data_gen.n_symbols
-    hidden_size = trial.suggest_int('hidden_size', 2, 100, step=5)  # 4
+    hidden_size = trial.suggest_int('hidden_size', 2, 150, step=5)  # 4
     output_size = 3  # this is the leågth of the output vector #train_data_gen.n_classes
     # model = SimpleRNN(input_size, hidden_size, output_size)
     model = SimpleLSTM(input_size, hidden_size, output_size)
@@ -288,7 +292,7 @@ def objective(trial):
 
     # Train the model
     model_rnn = train_and_test(model, train_data_sim, test_data_sim, criterion, optimizer, max_epochs, batch_size,
-                               n_total_seq, verbose=False, model_name='LSTM', make_plot=True)
+                               n_total_seq, verbose=False, model_name='LSTM', make_plot=False)
 
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     loss = test(model_rnn, test_data_sim, criterion, device, batch_size, n_total_seq)
@@ -324,14 +328,29 @@ def run_with_default_settings():
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     loss = test(model_rnn, test_data_sim, criterion, device, batch_size, n_total_seq)
 
+    
+def save_study(study, file_name, on_cluster = False):
 
+    if on_cluster:
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/optuna_results'
+    else:
+        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/optuna_results'
+
+    if not os.path.exists(to_save_folder):
+        os.mkdir(to_save_folder)
+    
+    to_save_file = os.path.join(to_save_folder, file_name)
+    
+    outfile = open(to_save_file,'wb')
+    pickle.dump(study,outfile)
+    outfile.close()
+    
 
 if __name__ == '__main__':
     study = optuna.create_study()
     start_time = time.time()
-    study.optimize(objective, n_trials=1)
+    study.optimize(objective, n_trials=n_optuna_trials)
+    
     print("--- %s seconds ---" % (time.time() - start_time))
-
-    # run_with_default_settings()
-
-#    print("Pycharm is Awesome")
+    
+    save_study(study, 'scratch1_optuna_results', on_cluster = on_cluster)
