@@ -10,14 +10,13 @@ import time
 import os
 import pickle
 
-on_cluster = False
-n_optuna_trials = 1
-
+on_cluster = True
+n_optuna_trials = 350
 
 # probably could get away with less memory?
 
 # Functions to load data
-def load_sim_data(data_path, n_train=5e5, n_test=1e5):
+def load_sim_data(data_path, n_train=1e5, n_test=1e5):
     """ Load simulated data from json file to dictionary """
 
     train_file_idxs = range(1,16)
@@ -29,10 +28,10 @@ def load_sim_data(data_path, n_train=5e5, n_test=1e5):
     a = [json.load(open(train_files[i])) for i in range(15)]
     train_trials = [item for sublist in a for item in sublist]
     del a
-    train_data_sim = train_trials[:int(5e5)]
+    train_data_sim = train_trials[:int(n_train)]
 
     test_trials = json.load(open(train_files[0]))
-    test_data_sim = test_trials[:int(1e5)]
+    test_data_sim = test_trials[:int(n_test)]
     
     return train_data_sim, test_data_sim
 
@@ -292,7 +291,7 @@ def objective(trial):
 
     # Set up the training and test data generators
     batch_size = 32  # trial.suggest_int('batch_size', 10, 100)  # 32
-    n_total_seq = 100
+    n_total_seq = 1e5
 
     # Set up the RNN and training settings
     input_size = 3  # this is the length of the input vector? #train_data_gen.n_symbols
@@ -324,7 +323,7 @@ def run_with_default_settings(on_cluster=False):
         data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/optimal_fixation_sims'
 
 
-    (train_data_sim, test_data_sim) = load_sim_data(data_path, n_train=5e5, n_test=1e5)
+    (train_data_sim, test_data_sim) = load_sim_data(data_path, n_train=1e5, n_test=1e5)
 
     # Set up the training and test data generators
     batch_size = 32  # trial.suggest_int('batch_size', 10, 100)  # 32

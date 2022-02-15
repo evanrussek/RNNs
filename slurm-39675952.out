@@ -1,0 +1,1402 @@
+[32m[I 2022-02-15 12:19:47,207][0m A new study created in memory with name: no-name-95503cef-57bb-475d-a222-724a891fe0c8[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:20:52,750][0m Trial 0 finished with value: 4.472132808227539 and parameters: {'hidden_size': 157, 'lr': 0.0038217600373206552}. Best is trial 0 with value: 4.472132808227539.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:21:52,446][0m Trial 1 finished with value: 4.5584912842559815 and parameters: {'hidden_size': 67, 'lr': 0.0029317324083943273}. Best is trial 0 with value: 4.472132808227539.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:22:50,806][0m Trial 2 finished with value: 4.391253843460083 and parameters: {'hidden_size': 37, 'lr': 0.00910240802245134}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:23:49,459][0m Trial 3 finished with value: 4.7223751205444335 and parameters: {'hidden_size': 87, 'lr': 0.00017327760827773154}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:24:47,900][0m Trial 4 finished with value: 4.505328212432861 and parameters: {'hidden_size': 77, 'lr': 0.0052667938764540175}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:25:46,576][0m Trial 5 finished with value: 4.497652614746094 and parameters: {'hidden_size': 52, 'lr': 0.008538143308859467}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:26:44,201][0m Trial 6 finished with value: 4.516648423538208 and parameters: {'hidden_size': 57, 'lr': 0.003692951611938876}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:27:43,130][0m Trial 7 finished with value: 4.40841240486145 and parameters: {'hidden_size': 62, 'lr': 0.001249587912100701}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:28:40,369][0m Trial 8 finished with value: 4.672445170974732 and parameters: {'hidden_size': 52, 'lr': 0.0003035174124456897}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:29:40,643][0m Trial 9 finished with value: 4.465677763137817 and parameters: {'hidden_size': 97, 'lr': 0.0024018363542691722}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:30:38,194][0m Trial 10 finished with value: 6.278115816802979 and parameters: {'hidden_size': 2, 'lr': 0.0008326057303419159}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:31:34,176][0m Trial 11 finished with value: 4.923037520523072 and parameters: {'hidden_size': 7, 'lr': 0.0009989187486272753}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:32:35,278][0m Trial 12 finished with value: 4.4616466969299315 and parameters: {'hidden_size': 142, 'lr': 0.00045063296279808325}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:33:36,768][0m Trial 13 finished with value: 4.9545474881744385 and parameters: {'hidden_size': 192, 'lr': 0.009915099919728939}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:34:33,291][0m Trial 14 finished with value: 4.482462212905884 and parameters: {'hidden_size': 27, 'lr': 0.0015012882903174304}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:35:34,532][0m Trial 15 finished with value: 4.985452102966309 and parameters: {'hidden_size': 127, 'lr': 0.00010288702996482628}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:36:30,813][0m Trial 16 finished with value: 4.558937270812988 and parameters: {'hidden_size': 32, 'lr': 0.0006002749118505636}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:37:32,229][0m Trial 17 finished with value: 4.463495942687988 and parameters: {'hidden_size': 112, 'lr': 0.0019330486255896213}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:38:28,514][0m Trial 18 finished with value: 4.535625368499756 and parameters: {'hidden_size': 32, 'lr': 0.005844936494919491}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:39:26,075][0m Trial 19 finished with value: 4.419144448165894 and parameters: {'hidden_size': 27, 'lr': 0.0012357267043381535}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:40:26,387][0m Trial 20 finished with value: 4.572534124526977 and parameters: {'hidden_size': 112, 'lr': 0.00024624500307055756}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:41:24,792][0m Trial 21 finished with value: 4.4786300427246095 and parameters: {'hidden_size': 22, 'lr': 0.0012113420648490832}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:42:22,721][0m Trial 22 finished with value: 4.4564213068389895 and parameters: {'hidden_size': 42, 'lr': 0.0007221733248456252}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:43:22,642][0m Trial 23 finished with value: 4.490851892089844 and parameters: {'hidden_size': 72, 'lr': 0.0013942171554540456}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:44:20,652][0m Trial 24 finished with value: 4.4769966180419924 and parameters: {'hidden_size': 17, 'lr': 0.0020404290675174303}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:45:19,448][0m Trial 25 finished with value: 4.597968211898804 and parameters: {'hidden_size': 42, 'lr': 0.00043650258452904714}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:46:17,535][0m Trial 26 finished with value: 4.490238673706055 and parameters: {'hidden_size': 82, 'lr': 0.006307500444719985}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:47:16,843][0m Trial 27 finished with value: 4.393433396453857 and parameters: {'hidden_size': 62, 'lr': 0.0037500440650628064}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:48:14,522][0m Trial 28 finished with value: 4.4362696509552 and parameters: {'hidden_size': 62, 'lr': 0.0045549369071361395}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:49:14,152][0m Trial 29 finished with value: 4.5262730973815914 and parameters: {'hidden_size': 97, 'lr': 0.003636739289556743}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:50:12,291][0m Trial 30 finished with value: 4.422736564788818 and parameters: {'hidden_size': 47, 'lr': 0.0075351360031421346}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:51:09,405][0m Trial 31 finished with value: 4.487822198791504 and parameters: {'hidden_size': 12, 'lr': 0.0027609688615217332}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:52:07,929][0m Trial 32 finished with value: 4.442348943710327 and parameters: {'hidden_size': 67, 'lr': 0.0017812113972443422}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:53:07,149][0m Trial 33 finished with value: 4.469364340209961 and parameters: {'hidden_size': 37, 'lr': 0.00318564988556328}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:54:06,570][0m Trial 34 finished with value: 4.449788424072266 and parameters: {'hidden_size': 87, 'lr': 0.005030434259318889}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:55:05,916][0m Trial 35 finished with value: 4.4370687635803225 and parameters: {'hidden_size': 67, 'lr': 0.00099250055152605}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:56:03,443][0m Trial 36 finished with value: 4.461245278778076 and parameters: {'hidden_size': 57, 'lr': 0.006825941982294842}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:57:01,742][0m Trial 37 finished with value: 4.480228753662109 and parameters: {'hidden_size': 22, 'lr': 0.004466113773978032}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:58:04,968][0m Trial 38 finished with value: 4.634411927185059 and parameters: {'hidden_size': 187, 'lr': 0.0026077448137657}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 12:59:03,463][0m Trial 39 finished with value: 4.450708363800048 and parameters: {'hidden_size': 47, 'lr': 0.0005463017414710408}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:00:02,223][0m Trial 40 finished with value: 4.559200670242309 and parameters: {'hidden_size': 77, 'lr': 0.007950023284050915}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:00:59,981][0m Trial 41 finished with value: 4.644706101379395 and parameters: {'hidden_size': 52, 'lr': 0.00970890178752883}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:01:57,832][0m Trial 42 finished with value: 4.4167666439819335 and parameters: {'hidden_size': 42, 'lr': 0.0074317275762804695}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:02:55,013][0m Trial 43 finished with value: 4.722059542007447 and parameters: {'hidden_size': 7, 'lr': 0.005800485712377752}. Best is trial 2 with value: 4.391253843460083.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:03:52,385][0m Trial 44 finished with value: 4.388159270477295 and parameters: {'hidden_size': 32, 'lr': 0.003938484672405132}. Best is trial 44 with value: 4.388159270477295.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:04:51,263][0m Trial 45 finished with value: 4.534413435287475 and parameters: {'hidden_size': 62, 'lr': 0.004276684555130165}. Best is trial 44 with value: 4.388159270477295.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:05:48,843][0m Trial 46 finished with value: 4.371968461303711 and parameters: {'hidden_size': 37, 'lr': 0.0034163376675563984}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:06:46,722][0m Trial 47 finished with value: 5.217967498168945 and parameters: {'hidden_size': 2, 'lr': 0.00342880770870966}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:07:42,903][0m Trial 48 finished with value: 4.442291787948609 and parameters: {'hidden_size': 32, 'lr': 0.0028677824272637428}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:08:41,500][0m Trial 49 finished with value: 4.420021620101929 and parameters: {'hidden_size': 57, 'lr': 0.002345623811511918}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:09:40,128][0m Trial 50 finished with value: 4.5477269425964355 and parameters: {'hidden_size': 92, 'lr': 0.004014772724467313}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:10:39,357][0m Trial 51 finished with value: 4.426819749069214 and parameters: {'hidden_size': 42, 'lr': 0.008642640333289776}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:11:36,556][0m Trial 52 finished with value: 4.421324595794678 and parameters: {'hidden_size': 17, 'lr': 0.0051206086383650375}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:12:35,972][0m Trial 53 finished with value: 4.542804297866821 and parameters: {'hidden_size': 37, 'lr': 0.007189045928137789}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:13:33,543][0m Trial 54 finished with value: 4.464894636688232 and parameters: {'hidden_size': 52, 'lr': 0.006049912747600794}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:14:31,645][0m Trial 55 finished with value: 4.4599551977539065 and parameters: {'hidden_size': 27, 'lr': 0.00880327019957533}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:15:29,420][0m Trial 56 finished with value: 4.498212505111694 and parameters: {'hidden_size': 37, 'lr': 0.0020531473668299405}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:16:27,778][0m Trial 57 finished with value: 4.450992446060181 and parameters: {'hidden_size': 22, 'lr': 0.0052666763443304145}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:17:26,139][0m Trial 58 finished with value: 4.455432001037598 and parameters: {'hidden_size': 77, 'lr': 0.0016675973999851297}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:18:26,603][0m Trial 59 finished with value: 4.5090531708526616 and parameters: {'hidden_size': 112, 'lr': 0.00228850507565417}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:19:26,904][0m Trial 60 finished with value: 4.752431457214356 and parameters: {'hidden_size': 172, 'lr': 0.0001125597796612708}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:20:24,903][0m Trial 61 finished with value: 4.543380497512818 and parameters: {'hidden_size': 27, 'lr': 0.0006901941029743586}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:21:20,789][0m Trial 62 finished with value: 4.464833023834228 and parameters: {'hidden_size': 12, 'lr': 0.0012101941175492537}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:22:19,822][0m Trial 63 finished with value: 4.452163559494019 and parameters: {'hidden_size': 47, 'lr': 0.0013005025654879248}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:23:17,222][0m Trial 64 finished with value: 4.434008353652954 and parameters: {'hidden_size': 32, 'lr': 0.0010943870900966155}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:24:16,139][0m Trial 65 finished with value: 4.449547827453613 and parameters: {'hidden_size': 62, 'lr': 0.0008306227242588566}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:25:17,051][0m Trial 66 finished with value: 4.494021946334839 and parameters: {'hidden_size': 142, 'lr': 0.0015701767491608297}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:26:16,516][0m Trial 67 finished with value: 4.426545331115722 and parameters: {'hidden_size': 42, 'lr': 0.0030771351956856477}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:27:13,272][0m Trial 68 finished with value: 4.4607803575134275 and parameters: {'hidden_size': 17, 'lr': 0.0035155498671894216}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:28:11,806][0m Trial 69 finished with value: 4.616517791519165 and parameters: {'hidden_size': 57, 'lr': 0.00030669632353529834}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:29:09,994][0m Trial 70 finished with value: 4.540177179641724 and parameters: {'hidden_size': 37, 'lr': 0.006823742035048732}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:30:09,713][0m Trial 71 finished with value: 4.506640700378418 and parameters: {'hidden_size': 72, 'lr': 0.002487728216093349}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:31:07,618][0m Trial 72 finished with value: 4.6614890074157715 and parameters: {'hidden_size': 57, 'lr': 0.00223859656065944}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:32:06,807][0m Trial 73 finished with value: 4.458684770355225 and parameters: {'hidden_size': 47, 'lr': 0.004596050096652649}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:33:06,212][0m Trial 74 finished with value: 4.509709940261841 and parameters: {'hidden_size': 67, 'lr': 0.0019387489722662084}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:34:04,222][0m Trial 75 finished with value: 4.498846227874756 and parameters: {'hidden_size': 27, 'lr': 0.0009311066258077902}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:35:01,677][0m Trial 76 finished with value: 4.428090556182862 and parameters: {'hidden_size': 47, 'lr': 0.00391043252467284}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:35:59,653][0m Trial 77 finished with value: 4.426548631591797 and parameters: {'hidden_size': 52, 'lr': 0.001486967513379095}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:36:55,762][0m Trial 78 finished with value: 4.454863639068604 and parameters: {'hidden_size': 32, 'lr': 0.003186625072692682}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:37:54,730][0m Trial 79 finished with value: 4.529620122756958 and parameters: {'hidden_size': 82, 'lr': 0.009955181585055319}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:38:52,873][0m Trial 80 finished with value: 4.417742950592041 and parameters: {'hidden_size': 57, 'lr': 0.002731349228420622}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:39:52,416][0m Trial 81 finished with value: 4.600755103683472 and parameters: {'hidden_size': 72, 'lr': 0.0035927364017264837}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:40:50,281][0m Trial 82 finished with value: 4.487761373748779 and parameters: {'hidden_size': 57, 'lr': 0.002764597952822213}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:41:49,310][0m Trial 83 finished with value: 4.422269026107788 and parameters: {'hidden_size': 62, 'lr': 0.0017146745133123351}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:42:47,997][0m Trial 84 finished with value: 4.520160170822144 and parameters: {'hidden_size': 42, 'lr': 0.005632190072944892}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:43:45,485][0m Trial 85 finished with value: 4.553209513626099 and parameters: {'hidden_size': 52, 'lr': 0.00456195944503896}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:44:41,983][0m Trial 86 finished with value: 4.4746980587768554 and parameters: {'hidden_size': 22, 'lr': 0.002165491866317244}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:45:41,112][0m Trial 87 finished with value: 4.419049040985107 and parameters: {'hidden_size': 42, 'lr': 0.0025694060080072505}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:46:38,747][0m Trial 88 finished with value: 4.510470585250855 and parameters: {'hidden_size': 37, 'lr': 0.006520020209631608}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:47:35,276][0m Trial 89 finished with value: 4.535168935699463 and parameters: {'hidden_size': 12, 'lr': 0.008452796432931791}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:48:31,870][0m Trial 90 finished with value: 4.510076198043823 and parameters: {'hidden_size': 32, 'lr': 0.0040792030272935416}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:49:30,747][0m Trial 91 finished with value: 4.4888963875579835 and parameters: {'hidden_size': 42, 'lr': 0.0025022711462144346}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:50:29,085][0m Trial 92 finished with value: 4.466790816879272 and parameters: {'hidden_size': 67, 'lr': 0.003228473765261362}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:51:26,805][0m Trial 93 finished with value: 4.394395995407105 and parameters: {'hidden_size': 52, 'lr': 0.0026117592958127384}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:52:25,480][0m Trial 94 finished with value: 4.479633942565918 and parameters: {'hidden_size': 47, 'lr': 0.0018658904025597367}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:53:23,173][0m Trial 95 finished with value: 4.569383116989136 and parameters: {'hidden_size': 27, 'lr': 0.002778053237755308}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:54:20,593][0m Trial 96 finished with value: 4.414784820861817 and parameters: {'hidden_size': 37, 'lr': 0.003916864971007504}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:55:19,748][0m Trial 97 finished with value: 4.502451818542481 and parameters: {'hidden_size': 37, 'lr': 0.004950773421628606}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:56:15,988][0m Trial 98 finished with value: 4.516863625335693 and parameters: {'hidden_size': 52, 'lr': 0.003772459079723494}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:57:14,315][0m Trial 99 finished with value: 4.426338264465332 and parameters: {'hidden_size': 42, 'lr': 0.0032930358396691937}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:58:12,390][0m Trial 100 finished with value: 4.466065094985962 and parameters: {'hidden_size': 62, 'lr': 0.002919858192809505}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 13:59:09,872][0m Trial 101 finished with value: 4.419621780929566 and parameters: {'hidden_size': 32, 'lr': 0.007520894039393929}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:00:06,793][0m Trial 102 finished with value: 4.470431993713379 and parameters: {'hidden_size': 22, 'lr': 0.005679527833254851}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:01:04,979][0m Trial 103 finished with value: 4.5182854458618165 and parameters: {'hidden_size': 17, 'lr': 0.0014251432364908543}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:02:03,638][0m Trial 104 finished with value: 4.412261020126342 and parameters: {'hidden_size': 42, 'lr': 0.0011833733555430778}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:03:00,920][0m Trial 105 finished with value: 4.450763158340454 and parameters: {'hidden_size': 42, 'lr': 0.002617574996272081}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:03:58,984][0m Trial 106 finished with value: 4.415350045928955 and parameters: {'hidden_size': 52, 'lr': 0.004154316868492068}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:04:55,077][0m Trial 107 finished with value: 4.4770324063873295 and parameters: {'hidden_size': 52, 'lr': 0.003745203559860558}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:05:54,251][0m Trial 108 finished with value: 4.449915977706909 and parameters: {'hidden_size': 47, 'lr': 0.004315425242987381}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:06:52,835][0m Trial 109 finished with value: 4.4441176090240475 and parameters: {'hidden_size': 102, 'lr': 0.004785791525430606}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:07:51,269][0m Trial 110 finished with value: 4.431857417602539 and parameters: {'hidden_size': 57, 'lr': 0.008988227786271235}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:08:49,268][0m Trial 111 finished with value: 4.459685942382812 and parameters: {'hidden_size': 37, 'lr': 0.001144151531274462}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:09:48,233][0m Trial 112 finished with value: 4.528471027908325 and parameters: {'hidden_size': 47, 'lr': 0.002992688982826289}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:10:44,744][0m Trial 113 finished with value: 4.462692225952148 and parameters: {'hidden_size': 52, 'lr': 0.004264624739802086}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:11:42,804][0m Trial 114 finished with value: 4.458785875091553 and parameters: {'hidden_size': 27, 'lr': 0.003437209622686899}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:12:41,736][0m Trial 115 finished with value: 4.555800293350219 and parameters: {'hidden_size': 37, 'lr': 0.005266441481067764}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:13:39,232][0m Trial 116 finished with value: 4.478222932281494 and parameters: {'hidden_size': 62, 'lr': 0.0008416941184238152}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:14:38,581][0m Trial 117 finished with value: 4.434052685089111 and parameters: {'hidden_size': 42, 'lr': 0.002087519441980321}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:15:36,571][0m Trial 118 finished with value: 4.434499700622559 and parameters: {'hidden_size': 67, 'lr': 0.002442652894605779}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:16:35,824][0m Trial 119 finished with value: 4.466463172912598 and parameters: {'hidden_size': 57, 'lr': 0.006278022313391328}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:17:33,307][0m Trial 120 finished with value: 4.433108930740357 and parameters: {'hidden_size': 47, 'lr': 0.0012976185675911548}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:18:30,162][0m Trial 121 finished with value: 4.4826730387878415 and parameters: {'hidden_size': 32, 'lr': 0.0009546052318668876}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:19:26,766][0m Trial 122 finished with value: 4.487539478607178 and parameters: {'hidden_size': 32, 'lr': 0.0010913003022853017}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:20:26,264][0m Trial 123 finished with value: 4.468857130432129 and parameters: {'hidden_size': 72, 'lr': 0.004054928395943028}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:21:23,047][0m Trial 124 finished with value: 4.404338601760864 and parameters: {'hidden_size': 27, 'lr': 0.0015679073086436654}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:22:22,092][0m Trial 125 finished with value: 4.42838872970581 and parameters: {'hidden_size': 37, 'lr': 0.0016263295104877449}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:23:19,926][0m Trial 126 finished with value: 4.446641125717163 and parameters: {'hidden_size': 27, 'lr': 0.0026528524046999574}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:24:16,424][0m Trial 127 finished with value: 4.450806292114258 and parameters: {'hidden_size': 22, 'lr': 0.001807751374996841}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:25:16,407][0m Trial 128 finished with value: 4.549596409683228 and parameters: {'hidden_size': 77, 'lr': 0.0029701628554870884}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:26:13,675][0m Trial 129 finished with value: 4.459654743423462 and parameters: {'hidden_size': 42, 'lr': 0.007884643515503758}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:27:12,839][0m Trial 130 finished with value: 4.509514121856689 and parameters: {'hidden_size': 47, 'lr': 0.003590496978958525}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:28:08,466][0m Trial 131 finished with value: 4.572094399795533 and parameters: {'hidden_size': 12, 'lr': 0.0011733575368286246}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:29:05,341][0m Trial 132 finished with value: 4.420897704772949 and parameters: {'hidden_size': 32, 'lr': 0.0013034451711175846}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:30:02,373][0m Trial 133 finished with value: 4.5033766621398925 and parameters: {'hidden_size': 27, 'lr': 0.0010484488118765044}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:31:00,405][0m Trial 134 finished with value: 4.456411140823365 and parameters: {'hidden_size': 17, 'lr': 0.0015288120443878676}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:31:56,896][0m Trial 135 finished with value: 4.566698958511353 and parameters: {'hidden_size': 52, 'lr': 0.0012835371631644472}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:32:55,964][0m Trial 136 finished with value: 4.456391503677368 and parameters: {'hidden_size': 37, 'lr': 0.0009076015579932657}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:33:54,569][0m Trial 137 finished with value: 4.515663888320923 and parameters: {'hidden_size': 42, 'lr': 0.0006749162372112026}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:34:51,969][0m Trial 138 finished with value: 4.465457904968262 and parameters: {'hidden_size': 57, 'lr': 0.003262898957913738}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:35:51,380][0m Trial 139 finished with value: 4.5199583598327635 and parameters: {'hidden_size': 62, 'lr': 0.003770653033200202}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:36:47,817][0m Trial 140 finished with value: 4.457684542388916 and parameters: {'hidden_size': 22, 'lr': 0.00235240644818309}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:37:45,585][0m Trial 141 finished with value: 4.478623514709473 and parameters: {'hidden_size': 32, 'lr': 0.004783250528323424}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:38:41,589][0m Trial 142 finished with value: 4.4612863031768795 and parameters: {'hidden_size': 32, 'lr': 0.007723716996413018}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:39:40,020][0m Trial 143 finished with value: 4.408200418777466 and parameters: {'hidden_size': 37, 'lr': 0.00711283017330009}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:40:38,048][0m Trial 144 finished with value: 4.49620994720459 and parameters: {'hidden_size': 37, 'lr': 0.007003482576898905}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:41:37,050][0m Trial 145 finished with value: 4.511563885269165 and parameters: {'hidden_size': 42, 'lr': 0.00590481223761735}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:42:34,983][0m Trial 146 finished with value: 4.510949838256836 and parameters: {'hidden_size': 47, 'lr': 0.009892853051864558}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:43:32,734][0m Trial 147 finished with value: 4.503503202056884 and parameters: {'hidden_size': 52, 'lr': 0.00904268376019422}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:44:30,423][0m Trial 148 finished with value: 4.466792327041626 and parameters: {'hidden_size': 27, 'lr': 0.002070714515889185}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:45:27,843][0m Trial 149 finished with value: 4.482623080062866 and parameters: {'hidden_size': 37, 'lr': 0.0013879321518655546}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:46:25,288][0m Trial 150 finished with value: 4.504801017227173 and parameters: {'hidden_size': 7, 'lr': 0.0042193284266475554}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:47:21,725][0m Trial 151 finished with value: 4.63079640296936 and parameters: {'hidden_size': 22, 'lr': 0.00726912075549868}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:48:19,473][0m Trial 152 finished with value: 4.473189796295166 and parameters: {'hidden_size': 32, 'lr': 0.008186185700997455}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:49:16,917][0m Trial 153 finished with value: 4.4652241090393066 and parameters: {'hidden_size': 37, 'lr': 0.0067524518276954795}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:50:15,253][0m Trial 154 finished with value: 4.41499603881836 and parameters: {'hidden_size': 42, 'lr': 0.0031146347413247414}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:51:13,274][0m Trial 155 finished with value: 4.48230158744812 and parameters: {'hidden_size': 47, 'lr': 0.0031106845697725025}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:52:12,125][0m Trial 156 finished with value: 4.48669713180542 and parameters: {'hidden_size': 42, 'lr': 0.0027055222404454506}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:53:09,939][0m Trial 157 finished with value: 4.384881193237304 and parameters: {'hidden_size': 57, 'lr': 0.00333350927261919}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:54:09,038][0m Trial 158 finished with value: 4.41373596496582 and parameters: {'hidden_size': 57, 'lr': 0.0034338777841921714}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:55:07,901][0m Trial 159 finished with value: 4.562138879394531 and parameters: {'hidden_size': 57, 'lr': 0.0034985826261027865}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:56:06,007][0m Trial 160 finished with value: 4.480490303192139 and parameters: {'hidden_size': 67, 'lr': 0.003975965922806501}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:57:04,140][0m Trial 161 finished with value: 4.524306200027466 and parameters: {'hidden_size': 52, 'lr': 0.0034598573507000937}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:58:00,260][0m Trial 162 finished with value: 4.4329766043853756 and parameters: {'hidden_size': 52, 'lr': 0.002775988991404519}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 14:58:59,496][0m Trial 163 finished with value: 4.481744192276001 and parameters: {'hidden_size': 62, 'lr': 0.0037306963137795734}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:00:00,161][0m Trial 164 finished with value: 4.456935447616577 and parameters: {'hidden_size': 137, 'lr': 0.003138187928801356}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:00:58,552][0m Trial 165 finished with value: 4.428107042770386 and parameters: {'hidden_size': 57, 'lr': 0.0044623855387720375}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:01:56,586][0m Trial 166 finished with value: 4.523311478500366 and parameters: {'hidden_size': 47, 'lr': 0.002973209920382583}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:02:59,826][0m Trial 167 finished with value: 4.539684437637329 and parameters: {'hidden_size': 157, 'lr': 0.005330201338935814}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:03:57,445][0m Trial 168 finished with value: 4.440774531478882 and parameters: {'hidden_size': 42, 'lr': 0.0024282310264028633}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:04:56,384][0m Trial 169 finished with value: 4.593080974807739 and parameters: {'hidden_size': 62, 'lr': 0.0033171474347131746}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:05:53,871][0m Trial 170 finished with value: 4.496218880691528 and parameters: {'hidden_size': 52, 'lr': 0.0039918424508048654}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:06:50,207][0m Trial 171 finished with value: 4.438264628829956 and parameters: {'hidden_size': 27, 'lr': 0.0022350055345650025}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:07:49,598][0m Trial 172 finished with value: 4.410060235443115 and parameters: {'hidden_size': 37, 'lr': 0.002811313756821052}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:08:46,951][0m Trial 173 finished with value: 4.397968126907348 and parameters: {'hidden_size': 37, 'lr': 0.002587013538334558}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:09:46,076][0m Trial 174 finished with value: 4.477726186904907 and parameters: {'hidden_size': 37, 'lr': 0.0029033138113532995}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:10:43,559][0m Trial 175 finished with value: 4.4327802509307865 and parameters: {'hidden_size': 47, 'lr': 0.0032352948098761775}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:11:41,898][0m Trial 176 finished with value: 4.4095549634552 and parameters: {'hidden_size': 37, 'lr': 0.0036985380335842984}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:12:40,042][0m Trial 177 finished with value: 4.46790861907959 and parameters: {'hidden_size': 37, 'lr': 0.004577438600416934}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:13:39,025][0m Trial 178 finished with value: 4.449874251785278 and parameters: {'hidden_size': 42, 'lr': 0.0037914295936360204}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:14:35,383][0m Trial 179 finished with value: 4.4733439279174805 and parameters: {'hidden_size': 32, 'lr': 0.0034527248905174756}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:15:34,397][0m Trial 180 finished with value: 4.442973874511718 and parameters: {'hidden_size': 47, 'lr': 0.004342091920540517}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:16:33,123][0m Trial 181 finished with value: 4.504018153152466 and parameters: {'hidden_size': 57, 'lr': 0.002597730500233861}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:17:30,473][0m Trial 182 finished with value: 4.417997515258789 and parameters: {'hidden_size': 37, 'lr': 0.002948071647029508}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:18:29,869][0m Trial 183 finished with value: 4.396849584197998 and parameters: {'hidden_size': 42, 'lr': 0.0035836451967041862}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:19:27,285][0m Trial 184 finished with value: 4.403161241226196 and parameters: {'hidden_size': 42, 'lr': 0.0036278515929205122}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:20:25,010][0m Trial 185 finished with value: 4.434270846252441 and parameters: {'hidden_size': 32, 'lr': 0.003620592130965145}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:21:22,465][0m Trial 186 finished with value: 4.501245323486328 and parameters: {'hidden_size': 42, 'lr': 0.004014982655126548}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:22:26,992][0m Trial 187 finished with value: 4.532714838867188 and parameters: {'hidden_size': 197, 'lr': 0.003209248107872633}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:23:25,059][0m Trial 188 finished with value: 4.50390240234375 and parameters: {'hidden_size': 37, 'lr': 0.003621413614338449}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:24:23,960][0m Trial 189 finished with value: 4.961443188629151 and parameters: {'hidden_size': 47, 'lr': 0.0001710529886238266}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:25:20,392][0m Trial 190 finished with value: 4.684919233474732 and parameters: {'hidden_size': 32, 'lr': 0.005035406297293413}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:26:19,465][0m Trial 191 finished with value: 4.426620276565552 and parameters: {'hidden_size': 42, 'lr': 0.004027408545125043}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:27:18,156][0m Trial 192 finished with value: 4.412991409759521 and parameters: {'hidden_size': 42, 'lr': 0.00320211479674274}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:28:15,597][0m Trial 193 finished with value: 4.4758749752044675 and parameters: {'hidden_size': 37, 'lr': 0.003328488393688813}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:29:13,912][0m Trial 194 finished with value: 4.447043089981079 and parameters: {'hidden_size': 27, 'lr': 0.003031082674061408}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:30:11,372][0m Trial 195 finished with value: 4.5289761372375485 and parameters: {'hidden_size': 42, 'lr': 0.0036901310839158093}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:31:10,558][0m Trial 196 finished with value: 4.442148677139282 and parameters: {'hidden_size': 47, 'lr': 0.0027828311330076036}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:32:06,834][0m Trial 197 finished with value: 4.423629462280274 and parameters: {'hidden_size': 52, 'lr': 0.0032059131323720087}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:33:05,382][0m Trial 198 finished with value: 4.653534188537598 and parameters: {'hidden_size': 37, 'lr': 0.004131129581621573}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:34:02,006][0m Trial 199 finished with value: 4.443755333862304 and parameters: {'hidden_size': 32, 'lr': 0.003589996157092139}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:35:00,883][0m Trial 200 finished with value: 4.490745962600708 and parameters: {'hidden_size': 42, 'lr': 0.004791937982858046}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:35:58,531][0m Trial 201 finished with value: 4.422258059616089 and parameters: {'hidden_size': 37, 'lr': 0.0033018533738163338}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:36:57,448][0m Trial 202 finished with value: 4.5134334967803955 and parameters: {'hidden_size': 42, 'lr': 0.008792947159277392}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:37:54,853][0m Trial 203 finished with value: 4.405964331207276 and parameters: {'hidden_size': 52, 'lr': 0.0038361260229574285}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:38:50,957][0m Trial 204 finished with value: 4.510200444793701 and parameters: {'hidden_size': 52, 'lr': 0.004304983680793417}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:39:50,331][0m Trial 205 finished with value: 4.458612232437134 and parameters: {'hidden_size': 57, 'lr': 0.003994243199134224}. Best is trial 46 with value: 4.371968461303711.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:40:47,696][0m Trial 206 finished with value: 4.355436987609863 and parameters: {'hidden_size': 47, 'lr': 0.003047390723290986}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:41:46,847][0m Trial 207 finished with value: 4.423297466278076 and parameters: {'hidden_size': 47, 'lr': 0.002569390938637615}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:42:43,445][0m Trial 208 finished with value: 4.391144487838745 and parameters: {'hidden_size': 27, 'lr': 0.002804846655406632}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:43:40,864][0m Trial 209 finished with value: 4.405763009262085 and parameters: {'hidden_size': 27, 'lr': 0.00288399402527373}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:44:38,128][0m Trial 210 finished with value: 4.393964937286377 and parameters: {'hidden_size': 27, 'lr': 0.0027646492387106247}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:45:35,024][0m Trial 211 finished with value: 4.460716255493164 and parameters: {'hidden_size': 27, 'lr': 0.0022458731462012167}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:46:32,481][0m Trial 212 finished with value: 4.465957709274292 and parameters: {'hidden_size': 27, 'lr': 0.002834462083961852}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:47:30,126][0m Trial 213 finished with value: 4.490039751586914 and parameters: {'hidden_size': 17, 'lr': 0.002536732733651438}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:48:27,345][0m Trial 214 finished with value: 4.478894420089722 and parameters: {'hidden_size': 22, 'lr': 0.0029026676375740984}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:49:24,879][0m Trial 215 finished with value: 4.39748584564209 and parameters: {'hidden_size': 32, 'lr': 0.0028009286319057363}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:50:21,209][0m Trial 216 finished with value: 4.47531797340393 and parameters: {'hidden_size': 32, 'lr': 0.0024297009704478045}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:51:19,274][0m Trial 217 finished with value: 4.570217392578125 and parameters: {'hidden_size': 27, 'lr': 0.0026214716481593524}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:52:16,042][0m Trial 218 finished with value: 4.508155238647461 and parameters: {'hidden_size': 22, 'lr': 0.0019134160487788263}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:53:13,821][0m Trial 219 finished with value: 4.364500074005127 and parameters: {'hidden_size': 32, 'lr': 0.002985612602210544}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:54:11,257][0m Trial 220 finished with value: 4.477879051208496 and parameters: {'hidden_size': 32, 'lr': 0.002841280817448368}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:55:07,886][0m Trial 221 finished with value: 4.456269396820068 and parameters: {'hidden_size': 27, 'lr': 0.003061257696471131}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:56:05,912][0m Trial 222 finished with value: 4.441388790283203 and parameters: {'hidden_size': 32, 'lr': 0.0024002508567906294}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:57:01,872][0m Trial 223 finished with value: 4.380894589767456 and parameters: {'hidden_size': 32, 'lr': 0.0027413686515299083}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:57:59,010][0m Trial 224 finished with value: 4.517253455963135 and parameters: {'hidden_size': 32, 'lr': 0.002194524837623574}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:58:56,124][0m Trial 225 finished with value: 4.431133929290771 and parameters: {'hidden_size': 22, 'lr': 0.002702644454570618}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 15:59:54,177][0m Trial 226 finished with value: 4.4602740833282475 and parameters: {'hidden_size': 27, 'lr': 0.0010273852236329887}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:00:50,708][0m Trial 227 finished with value: 4.43406270904541 and parameters: {'hidden_size': 32, 'lr': 0.002915469736820551}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:01:50,051][0m Trial 228 finished with value: 4.491637051620484 and parameters: {'hidden_size': 37, 'lr': 0.0026256049872909514}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:02:47,625][0m Trial 229 finished with value: 4.389935802612305 and parameters: {'hidden_size': 37, 'lr': 0.0023575569870566138}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:03:44,992][0m Trial 230 finished with value: 4.516902527923584 and parameters: {'hidden_size': 22, 'lr': 0.0023478081718242964}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:04:42,585][0m Trial 231 finished with value: 4.509907383422852 and parameters: {'hidden_size': 32, 'lr': 0.002065493010078893}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:05:41,372][0m Trial 232 finished with value: 4.3782163103485106 and parameters: {'hidden_size': 37, 'lr': 0.00298870232545768}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:06:40,318][0m Trial 233 finished with value: 4.444027618026733 and parameters: {'hidden_size': 37, 'lr': 0.002834774835268501}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:07:37,107][0m Trial 234 finished with value: 4.4213584717559815 and parameters: {'hidden_size': 27, 'lr': 0.003191530038648301}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:08:35,201][0m Trial 235 finished with value: 4.397707156982422 and parameters: {'hidden_size': 32, 'lr': 0.002555467584912225}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:09:32,173][0m Trial 236 finished with value: 4.438253357009888 and parameters: {'hidden_size': 27, 'lr': 0.0023175787957192074}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:10:32,911][0m Trial 237 finished with value: 4.521742266769409 and parameters: {'hidden_size': 117, 'lr': 0.003527644826885794}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:11:29,713][0m Trial 238 finished with value: 4.448568806152344 and parameters: {'hidden_size': 32, 'lr': 0.0025414980925463617}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:12:28,783][0m Trial 239 finished with value: 4.485489974365234 and parameters: {'hidden_size': 37, 'lr': 0.00312269801661282}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:13:25,787][0m Trial 240 finished with value: 4.403718129577637 and parameters: {'hidden_size': 27, 'lr': 0.0034155541028723247}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:14:24,200][0m Trial 241 finished with value: 4.407782104034424 and parameters: {'hidden_size': 27, 'lr': 0.003409501121102151}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:15:20,891][0m Trial 242 finished with value: 4.4845626880645755 and parameters: {'hidden_size': 22, 'lr': 0.0033811769434697113}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:16:18,586][0m Trial 243 finished with value: 4.455732619628907 and parameters: {'hidden_size': 27, 'lr': 0.0028656857860677003}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:17:17,114][0m Trial 244 finished with value: 4.457110894393921 and parameters: {'hidden_size': 17, 'lr': 0.0030400480322185985}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:18:15,112][0m Trial 245 finished with value: 4.457130720748902 and parameters: {'hidden_size': 27, 'lr': 0.002596686896397485}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:19:12,574][0m Trial 246 finished with value: 4.421964249725342 and parameters: {'hidden_size': 32, 'lr': 0.0034944813134541786}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:20:09,016][0m Trial 247 finished with value: 4.47374592628479 and parameters: {'hidden_size': 32, 'lr': 0.0030266384976445847}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:21:07,586][0m Trial 248 finished with value: 4.440910431137085 and parameters: {'hidden_size': 22, 'lr': 0.002689234146841956}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:22:04,384][0m Trial 249 finished with value: 4.487181452026367 and parameters: {'hidden_size': 27, 'lr': 0.0034122895880466424}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:23:01,695][0m Trial 250 finished with value: 4.433213444900512 and parameters: {'hidden_size': 32, 'lr': 0.0024733479528476245}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:24:00,118][0m Trial 251 finished with value: 4.432567647628784 and parameters: {'hidden_size': 37, 'lr': 0.003740775464259727}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:24:58,228][0m Trial 252 finished with value: 4.436109004821778 and parameters: {'hidden_size': 17, 'lr': 0.0031011714293973144}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:25:54,990][0m Trial 253 finished with value: 4.420830086517334 and parameters: {'hidden_size': 32, 'lr': 0.0021941169722414877}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:26:53,338][0m Trial 254 finished with value: 4.401085665664673 and parameters: {'hidden_size': 27, 'lr': 0.0028645513127839024}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:27:49,979][0m Trial 255 finished with value: 4.43491088798523 and parameters: {'hidden_size': 27, 'lr': 0.0028369655270903044}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:28:47,550][0m Trial 256 finished with value: 4.470157824554444 and parameters: {'hidden_size': 22, 'lr': 0.0032358327200136838}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:29:45,953][0m Trial 257 finished with value: 4.426801503219605 and parameters: {'hidden_size': 22, 'lr': 0.00243637679221698}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:30:43,314][0m Trial 258 finished with value: 4.549087794113159 and parameters: {'hidden_size': 32, 'lr': 0.002689431642992183}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:31:42,594][0m Trial 259 finished with value: 4.444469264602661 and parameters: {'hidden_size': 37, 'lr': 0.0030147878631363177}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:32:39,512][0m Trial 260 finished with value: 4.49877640914917 and parameters: {'hidden_size': 27, 'lr': 0.003460783316831625}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:33:39,025][0m Trial 261 finished with value: 4.51998659576416 and parameters: {'hidden_size': 37, 'lr': 0.0037516415075849498}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:34:37,191][0m Trial 262 finished with value: 4.430744218215942 and parameters: {'hidden_size': 92, 'lr': 0.0028270014218201387}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:35:34,465][0m Trial 263 finished with value: 4.4575979103851315 and parameters: {'hidden_size': 32, 'lr': 0.00196846185477815}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:36:31,625][0m Trial 264 finished with value: 4.466284713134765 and parameters: {'hidden_size': 27, 'lr': 0.003291881482471082}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:37:30,499][0m Trial 265 finished with value: 4.616479996948242 and parameters: {'hidden_size': 42, 'lr': 0.0024552699125658856}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:38:27,361][0m Trial 266 finished with value: 4.493148187484741 and parameters: {'hidden_size': 17, 'lr': 0.0026631722799377333}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:39:25,479][0m Trial 267 finished with value: 4.419256138076782 and parameters: {'hidden_size': 27, 'lr': 0.002951928553878313}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:40:23,081][0m Trial 268 finished with value: 4.436170324707032 and parameters: {'hidden_size': 47, 'lr': 0.00228132875579493}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:41:21,513][0m Trial 269 finished with value: 4.5258588461303715 and parameters: {'hidden_size': 37, 'lr': 0.003853732088142646}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:42:19,337][0m Trial 270 finished with value: 4.541712369384766 and parameters: {'hidden_size': 32, 'lr': 0.003398921770621882}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:43:17,631][0m Trial 271 finished with value: 4.481684133377075 and parameters: {'hidden_size': 22, 'lr': 0.003134021374654548}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:44:16,690][0m Trial 272 finished with value: 4.442160460510254 and parameters: {'hidden_size': 42, 'lr': 0.0027228232937370773}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:45:13,559][0m Trial 273 finished with value: 4.680135578155517 and parameters: {'hidden_size': 27, 'lr': 0.00036836548974069093}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:46:13,109][0m Trial 274 finished with value: 4.453444174880982 and parameters: {'hidden_size': 37, 'lr': 0.003621151345342744}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:47:10,953][0m Trial 275 finished with value: 4.443863885040283 and parameters: {'hidden_size': 47, 'lr': 0.0017489826252058882}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:48:08,452][0m Trial 276 finished with value: 4.461231282958984 and parameters: {'hidden_size': 32, 'lr': 0.00307902263943163}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:49:06,810][0m Trial 277 finished with value: 4.431143320617676 and parameters: {'hidden_size': 42, 'lr': 0.00254936611771794}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:50:04,529][0m Trial 278 finished with value: 4.471082911148072 and parameters: {'hidden_size': 32, 'lr': 0.0033285576440936545}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:51:00,524][0m Trial 279 finished with value: 4.432376332626343 and parameters: {'hidden_size': 12, 'lr': 0.004360217428182012}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:51:59,006][0m Trial 280 finished with value: 4.466408109664917 and parameters: {'hidden_size': 22, 'lr': 0.0028741032906641176}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:52:56,644][0m Trial 281 finished with value: 4.45044551071167 and parameters: {'hidden_size': 37, 'lr': 0.0023427873818699214}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:53:53,893][0m Trial 282 finished with value: 4.402480637969971 and parameters: {'hidden_size': 32, 'lr': 0.0021722557348472496}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:54:52,105][0m Trial 283 finished with value: 4.514091886901856 and parameters: {'hidden_size': 27, 'lr': 0.002032296275611457}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:55:49,969][0m Trial 284 finished with value: 4.486220180053711 and parameters: {'hidden_size': 22, 'lr': 0.0023120487439171485}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:56:48,162][0m Trial 285 finished with value: 4.524880200958252 and parameters: {'hidden_size': 27, 'lr': 0.002649891105209846}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:57:44,548][0m Trial 286 finished with value: 4.485905048217774 and parameters: {'hidden_size': 32, 'lr': 0.0022330939657896833}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:58:43,081][0m Trial 287 finished with value: 4.4789118392181395 and parameters: {'hidden_size': 17, 'lr': 0.003853260874906835}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 16:59:40,931][0m Trial 288 finished with value: 4.375872460479736 and parameters: {'hidden_size': 42, 'lr': 0.0030236562683365912}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:00:39,637][0m Trial 289 finished with value: 4.3849411338806155 and parameters: {'hidden_size': 47, 'lr': 0.0029288747973721333}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:01:37,893][0m Trial 290 finished with value: 4.45982806640625 and parameters: {'hidden_size': 42, 'lr': 0.0025231613544870603}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:02:36,866][0m Trial 291 finished with value: 4.43150465057373 and parameters: {'hidden_size': 47, 'lr': 0.002861349533457514}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:03:34,901][0m Trial 292 finished with value: 4.411868463439942 and parameters: {'hidden_size': 42, 'lr': 0.002115655269714174}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:04:34,313][0m Trial 293 finished with value: 4.544863597793579 and parameters: {'hidden_size': 37, 'lr': 0.002963301418283811}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:05:31,942][0m Trial 294 finished with value: 4.488381453323364 and parameters: {'hidden_size': 42, 'lr': 0.0026665569529493883}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:06:30,425][0m Trial 295 finished with value: 4.427308975830078 and parameters: {'hidden_size': 47, 'lr': 0.0031407459909613498}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:07:29,338][0m Trial 296 finished with value: 4.517118366317749 and parameters: {'hidden_size': 37, 'lr': 0.002479192574661609}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:08:28,022][0m Trial 297 finished with value: 4.474553564300537 and parameters: {'hidden_size': 42, 'lr': 0.002779448911873426}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:09:25,558][0m Trial 298 finished with value: 4.4526300075531005 and parameters: {'hidden_size': 32, 'lr': 0.0018834714068554892}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:10:21,672][0m Trial 299 finished with value: 4.42220067817688 and parameters: {'hidden_size': 32, 'lr': 0.0030889722050507964}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:11:19,592][0m Trial 300 finished with value: 4.490283851928711 and parameters: {'hidden_size': 52, 'lr': 0.0026903655662725563}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:12:17,097][0m Trial 301 finished with value: 4.483674142379761 and parameters: {'hidden_size': 47, 'lr': 0.002386419644594279}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:13:15,642][0m Trial 302 finished with value: 4.49967450164795 and parameters: {'hidden_size': 37, 'lr': 0.0021246070410500845}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:14:13,609][0m Trial 303 finished with value: 4.416307466278076 and parameters: {'hidden_size': 37, 'lr': 0.0029578952158417315}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:15:12,340][0m Trial 304 finished with value: 4.499730312118531 and parameters: {'hidden_size': 42, 'lr': 0.003300641634038442}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:16:08,668][0m Trial 305 finished with value: 4.584126897506714 and parameters: {'hidden_size': 32, 'lr': 0.0025027677976249187}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:17:13,512][0m Trial 306 finished with value: 4.436499177627564 and parameters: {'hidden_size': 182, 'lr': 0.0016548319735887286}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:18:10,050][0m Trial 307 finished with value: 4.39824247215271 and parameters: {'hidden_size': 27, 'lr': 0.0028407476428522075}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:19:08,550][0m Trial 308 finished with value: 4.45514587638855 and parameters: {'hidden_size': 37, 'lr': 0.0033218606124601}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:20:07,561][0m Trial 309 finished with value: 4.4286933590698245 and parameters: {'hidden_size': 47, 'lr': 0.0026860920592097753}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:21:04,860][0m Trial 310 finished with value: 4.46238657081604 and parameters: {'hidden_size': 32, 'lr': 0.003032432877834242}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:22:02,883][0m Trial 311 finished with value: 4.438147150268555 and parameters: {'hidden_size': 22, 'lr': 0.0034514002788518985}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:23:00,306][0m Trial 312 finished with value: 4.433976184005737 and parameters: {'hidden_size': 42, 'lr': 0.002292699263066959}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:23:58,576][0m Trial 313 finished with value: 4.421220059890747 and parameters: {'hidden_size': 27, 'lr': 0.0028086077776050236}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:24:54,890][0m Trial 314 finished with value: 4.471623920516968 and parameters: {'hidden_size': 52, 'lr': 0.0025115608061843345}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:25:51,928][0m Trial 315 finished with value: 4.452187655258179 and parameters: {'hidden_size': 32, 'lr': 0.003283105574895608}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:26:49,875][0m Trial 316 finished with value: 4.5064081037902834 and parameters: {'hidden_size': 37, 'lr': 0.0030211726734181775}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:27:47,693][0m Trial 317 finished with value: 4.452079208984375 and parameters: {'hidden_size': 27, 'lr': 0.0036566468566401377}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:28:45,679][0m Trial 318 finished with value: 4.451036200790405 and parameters: {'hidden_size': 47, 'lr': 0.0026471255653252755}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:29:44,719][0m Trial 319 finished with value: 4.416079273834229 and parameters: {'hidden_size': 42, 'lr': 0.0021199313060459323}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:30:42,618][0m Trial 320 finished with value: 4.420009618225098 and parameters: {'hidden_size': 82, 'lr': 0.003053934551036957}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:31:40,163][0m Trial 321 finished with value: 4.479613773651123 and parameters: {'hidden_size': 32, 'lr': 0.004090157557232885}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:32:37,132][0m Trial 322 finished with value: 4.421734484786987 and parameters: {'hidden_size': 22, 'lr': 0.003610842508966233}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:33:35,975][0m Trial 323 finished with value: 4.408265525665283 and parameters: {'hidden_size': 37, 'lr': 0.0023892304029991046}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:34:33,003][0m Trial 324 finished with value: 4.449377766647339 and parameters: {'hidden_size': 27, 'lr': 0.002784745376853466}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:35:29,432][0m Trial 325 finished with value: 5.449307305374146 and parameters: {'hidden_size': 32, 'lr': 0.00014724179490316195}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:36:27,741][0m Trial 326 finished with value: 4.409836307373046 and parameters: {'hidden_size': 37, 'lr': 0.0031585712903743446}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:37:25,342][0m Trial 327 finished with value: 4.40368303642273 and parameters: {'hidden_size': 52, 'lr': 0.0028206318084023217}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:38:24,169][0m Trial 328 finished with value: 4.433540484771728 and parameters: {'hidden_size': 57, 'lr': 0.002615786727510482}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:39:21,471][0m Trial 329 finished with value: 4.511619268188476 and parameters: {'hidden_size': 62, 'lr': 0.003543785624066202}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:40:18,763][0m Trial 330 finished with value: 4.506049590988159 and parameters: {'hidden_size': 52, 'lr': 0.0005930217621837346}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:41:16,954][0m Trial 331 finished with value: 4.464014890441894 and parameters: {'hidden_size': 47, 'lr': 0.0028897827843877757}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:42:13,769][0m Trial 332 finished with value: 4.473930533828735 and parameters: {'hidden_size': 52, 'lr': 0.003228558738238029}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:43:12,193][0m Trial 333 finished with value: 4.485505625839234 and parameters: {'hidden_size': 42, 'lr': 0.0028018357323311154}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:44:11,204][0m Trial 334 finished with value: 4.398730520706176 and parameters: {'hidden_size': 47, 'lr': 0.002479378945219435}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:45:10,049][0m Trial 335 finished with value: 4.499089017105103 and parameters: {'hidden_size': 57, 'lr': 0.0023577133150694094}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:46:07,504][0m Trial 336 finished with value: 4.3762954837799075 and parameters: {'hidden_size': 47, 'lr': 0.0025315237708563834}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:47:06,081][0m Trial 337 finished with value: 4.610111250915527 and parameters: {'hidden_size': 42, 'lr': 0.0021612852573125057}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:48:04,151][0m Trial 338 finished with value: 4.427548755264282 and parameters: {'hidden_size': 47, 'lr': 0.002460972361033339}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:49:02,086][0m Trial 339 finished with value: 4.419237093276977 and parameters: {'hidden_size': 47, 'lr': 0.0025269145197072585}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:50:05,471][0m Trial 340 finished with value: 4.505190032196045 and parameters: {'hidden_size': 157, 'lr': 0.0022608401254574626}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:51:03,143][0m Trial 341 finished with value: 4.398620869140625 and parameters: {'hidden_size': 42, 'lr': 0.0025409074817478714}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:52:02,557][0m Trial 342 finished with value: 4.418757405471802 and parameters: {'hidden_size': 47, 'lr': 0.0018703833113951076}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:53:00,247][0m Trial 343 finished with value: 4.440967797164917 and parameters: {'hidden_size': 37, 'lr': 0.0025480806771899745}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:53:58,845][0m Trial 344 finished with value: 4.482572853698731 and parameters: {'hidden_size': 47, 'lr': 0.002244734391410627}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:54:56,941][0m Trial 345 finished with value: 4.4380006246948245 and parameters: {'hidden_size': 42, 'lr': 0.001957863464605202}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:55:54,493][0m Trial 346 finished with value: 4.598770847320557 and parameters: {'hidden_size': 52, 'lr': 0.0026515078009502584}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:56:52,125][0m Trial 347 finished with value: 4.4854009657287595 and parameters: {'hidden_size': 42, 'lr': 0.0024264066993053427}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:57:49,681][0m Trial 348 finished with value: 4.415229804992676 and parameters: {'hidden_size': 37, 'lr': 0.002965496828969326}. Best is trial 206 with value: 4.355436987609863.[0m
+/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/optuna/distributions.py:560: UserWarning: The distribution is specified by [2, 200] and step=5, but the range is not divisible by `step`. It will be replaced by [2, 197].
+  warnings.warn(
+[32m[I 2022-02-15 17:58:48,175][0m Trial 349 finished with value: 4.474245289306641 and parameters: {'hidden_size': 37, 'lr': 0.0026137478256907853}. Best is trial 206 with value: 4.355436987609863.[0m
+[Epoch 1/1] loss: 4.5489 (MSE) - test_loss: 4.4721 (MSE)
+[Epoch 1/1] loss: 4.5729 (MSE) - test_loss: 4.5585 (MSE)
+[Epoch 1/1] loss: 4.6641 (MSE) - test_loss: 4.3913 (MSE)
+[Epoch 1/1] loss: 5.4282 (MSE) - test_loss: 4.7224 (MSE)
+[Epoch 1/1] loss: 4.7592 (MSE) - test_loss: 4.5053 (MSE)
+[Epoch 1/1] loss: 4.6550 (MSE) - test_loss: 4.4977 (MSE)
+[Epoch 1/1] loss: 4.6228 (MSE) - test_loss: 4.5166 (MSE)
+[Epoch 1/1] loss: 4.7316 (MSE) - test_loss: 4.4084 (MSE)
+[Epoch 1/1] loss: 5.4464 (MSE) - test_loss: 4.6724 (MSE)
+[Epoch 1/1] loss: 4.6040 (MSE) - test_loss: 4.4657 (MSE)
+[Epoch 1/1] loss: 9.5002 (MSE) - test_loss: 6.2781 (MSE)
+[Epoch 1/1] loss: 6.1984 (MSE) - test_loss: 4.9230 (MSE)
+[Epoch 1/1] loss: 4.8840 (MSE) - test_loss: 4.4616 (MSE)
+[Epoch 1/1] loss: 5.0564 (MSE) - test_loss: 4.9545 (MSE)
+[Epoch 1/1] loss: 4.8556 (MSE) - test_loss: 4.4825 (MSE)
+[Epoch 1/1] loss: 5.6697 (MSE) - test_loss: 4.9855 (MSE)
+[Epoch 1/1] loss: 5.2710 (MSE) - test_loss: 4.5589 (MSE)
+[Epoch 1/1] loss: 4.6431 (MSE) - test_loss: 4.4635 (MSE)
+[Epoch 1/1] loss: 4.6102 (MSE) - test_loss: 4.5356 (MSE)
+[Epoch 1/1] loss: 4.8829 (MSE) - test_loss: 4.4191 (MSE)
+[Epoch 1/1] loss: 5.1329 (MSE) - test_loss: 4.5725 (MSE)
+[Epoch 1/1] loss: 4.9939 (MSE) - test_loss: 4.4786 (MSE)
+[Epoch 1/1] loss: 4.9445 (MSE) - test_loss: 4.4564 (MSE)
+[Epoch 1/1] loss: 4.7200 (MSE) - test_loss: 4.4909 (MSE)
+[Epoch 1/1] loss: 4.9007 (MSE) - test_loss: 4.4770 (MSE)
+[Epoch 1/1] loss: 5.2560 (MSE) - test_loss: 4.5980 (MSE)
+[Epoch 1/1] loss: 4.6397 (MSE) - test_loss: 4.4902 (MSE)
+[Epoch 1/1] loss: 4.6042 (MSE) - test_loss: 4.3934 (MSE)
+[Epoch 1/1] loss: 4.5874 (MSE) - test_loss: 4.4363 (MSE)
+[Epoch 1/1] loss: 4.6637 (MSE) - test_loss: 4.5263 (MSE)
+[Epoch 1/1] loss: 4.6540 (MSE) - test_loss: 4.4227 (MSE)
+[Epoch 1/1] loss: 4.8427 (MSE) - test_loss: 4.4878 (MSE)
+[Epoch 1/1] loss: 4.6742 (MSE) - test_loss: 4.4423 (MSE)
+[Epoch 1/1] loss: 4.5904 (MSE) - test_loss: 4.4694 (MSE)
+[Epoch 1/1] loss: 4.6518 (MSE) - test_loss: 4.4498 (MSE)
+[Epoch 1/1] loss: 4.7954 (MSE) - test_loss: 4.4371 (MSE)
+[Epoch 1/1] loss: 4.6429 (MSE) - test_loss: 4.4612 (MSE)
+[Epoch 1/1] loss: 4.6663 (MSE) - test_loss: 4.4802 (MSE)
+[Epoch 1/1] loss: 4.6458 (MSE) - test_loss: 4.6344 (MSE)
+[Epoch 1/1] loss: 4.9819 (MSE) - test_loss: 4.4507 (MSE)
+[Epoch 1/1] loss: 4.8127 (MSE) - test_loss: 4.5592 (MSE)
+[Epoch 1/1] loss: 4.6415 (MSE) - test_loss: 4.6447 (MSE)
+[Epoch 1/1] loss: 4.5934 (MSE) - test_loss: 4.4168 (MSE)
+[Epoch 1/1] loss: 5.0035 (MSE) - test_loss: 4.7221 (MSE)
+[Epoch 1/1] loss: 4.6193 (MSE) - test_loss: 4.3882 (MSE)
+[Epoch 1/1] loss: 4.6316 (MSE) - test_loss: 4.5344 (MSE)
+[Epoch 1/1] loss: 4.6683 (MSE) - test_loss: 4.3720 (MSE)
+[Epoch 1/1] loss: 6.1534 (MSE) - test_loss: 5.2180 (MSE)
+[Epoch 1/1] loss: 4.6438 (MSE) - test_loss: 4.4423 (MSE)
+[Epoch 1/1] loss: 4.6628 (MSE) - test_loss: 4.4200 (MSE)
+[Epoch 1/1] loss: 4.6294 (MSE) - test_loss: 4.5477 (MSE)
+[Epoch 1/1] loss: 4.6029 (MSE) - test_loss: 4.4268 (MSE)
+[Epoch 1/1] loss: 4.6823 (MSE) - test_loss: 4.4213 (MSE)
+[Epoch 1/1] loss: 4.5992 (MSE) - test_loss: 4.5428 (MSE)
+[Epoch 1/1] loss: 4.7242 (MSE) - test_loss: 4.4649 (MSE)
+[Epoch 1/1] loss: 4.5747 (MSE) - test_loss: 4.4600 (MSE)
+[Epoch 1/1] loss: 4.6923 (MSE) - test_loss: 4.4982 (MSE)
+[Epoch 1/1] loss: 4.6843 (MSE) - test_loss: 4.4510 (MSE)
+[Epoch 1/1] loss: 4.6881 (MSE) - test_loss: 4.4554 (MSE)
+[Epoch 1/1] loss: 4.5677 (MSE) - test_loss: 4.5091 (MSE)
+[Epoch 1/1] loss: 5.4001 (MSE) - test_loss: 4.7524 (MSE)
+[Epoch 1/1] loss: 5.2147 (MSE) - test_loss: 4.5434 (MSE)
+[Epoch 1/1] loss: 5.2835 (MSE) - test_loss: 4.4648 (MSE)
+[Epoch 1/1] loss: 4.8575 (MSE) - test_loss: 4.4522 (MSE)
+[Epoch 1/1] loss: 4.9184 (MSE) - test_loss: 4.4340 (MSE)
+[Epoch 1/1] loss: 4.8888 (MSE) - test_loss: 4.4495 (MSE)
+[Epoch 1/1] loss: 4.6373 (MSE) - test_loss: 4.4940 (MSE)
+[Epoch 1/1] loss: 4.5708 (MSE) - test_loss: 4.4265 (MSE)
+[Epoch 1/1] loss: 4.7810 (MSE) - test_loss: 4.4608 (MSE)
+[Epoch 1/1] loss: 5.2317 (MSE) - test_loss: 4.6165 (MSE)
+[Epoch 1/1] loss: 4.6042 (MSE) - test_loss: 4.5402 (MSE)
+[Epoch 1/1] loss: 4.6042 (MSE) - test_loss: 4.5066 (MSE)
+[Epoch 1/1] loss: 4.6862 (MSE) - test_loss: 4.6615 (MSE)
+[Epoch 1/1] loss: 4.5740 (MSE) - test_loss: 4.4587 (MSE)
+[Epoch 1/1] loss: 4.7363 (MSE) - test_loss: 4.5097 (MSE)
+[Epoch 1/1] loss: 5.1195 (MSE) - test_loss: 4.4988 (MSE)
+[Epoch 1/1] loss: 4.6145 (MSE) - test_loss: 4.4281 (MSE)
+[Epoch 1/1] loss: 4.7607 (MSE) - test_loss: 4.4265 (MSE)
+[Epoch 1/1] loss: 4.6863 (MSE) - test_loss: 4.4549 (MSE)
+[Epoch 1/1] loss: 4.7500 (MSE) - test_loss: 4.5296 (MSE)
+[Epoch 1/1] loss: 4.5758 (MSE) - test_loss: 4.4177 (MSE)
+[Epoch 1/1] loss: 4.5898 (MSE) - test_loss: 4.6008 (MSE)
+[Epoch 1/1] loss: 4.5968 (MSE) - test_loss: 4.4878 (MSE)
+[Epoch 1/1] loss: 4.6791 (MSE) - test_loss: 4.4223 (MSE)
+[Epoch 1/1] loss: 4.5758 (MSE) - test_loss: 4.5202 (MSE)
+[Epoch 1/1] loss: 4.6449 (MSE) - test_loss: 4.5532 (MSE)
+[Epoch 1/1] loss: 4.7514 (MSE) - test_loss: 4.4747 (MSE)
+[Epoch 1/1] loss: 4.6634 (MSE) - test_loss: 4.4190 (MSE)
+[Epoch 1/1] loss: 4.6360 (MSE) - test_loss: 4.5105 (MSE)
+[Epoch 1/1] loss: 4.5729 (MSE) - test_loss: 4.5352 (MSE)
+[Epoch 1/1] loss: 4.5227 (MSE) - test_loss: 4.5101 (MSE)
+[Epoch 1/1] loss: 4.6434 (MSE) - test_loss: 4.4889 (MSE)
+[Epoch 1/1] loss: 4.5955 (MSE) - test_loss: 4.4668 (MSE)
+[Epoch 1/1] loss: 4.6380 (MSE) - test_loss: 4.3944 (MSE)
+[Epoch 1/1] loss: 4.6806 (MSE) - test_loss: 4.4796 (MSE)
+[Epoch 1/1] loss: 4.6362 (MSE) - test_loss: 4.5694 (MSE)
+[Epoch 1/1] loss: 4.6501 (MSE) - test_loss: 4.4148 (MSE)
+[Epoch 1/1] loss: 4.6198 (MSE) - test_loss: 4.5025 (MSE)
+[Epoch 1/1] loss: 4.5910 (MSE) - test_loss: 4.5169 (MSE)
+[Epoch 1/1] loss: 4.6591 (MSE) - test_loss: 4.4263 (MSE)
+[Epoch 1/1] loss: 4.5891 (MSE) - test_loss: 4.4661 (MSE)
+[Epoch 1/1] loss: 4.5888 (MSE) - test_loss: 4.4196 (MSE)
+[Epoch 1/1] loss: 4.6788 (MSE) - test_loss: 4.4704 (MSE)
+[Epoch 1/1] loss: 5.0191 (MSE) - test_loss: 4.5183 (MSE)
+[Epoch 1/1] loss: 4.8625 (MSE) - test_loss: 4.4123 (MSE)
+[Epoch 1/1] loss: 4.6740 (MSE) - test_loss: 4.4508 (MSE)
+[Epoch 1/1] loss: 4.5714 (MSE) - test_loss: 4.4154 (MSE)
+[Epoch 1/1] loss: 4.6264 (MSE) - test_loss: 4.4770 (MSE)
+[Epoch 1/1] loss: 4.5755 (MSE) - test_loss: 4.4499 (MSE)
+[Epoch 1/1] loss: 4.6848 (MSE) - test_loss: 4.4441 (MSE)
+[Epoch 1/1] loss: 4.7079 (MSE) - test_loss: 4.4319 (MSE)
+[Epoch 1/1] loss: 4.8397 (MSE) - test_loss: 4.4597 (MSE)
+[Epoch 1/1] loss: 4.5836 (MSE) - test_loss: 4.5285 (MSE)
+[Epoch 1/1] loss: 4.6026 (MSE) - test_loss: 4.4627 (MSE)
+[Epoch 1/1] loss: 4.6226 (MSE) - test_loss: 4.4588 (MSE)
+[Epoch 1/1] loss: 4.5919 (MSE) - test_loss: 4.5558 (MSE)
+[Epoch 1/1] loss: 4.8292 (MSE) - test_loss: 4.4782 (MSE)
+[Epoch 1/1] loss: 4.7055 (MSE) - test_loss: 4.4341 (MSE)
+[Epoch 1/1] loss: 4.6363 (MSE) - test_loss: 4.4345 (MSE)
+[Epoch 1/1] loss: 4.6178 (MSE) - test_loss: 4.4665 (MSE)
+[Epoch 1/1] loss: 4.7629 (MSE) - test_loss: 4.4331 (MSE)
+[Epoch 1/1] loss: 4.9102 (MSE) - test_loss: 4.4827 (MSE)
+[Epoch 1/1] loss: 4.8951 (MSE) - test_loss: 4.4875 (MSE)
+[Epoch 1/1] loss: 4.6779 (MSE) - test_loss: 4.4689 (MSE)
+[Epoch 1/1] loss: 4.8616 (MSE) - test_loss: 4.4043 (MSE)
+[Epoch 1/1] loss: 4.7255 (MSE) - test_loss: 4.4284 (MSE)
+[Epoch 1/1] loss: 4.6776 (MSE) - test_loss: 4.4466 (MSE)
+[Epoch 1/1] loss: 4.8423 (MSE) - test_loss: 4.4508 (MSE)
+[Epoch 1/1] loss: 4.6324 (MSE) - test_loss: 4.5496 (MSE)
+[Epoch 1/1] loss: 4.6437 (MSE) - test_loss: 4.4597 (MSE)
+[Epoch 1/1] loss: 4.6344 (MSE) - test_loss: 4.5095 (MSE)
+[Epoch 1/1] loss: 5.5062 (MSE) - test_loss: 4.5721 (MSE)
+[Epoch 1/1] loss: 4.8458 (MSE) - test_loss: 4.4209 (MSE)
+[Epoch 1/1] loss: 5.0145 (MSE) - test_loss: 4.5034 (MSE)
+[Epoch 1/1] loss: 5.0567 (MSE) - test_loss: 4.4564 (MSE)
+[Epoch 1/1] loss: 4.7293 (MSE) - test_loss: 4.5667 (MSE)
+[Epoch 1/1] loss: 4.8589 (MSE) - test_loss: 4.4564 (MSE)
+[Epoch 1/1] loss: 5.0247 (MSE) - test_loss: 4.5157 (MSE)
+[Epoch 1/1] loss: 4.6589 (MSE) - test_loss: 4.4655 (MSE)
+[Epoch 1/1] loss: 4.6082 (MSE) - test_loss: 4.5200 (MSE)
+[Epoch 1/1] loss: 4.7785 (MSE) - test_loss: 4.4577 (MSE)
+[Epoch 1/1] loss: 4.6645 (MSE) - test_loss: 4.4786 (MSE)
+[Epoch 1/1] loss: 4.7254 (MSE) - test_loss: 4.4613 (MSE)
+[Epoch 1/1] loss: 4.6466 (MSE) - test_loss: 4.4082 (MSE)
+[Epoch 1/1] loss: 4.7405 (MSE) - test_loss: 4.4962 (MSE)
+[Epoch 1/1] loss: 4.5399 (MSE) - test_loss: 4.5116 (MSE)
+[Epoch 1/1] loss: 4.6886 (MSE) - test_loss: 4.5109 (MSE)
+[Epoch 1/1] loss: 4.6842 (MSE) - test_loss: 4.5035 (MSE)
+[Epoch 1/1] loss: 4.7701 (MSE) - test_loss: 4.4668 (MSE)
+[Epoch 1/1] loss: 4.7667 (MSE) - test_loss: 4.4826 (MSE)
+[Epoch 1/1] loss: 5.0403 (MSE) - test_loss: 4.5048 (MSE)
+[Epoch 1/1] loss: 4.5183 (MSE) - test_loss: 4.6308 (MSE)
+[Epoch 1/1] loss: 4.6658 (MSE) - test_loss: 4.4732 (MSE)
+[Epoch 1/1] loss: 4.6180 (MSE) - test_loss: 4.4652 (MSE)
+[Epoch 1/1] loss: 4.6372 (MSE) - test_loss: 4.4150 (MSE)
+[Epoch 1/1] loss: 4.6420 (MSE) - test_loss: 4.4823 (MSE)
+[Epoch 1/1] loss: 4.6497 (MSE) - test_loss: 4.4867 (MSE)
+[Epoch 1/1] loss: 4.5614 (MSE) - test_loss: 4.3849 (MSE)
+[Epoch 1/1] loss: 4.5900 (MSE) - test_loss: 4.4137 (MSE)
+[Epoch 1/1] loss: 4.6108 (MSE) - test_loss: 4.5621 (MSE)
+[Epoch 1/1] loss: 4.6364 (MSE) - test_loss: 4.4805 (MSE)
+[Epoch 1/1] loss: 4.6557 (MSE) - test_loss: 4.5243 (MSE)
+[Epoch 1/1] loss: 4.6264 (MSE) - test_loss: 4.4330 (MSE)
+[Epoch 1/1] loss: 4.6195 (MSE) - test_loss: 4.4817 (MSE)
+[Epoch 1/1] loss: 4.7010 (MSE) - test_loss: 4.4569 (MSE)
+[Epoch 1/1] loss: 4.6170 (MSE) - test_loss: 4.4281 (MSE)
+[Epoch 1/1] loss: 4.5876 (MSE) - test_loss: 4.5233 (MSE)
+[Epoch 1/1] loss: 4.7271 (MSE) - test_loss: 4.5397 (MSE)
+[Epoch 1/1] loss: 4.6876 (MSE) - test_loss: 4.4408 (MSE)
+[Epoch 1/1] loss: 4.5884 (MSE) - test_loss: 4.5931 (MSE)
+[Epoch 1/1] loss: 4.6039 (MSE) - test_loss: 4.4962 (MSE)
+[Epoch 1/1] loss: 4.7332 (MSE) - test_loss: 4.4383 (MSE)
+[Epoch 1/1] loss: 4.6672 (MSE) - test_loss: 4.4101 (MSE)
+[Epoch 1/1] loss: 4.6845 (MSE) - test_loss: 4.3980 (MSE)
+[Epoch 1/1] loss: 4.6357 (MSE) - test_loss: 4.4777 (MSE)
+[Epoch 1/1] loss: 4.6999 (MSE) - test_loss: 4.4328 (MSE)
+[Epoch 1/1] loss: 4.5753 (MSE) - test_loss: 4.4096 (MSE)
+[Epoch 1/1] loss: 4.5636 (MSE) - test_loss: 4.4679 (MSE)
+[Epoch 1/1] loss: 4.5837 (MSE) - test_loss: 4.4499 (MSE)
+[Epoch 1/1] loss: 4.6841 (MSE) - test_loss: 4.4733 (MSE)
+[Epoch 1/1] loss: 4.5539 (MSE) - test_loss: 4.4430 (MSE)
+[Epoch 1/1] loss: 4.6228 (MSE) - test_loss: 4.5040 (MSE)
+[Epoch 1/1] loss: 4.5701 (MSE) - test_loss: 4.4180 (MSE)
+[Epoch 1/1] loss: 4.6467 (MSE) - test_loss: 4.3968 (MSE)
+[Epoch 1/1] loss: 4.6332 (MSE) - test_loss: 4.4032 (MSE)
+[Epoch 1/1] loss: 4.6773 (MSE) - test_loss: 4.4343 (MSE)
+[Epoch 1/1] loss: 4.6376 (MSE) - test_loss: 4.5012 (MSE)
+[Epoch 1/1] loss: 4.7048 (MSE) - test_loss: 4.5327 (MSE)
+[Epoch 1/1] loss: 4.6942 (MSE) - test_loss: 4.5039 (MSE)
+[Epoch 1/1] loss: 6.0320 (MSE) - test_loss: 4.9614 (MSE)
+[Epoch 1/1] loss: 4.5855 (MSE) - test_loss: 4.6849 (MSE)
+[Epoch 1/1] loss: 4.6145 (MSE) - test_loss: 4.4266 (MSE)
+[Epoch 1/1] loss: 4.5977 (MSE) - test_loss: 4.4130 (MSE)
+[Epoch 1/1] loss: 4.6000 (MSE) - test_loss: 4.4759 (MSE)
+[Epoch 1/1] loss: 4.6787 (MSE) - test_loss: 4.4470 (MSE)
+[Epoch 1/1] loss: 4.5689 (MSE) - test_loss: 4.5290 (MSE)
+[Epoch 1/1] loss: 4.6476 (MSE) - test_loss: 4.4421 (MSE)
+[Epoch 1/1] loss: 4.5970 (MSE) - test_loss: 4.4236 (MSE)
+[Epoch 1/1] loss: 4.5494 (MSE) - test_loss: 4.6535 (MSE)
+[Epoch 1/1] loss: 4.6810 (MSE) - test_loss: 4.4438 (MSE)
+[Epoch 1/1] loss: 4.6698 (MSE) - test_loss: 4.4907 (MSE)
+[Epoch 1/1] loss: 4.7224 (MSE) - test_loss: 4.4223 (MSE)
+[Epoch 1/1] loss: 4.7210 (MSE) - test_loss: 4.5134 (MSE)
+[Epoch 1/1] loss: 4.5932 (MSE) - test_loss: 4.4060 (MSE)
+[Epoch 1/1] loss: 4.5970 (MSE) - test_loss: 4.5102 (MSE)
+[Epoch 1/1] loss: 4.6929 (MSE) - test_loss: 4.4586 (MSE)
+[Epoch 1/1] loss: 4.5586 (MSE) - test_loss: 4.3554 (MSE)
+[Epoch 1/1] loss: 4.7123 (MSE) - test_loss: 4.4233 (MSE)
+[Epoch 1/1] loss: 4.7212 (MSE) - test_loss: 4.3911 (MSE)
+[Epoch 1/1] loss: 4.6530 (MSE) - test_loss: 4.4058 (MSE)
+[Epoch 1/1] loss: 4.6784 (MSE) - test_loss: 4.3940 (MSE)
+[Epoch 1/1] loss: 4.7461 (MSE) - test_loss: 4.4607 (MSE)
+[Epoch 1/1] loss: 4.8551 (MSE) - test_loss: 4.4660 (MSE)
+[Epoch 1/1] loss: 4.8720 (MSE) - test_loss: 4.4900 (MSE)
+[Epoch 1/1] loss: 4.7342 (MSE) - test_loss: 4.4789 (MSE)
+[Epoch 1/1] loss: 4.6998 (MSE) - test_loss: 4.3975 (MSE)
+[Epoch 1/1] loss: 4.6612 (MSE) - test_loss: 4.4753 (MSE)
+[Epoch 1/1] loss: 4.6564 (MSE) - test_loss: 4.5702 (MSE)
+[Epoch 1/1] loss: 4.7994 (MSE) - test_loss: 4.5082 (MSE)
+[Epoch 1/1] loss: 4.6320 (MSE) - test_loss: 4.3645 (MSE)
+[Epoch 1/1] loss: 4.6783 (MSE) - test_loss: 4.4779 (MSE)
+[Epoch 1/1] loss: 4.6535 (MSE) - test_loss: 4.4563 (MSE)
+[Epoch 1/1] loss: 4.6697 (MSE) - test_loss: 4.4414 (MSE)
+[Epoch 1/1] loss: 4.6860 (MSE) - test_loss: 4.3809 (MSE)
+[Epoch 1/1] loss: 4.7616 (MSE) - test_loss: 4.5173 (MSE)
+[Epoch 1/1] loss: 4.7583 (MSE) - test_loss: 4.4311 (MSE)
+[Epoch 1/1] loss: 5.0105 (MSE) - test_loss: 4.4603 (MSE)
+[Epoch 1/1] loss: 4.6589 (MSE) - test_loss: 4.4341 (MSE)
+[Epoch 1/1] loss: 4.5873 (MSE) - test_loss: 4.4916 (MSE)
+[Epoch 1/1] loss: 4.6715 (MSE) - test_loss: 4.3899 (MSE)
+[Epoch 1/1] loss: 4.7438 (MSE) - test_loss: 4.5169 (MSE)
+[Epoch 1/1] loss: 4.7073 (MSE) - test_loss: 4.5099 (MSE)
+[Epoch 1/1] loss: 4.6044 (MSE) - test_loss: 4.3782 (MSE)
+[Epoch 1/1] loss: 4.6896 (MSE) - test_loss: 4.4440 (MSE)
+[Epoch 1/1] loss: 4.6646 (MSE) - test_loss: 4.4214 (MSE)
+[Epoch 1/1] loss: 4.6778 (MSE) - test_loss: 4.3977 (MSE)
+[Epoch 1/1] loss: 4.6988 (MSE) - test_loss: 4.4383 (MSE)
+[Epoch 1/1] loss: 4.6887 (MSE) - test_loss: 4.5217 (MSE)
+[Epoch 1/1] loss: 4.7103 (MSE) - test_loss: 4.4486 (MSE)
+[Epoch 1/1] loss: 4.6843 (MSE) - test_loss: 4.4855 (MSE)
+[Epoch 1/1] loss: 4.7150 (MSE) - test_loss: 4.4037 (MSE)
+[Epoch 1/1] loss: 4.7051 (MSE) - test_loss: 4.4078 (MSE)
+[Epoch 1/1] loss: 4.6420 (MSE) - test_loss: 4.4846 (MSE)
+[Epoch 1/1] loss: 4.7642 (MSE) - test_loss: 4.4557 (MSE)
+[Epoch 1/1] loss: 4.7960 (MSE) - test_loss: 4.4571 (MSE)
+[Epoch 1/1] loss: 4.7918 (MSE) - test_loss: 4.4571 (MSE)
+[Epoch 1/1] loss: 4.6963 (MSE) - test_loss: 4.4220 (MSE)
+[Epoch 1/1] loss: 4.6959 (MSE) - test_loss: 4.4737 (MSE)
+[Epoch 1/1] loss: 4.7161 (MSE) - test_loss: 4.4409 (MSE)
+[Epoch 1/1] loss: 4.6617 (MSE) - test_loss: 4.4872 (MSE)
+[Epoch 1/1] loss: 4.6241 (MSE) - test_loss: 4.4332 (MSE)
+[Epoch 1/1] loss: 4.6038 (MSE) - test_loss: 4.4326 (MSE)
+[Epoch 1/1] loss: 4.7444 (MSE) - test_loss: 4.4361 (MSE)
+[Epoch 1/1] loss: 4.7556 (MSE) - test_loss: 4.4208 (MSE)
+[Epoch 1/1] loss: 4.6703 (MSE) - test_loss: 4.4011 (MSE)
+[Epoch 1/1] loss: 4.6402 (MSE) - test_loss: 4.4349 (MSE)
+[Epoch 1/1] loss: 4.6312 (MSE) - test_loss: 4.4702 (MSE)
+[Epoch 1/1] loss: 4.7189 (MSE) - test_loss: 4.4268 (MSE)
+[Epoch 1/1] loss: 4.6786 (MSE) - test_loss: 4.5491 (MSE)
+[Epoch 1/1] loss: 4.6223 (MSE) - test_loss: 4.4445 (MSE)
+[Epoch 1/1] loss: 4.6321 (MSE) - test_loss: 4.4988 (MSE)
+[Epoch 1/1] loss: 4.6352 (MSE) - test_loss: 4.5200 (MSE)
+[Epoch 1/1] loss: 4.5736 (MSE) - test_loss: 4.4307 (MSE)
+[Epoch 1/1] loss: 4.7852 (MSE) - test_loss: 4.4576 (MSE)
+[Epoch 1/1] loss: 4.6994 (MSE) - test_loss: 4.4663 (MSE)
+[Epoch 1/1] loss: 4.6385 (MSE) - test_loss: 4.6165 (MSE)
+[Epoch 1/1] loss: 4.9357 (MSE) - test_loss: 4.4931 (MSE)
+[Epoch 1/1] loss: 4.6689 (MSE) - test_loss: 4.4193 (MSE)
+[Epoch 1/1] loss: 4.6913 (MSE) - test_loss: 4.4362 (MSE)
+[Epoch 1/1] loss: 4.5775 (MSE) - test_loss: 4.5259 (MSE)
+[Epoch 1/1] loss: 4.6475 (MSE) - test_loss: 4.5417 (MSE)
+[Epoch 1/1] loss: 4.6598 (MSE) - test_loss: 4.4817 (MSE)
+[Epoch 1/1] loss: 4.6314 (MSE) - test_loss: 4.4422 (MSE)
+[Epoch 1/1] loss: 5.7880 (MSE) - test_loss: 4.6801 (MSE)
+[Epoch 1/1] loss: 4.7092 (MSE) - test_loss: 4.4534 (MSE)
+[Epoch 1/1] loss: 4.7798 (MSE) - test_loss: 4.4439 (MSE)
+[Epoch 1/1] loss: 4.6109 (MSE) - test_loss: 4.4612 (MSE)
+[Epoch 1/1] loss: 4.7695 (MSE) - test_loss: 4.4311 (MSE)
+[Epoch 1/1] loss: 4.6644 (MSE) - test_loss: 4.4711 (MSE)
+[Epoch 1/1] loss: 4.8196 (MSE) - test_loss: 4.4324 (MSE)
+[Epoch 1/1] loss: 4.7377 (MSE) - test_loss: 4.4664 (MSE)
+[Epoch 1/1] loss: 4.6840 (MSE) - test_loss: 4.4504 (MSE)
+[Epoch 1/1] loss: 4.7641 (MSE) - test_loss: 4.4025 (MSE)
+[Epoch 1/1] loss: 4.8215 (MSE) - test_loss: 4.5141 (MSE)
+[Epoch 1/1] loss: 4.7900 (MSE) - test_loss: 4.4862 (MSE)
+[Epoch 1/1] loss: 4.7232 (MSE) - test_loss: 4.5249 (MSE)
+[Epoch 1/1] loss: 4.6896 (MSE) - test_loss: 4.4859 (MSE)
+[Epoch 1/1] loss: 4.7392 (MSE) - test_loss: 4.4789 (MSE)
+[Epoch 1/1] loss: 4.6119 (MSE) - test_loss: 4.3759 (MSE)
+[Epoch 1/1] loss: 4.5970 (MSE) - test_loss: 4.3849 (MSE)
+[Epoch 1/1] loss: 4.6371 (MSE) - test_loss: 4.4598 (MSE)
+[Epoch 1/1] loss: 4.7131 (MSE) - test_loss: 4.4315 (MSE)
+[Epoch 1/1] loss: 4.7131 (MSE) - test_loss: 4.4119 (MSE)
+[Epoch 1/1] loss: 4.6056 (MSE) - test_loss: 4.5449 (MSE)
+[Epoch 1/1] loss: 4.7479 (MSE) - test_loss: 4.4884 (MSE)
+[Epoch 1/1] loss: 4.6201 (MSE) - test_loss: 4.4273 (MSE)
+[Epoch 1/1] loss: 4.6827 (MSE) - test_loss: 4.5171 (MSE)
+[Epoch 1/1] loss: 4.7029 (MSE) - test_loss: 4.4746 (MSE)
+[Epoch 1/1] loss: 4.7561 (MSE) - test_loss: 4.4526 (MSE)
+[Epoch 1/1] loss: 4.6361 (MSE) - test_loss: 4.4222 (MSE)
+[Epoch 1/1] loss: 4.6950 (MSE) - test_loss: 4.4903 (MSE)
+[Epoch 1/1] loss: 4.7639 (MSE) - test_loss: 4.4837 (MSE)
+[Epoch 1/1] loss: 4.6632 (MSE) - test_loss: 4.4997 (MSE)
+[Epoch 1/1] loss: 4.6770 (MSE) - test_loss: 4.4163 (MSE)
+[Epoch 1/1] loss: 4.6526 (MSE) - test_loss: 4.4997 (MSE)
+[Epoch 1/1] loss: 4.6601 (MSE) - test_loss: 4.5841 (MSE)
+[Epoch 1/1] loss: 4.6466 (MSE) - test_loss: 4.4365 (MSE)
+[Epoch 1/1] loss: 4.7096 (MSE) - test_loss: 4.3982 (MSE)
+[Epoch 1/1] loss: 4.6338 (MSE) - test_loss: 4.4551 (MSE)
+[Epoch 1/1] loss: 4.6345 (MSE) - test_loss: 4.4287 (MSE)
+[Epoch 1/1] loss: 4.6572 (MSE) - test_loss: 4.4624 (MSE)
+[Epoch 1/1] loss: 4.7108 (MSE) - test_loss: 4.4381 (MSE)
+[Epoch 1/1] loss: 4.7094 (MSE) - test_loss: 4.4340 (MSE)
+[Epoch 1/1] loss: 4.6872 (MSE) - test_loss: 4.4212 (MSE)
+[Epoch 1/1] loss: 4.6248 (MSE) - test_loss: 4.4716 (MSE)
+[Epoch 1/1] loss: 4.6641 (MSE) - test_loss: 4.4522 (MSE)
+[Epoch 1/1] loss: 4.6959 (MSE) - test_loss: 4.5064 (MSE)
+[Epoch 1/1] loss: 4.7460 (MSE) - test_loss: 4.4521 (MSE)
+[Epoch 1/1] loss: 4.6240 (MSE) - test_loss: 4.4510 (MSE)
+[Epoch 1/1] loss: 4.6552 (MSE) - test_loss: 4.4161 (MSE)
+[Epoch 1/1] loss: 4.6228 (MSE) - test_loss: 4.4200 (MSE)
+[Epoch 1/1] loss: 4.5823 (MSE) - test_loss: 4.4796 (MSE)
+[Epoch 1/1] loss: 4.7192 (MSE) - test_loss: 4.4217 (MSE)
+[Epoch 1/1] loss: 4.6956 (MSE) - test_loss: 4.4083 (MSE)
+[Epoch 1/1] loss: 4.6583 (MSE) - test_loss: 4.4494 (MSE)
+[Epoch 1/1] loss: 7.0339 (MSE) - test_loss: 5.4493 (MSE)
+[Epoch 1/1] loss: 4.7146 (MSE) - test_loss: 4.4098 (MSE)
+[Epoch 1/1] loss: 4.6171 (MSE) - test_loss: 4.4037 (MSE)
+[Epoch 1/1] loss: 4.7483 (MSE) - test_loss: 4.4335 (MSE)
+[Epoch 1/1] loss: 4.5804 (MSE) - test_loss: 4.5116 (MSE)
+[Epoch 1/1] loss: 4.9772 (MSE) - test_loss: 4.5060 (MSE)
+[Epoch 1/1] loss: 4.6381 (MSE) - test_loss: 4.4640 (MSE)
+[Epoch 1/1] loss: 4.5867 (MSE) - test_loss: 4.4739 (MSE)
+[Epoch 1/1] loss: 4.6018 (MSE) - test_loss: 4.4855 (MSE)
+[Epoch 1/1] loss: 4.6304 (MSE) - test_loss: 4.3987 (MSE)
+[Epoch 1/1] loss: 4.6080 (MSE) - test_loss: 4.4991 (MSE)
+[Epoch 1/1] loss: 4.6610 (MSE) - test_loss: 4.3763 (MSE)
+[Epoch 1/1] loss: 4.5994 (MSE) - test_loss: 4.6101 (MSE)
+[Epoch 1/1] loss: 4.5787 (MSE) - test_loss: 4.4275 (MSE)
+[Epoch 1/1] loss: 4.6607 (MSE) - test_loss: 4.4192 (MSE)
+[Epoch 1/1] loss: 4.7300 (MSE) - test_loss: 4.5052 (MSE)
+[Epoch 1/1] loss: 4.6949 (MSE) - test_loss: 4.3986 (MSE)
+[Epoch 1/1] loss: 4.7030 (MSE) - test_loss: 4.4188 (MSE)
+[Epoch 1/1] loss: 4.6663 (MSE) - test_loss: 4.4410 (MSE)
+[Epoch 1/1] loss: 4.7005 (MSE) - test_loss: 4.4826 (MSE)
+[Epoch 1/1] loss: 4.8246 (MSE) - test_loss: 4.4380 (MSE)
+[Epoch 1/1] loss: 4.6012 (MSE) - test_loss: 4.5988 (MSE)
+[Epoch 1/1] loss: 4.6472 (MSE) - test_loss: 4.4854 (MSE)
+[Epoch 1/1] loss: 4.6808 (MSE) - test_loss: 4.4152 (MSE)
+[Epoch 1/1] loss: 4.7006 (MSE) - test_loss: 4.4742 (MSE)
+--- 20340.967915058136 seconds ---
