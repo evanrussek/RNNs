@@ -30,7 +30,7 @@ def load_sim_data(data_path, n_train=1e5, n_test=1e5):
     del a
     train_data_sim = train_trials[:int(n_train)]
 
-    test_trials = json.load(open(train_files[0]))
+    test_trials = json.load(open(test_files[0]))
     test_data_sim = test_trials[:int(n_test)]
     
     return train_data_sim, test_data_sim
