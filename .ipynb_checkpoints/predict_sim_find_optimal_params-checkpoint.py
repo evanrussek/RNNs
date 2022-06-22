@@ -216,6 +216,9 @@ class SimpleMLP(nn.Module):
 def test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_batch_data):
     # Set the model to evaluation mode. This will turn off layers that would
     # otherwise behave differently during training, such as dropout.
+    model.to(device)
+
+    
     model.eval()
     
     n_total_seq = 50000
@@ -251,6 +254,9 @@ def test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_b
 def train_and_test(model, train_sim_data, test_sim_data, criterion, optimizer, device, batch_size, n_total_seq, gen_batch_data, make_plot = False, model_name = ""):
     # Set the model to training mode. This will turn on layers that would
     # otherwise behave differently during evaluation, such as dropout.
+    
+    model.to(device)
+
     model.train()
     
 
