@@ -12,16 +12,17 @@ import optuna
 import time
 import sys
 
-on_cluster = False
-train_setting= sys.argv[0]
+on_cluster = True
+train_setting= int(sys.argv[1])
 print('train_setting: {}'.format(train_setting))
-n_optuna_trials = 1
+n_optuna_trials = 150
 
 train_setting_names = ["fix_and_choice", "fix_only", "choice_only"]
 this_setting_name = train_setting_names[train_setting]
 
 if on_cluster:
     sim_data_path = '/scratch/gpfs/erussek/RNN_project/optimal_fixation_sims'
+    human_data_path = '/scratch/gpfs/erussek/RNN_project/human_trials.json'
 else:
     sim_data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/optimal_fixation_sims'
     human_data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/human_trials.json'
@@ -236,7 +237,6 @@ def test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_b
             target = target[to_keep]
             output = output[to_keep]
             
-            
             # Pick only the output corresponding to last sequence element (input is pre padded)
             # output = output[:, -1, :]
 
@@ -304,9 +304,9 @@ def objective(trial, train_data_sim, test_data_sim, train_setting):
     input_sizes = [6,3,3]
     
     batch_size   = 32
-    n_total_seq = 1e3
+    n_total_seq = 1e5
 
-    n_runs = 1
+    n_runs = 4
     run_losses = np.zeros((n_runs))
     for run_idx in range(n_runs):
         torch.manual_seed(run_idx)
@@ -361,3 +361,5 @@ if __name__ == '__main__':
     print("--- %s seconds ---" % (time.time() - start_time))
     
     save_study(study, 'optimal_'+this_setting_name+'.pkl', on_cluster = on_cluster)
+    
+
