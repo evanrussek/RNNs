@@ -7,10 +7,24 @@ import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import pickle
+import optuna
+import time
+import sys
 
-# load in data files... 
-sim_data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/optimal_fixation_sims'
-human_data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/human_trials.json'
+on_cluster = False
+train_setting= sys.argv[0]
+print('train_setting: {}'.format(train_setting))
+n_optuna_trials = 1
+
+train_setting_names = ["fix_and_choice", "fix_only", "choice_only"]
+this_setting_name = train_setting_names[train_setting]
+
+if on_cluster:
+    sim_data_path = '/scratch/gpfs/erussek/RNN_project/optimal_fixation_sims'
+else:
+    sim_data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/optimal_fixation_sims'
+    human_data_path = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Data/RNNs/human_trials.json'
 
 def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5):
 
@@ -32,7 +46,8 @@ def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5):
     
     return train_data_sim, test_data_sim, human_data
 
-# train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path)
+# load the data
+train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path)
 # this is for fixations and choice... 
 # this is for fixations and choice... 
 def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=False):
@@ -252,9 +267,8 @@ def train_and_test(model, train_sim_data, test_sim_data, criterion, optimizer, d
         data, target = torch.from_numpy(data).float().to(device), torch.from_numpy(target).long().to(device)
 
         # Perform the forward pass of the model
-        output = model(data)  # Step ①
+        output = model(data)  # Step 
 
-        
         # for some reason target is an int, and dosn't match the output which is float32
         target = target.to(torch.float32)
         
@@ -264,15 +278,15 @@ def train_and_test(model, train_sim_data, test_sim_data, criterion, optimizer, d
         output = output[to_keep]
         
         # need to re-write this function... 
-        loss = criterion(output, target)  # Step ②
+        loss = criterion(output, target)  # Step 
 
         # Clear the gradient buffers of the optimized parameters.
         # Otherwise, gradients from the previous batch would be accumulated.
-        optimizer.zero_grad()  # Step ③
+        optimizer.zero_grad()  # Step 
 
-        loss.backward()  # Step ④
+        loss.backward()  # Step 
 
-        optimizer.step()  # Step ⑤
+        optimizer.step()  # Step 
         
     # compute the test loss... 
     test_loss = test(model, test_data_sim, criterion, device, batch_size, n_total_seq, gen_batch_data)
@@ -280,35 +294,70 @@ def train_and_test(model, train_sim_data, test_sim_data, criterion, optimizer, d
     return model, test_loss#loss.item()
 
 # Setup the training and test data generators
-batch_size     = 32
-n_total_seq = 1e6
-n_batches = int(np.round(n_total_seq/batch_size));
-n_tests = int(np.ceil(n_batches/250)) - 1
+# Setup the training and test data generators
 
-n_runs = 1
-LSTM_run_losses = np.zeros((n_runs, n_tests))
-for run_idx in range(n_runs):
-    torch.manual_seed(run_idx)
+train_data_funcs = [gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only]
+this_data_func = train_data_funcs[train_setting]
 
-    print(run_idx)
+def objective(trial, train_data_sim, test_data_sim, train_setting):
+    
+    input_sizes = [6,3,3]
+    
+    batch_size   = 32
+    n_total_seq = 1e3
 
-    # Setup the RNN and training settings
-    input_size  = 6 # this is the length of the input vector? #train_data_gen.n_symbols
-    hidden_size = 50
-    output_size = 3 # this is the leågth of the output vector #train_data_gen.n_classes
-    model       = SimpleLSTM(input_size, hidden_size, output_size)
-    criterion   = torch.nn.MSELoss() # torch.nn.CrossEntropyLoss()
-    optimizer   = torch.optim.RMSprop(model.parameters(), lr=0.001)
-    # optimizer   = torch.optim.Adam(model.parameters(), lr=0.00304)
-    max_epochs  = 10
-    device = torch.device('cpu')#torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    n_runs = 1
+    run_losses = np.zeros((n_runs))
+    for run_idx in range(n_runs):
+        torch.manual_seed(run_idx)
 
-    # Train the model›
-    # model = train_and_test(model, train_data_gen, test_data_gen, criterion, optimizer, max_epochs)
+        print(run_idx)
+
+        # Setup the RNN and training settings
+        input_size  = input_sizes[train_setting] # this is the length of the input vector? #train_data_gen.n_symbols
+        hidden_size = trial.suggest_int('hidden_size', 2, 200, step=5)  
+        output_size = 3 # 
+        if train_setting == 2:
+            model       = SimpleMLP(input_size, hidden_size, output_size)
+        else:
+            model       = SimpleLSTM(input_size, hidden_size, output_size)
+        
+        criterion   = torch.nn.MSELoss() # torch.nn.CrossEntropyLoss()
+        optimizer   = torch.optim.RMSprop(model.parameters(), lr=trial.suggest_float('lr', .0001, .01, log=True)) # was previously .001
+        device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+        data_func = this_data_func
+
+        # Train the model
+        start_time = time.time()
+        model_LSTM, loss = train_and_test(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, data_func, model_name='LSTM')
+        run_losses[run_idx]=loss
+    return np.mean(run_losses)
+
+def save_study(study, file_name, on_cluster = False):
+
+    if on_cluster:
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/optuna_results'
+    else:
+        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/optuna_results'
+
+    if not os.path.exists(to_save_folder):
+        os.mkdir(to_save_folder)
+    
+    to_save_file = os.path.join(to_save_folder, file_name)
+    
+    outfile = open(to_save_file,'wb')
+    pickle.dump(study,outfile)
+    outfile.close()
+    
+if __name__ == '__main__':
+        
+    study = optuna.create_study()
     start_time = time.time()
-    # model_LSTM = train_and_test(model, train_data_sim, test_data_sim, criterion, optimizer, max_epochs, batch_size, n_total_seq, verbose=True, model_name = 'LSTM')
-    device = torch.device('cpu')#torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    model_LSTM, loss_res, LSTM_batch_num = train_with_int_tests(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, gen_batch_data, model_name='LSTM')
-    LSTM_run_losses[run_idx,:] = loss_res
-
-
+    
+    this_obj = lambda trial: objective(trial, train_data_sim, test_data_sim, train_setting)
+    
+    study.optimize(this_obj, n_trials=n_optuna_trials)
+    
+    print("--- %s seconds ---" % (time.time() - start_time))
+    
+    save_study(study, 'optimal_'+this_setting_name+'.pkl', on_cluster = on_cluster)

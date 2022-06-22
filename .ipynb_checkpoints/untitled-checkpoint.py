@@ -34,6 +34,7 @@ def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5):
 
 # train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path)
 # this is for fixations and choice... 
+# this is for fixations and choice... 
 def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=False):
 
     """
@@ -54,31 +55,16 @@ def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=Fals
     # filter list of trials that are in this batch
     batch_sim_data = data[batch_idx*batch_size:((batch_idx+1)*(batch_size))]
 
-    ## generate sequences of fixations + choice
-
     # all sequences in the batch, attended item is coded as idx (as 0, 1, 2)
     if human_data:
-        batch_sequences_idx = [(np.array(trial_data['fixations'])-1).tolist() + [trial_data['choice']-1] for trial_data in batch_sim_data]
+        batch_fixation_sequences_idx = [(np.array(trial_data['fixations'])-1).tolist() for trial_data in batch_sim_data]
     else:
-        batch_sequences_idx = [trial_data['fixations'] + [trial_data['choice']-1] for trial_data in batch_sim_data]
+        batch_fixation_sequences_idx = [trial_data['fixations'] for trial_data in batch_sim_data]
 
-    # all sequences in the batch, attended item coded as one-hot categorical: e.g. 0: [1,0,0] 1: [0,1,0], [0,0,1]
-    batch_sequences_cat = [[to_categorical(x, num_classes = 3) for x in this_sequence] for this_sequence in batch_sequences_idx]
-
-    # pad front of each sequence with n x [0,0,0] so that all seqeunces are same length
-    batch_data = pad_sequences(batch_sequences_cat)
-    batch_data = batch_data.astype('float32')
-
-    ## generate sequences of targets 
-    batch_targets = np.array([trial_data['value'] for trial_data in batch_sim_data], dtype = 'float32')
-    
-    
-    # all sequences in the batch, attended item is coded as idx (as 0, 1, 2)
-    batch_fixation_sequences_idx = [trial_data['fixations'] for trial_data in batch_sim_data]
     batch_choices_idx = [trial_data['choice'] - 1 for trial_data in batch_sim_data]
 
     # first 3 are fixation, last is choice...
-    batch_sequences_cat = [[to_categorical(x, num_classes = 6) for x in this_sequence] for this_sequence in batch_sequences_idx]
+    batch_sequences_cat = [[to_categorical(x, num_classes = 6) for x in this_sequence] for this_sequence in batch_fixation_sequences_idx]
 
     # now append to each of these the choice info - the choice gets it's own channel (of 3)
     batch_sequences_cat_w_choices = [batch_sequences_cat[i] + [to_categorical(3 + batch_choices_idx[i], num_classes = 6)] for i in range(len(batch_sequences_cat))]
@@ -90,7 +76,6 @@ def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=Fals
 
     batch_targets = pad_sequences(batch_targets_cont)
     batch_targets = batch_targets.astype('float32')
-    
     
     return (batch_data, batch_targets)
 
@@ -125,6 +110,54 @@ def gen_batch_data_choice_only(batch_size, batch_idx, data, human_data=False):
 # print(f'The first element in the batch of targets is:\n {example_batch[1][0, :]}')
 
 
+# this is for fixations only
+def gen_batch_data_fixations_only(batch_size, batch_idx, data, human_data=False):
+
+    """
+    Create sequence and target data for a batch
+
+    Input: 
+        batch_size: number of trials to include in batch
+        batch_idx: index of data
+        data: list of dicts, where each dict has 'values', 'fixations', and 'choice'
+        human_data: this is just coded differently, so need to specify
+
+    Returns:
+        a tuple, (batch_data, batch_targets)
+        batch_data is 3d array: batch_size x sequence_size x one-hot categorical encoding (3 here)
+        batch_targets is 2d array: 
+    """
+
+    # filter list of trials that are in this batch
+    batch_sim_data = data[batch_idx*batch_size:((batch_idx+1)*(batch_size))]
+
+    # all sequences in the batch, attended item is coded as idx (as 0, 1, 2)
+    if human_data:
+        batch_fixation_sequences_idx = [(np.array(trial_data['fixations'])-1).tolist() for trial_data in batch_sim_data]
+    else:
+        batch_fixation_sequences_idx = [trial_data['fixations'] for trial_data in batch_sim_data]
+
+    # first 3 are fixation, last is choice...
+    batch_sequences_cat = [[to_categorical(x, num_classes = 3) for x in this_sequence] for this_sequence in batch_fixation_sequences_idx]
+
+    # now append to each of these the choice info - the choice gets it's own channel (of 3)
+    batch_data = pad_sequences(batch_sequences_cat)
+    batch_data = batch_data.astype('float32')
+
+    batch_targets_init = np.array([trial_data['value'] for trial_data in batch_sim_data], dtype = 'float32')
+    batch_targets_cont = [np.repeat([batch_targets_init[i]],len(batch_sequences_cat[i]),axis=0) for i in range(len(batch_sequences_cat))]
+
+    batch_targets = pad_sequences(batch_targets_cont)
+    batch_targets = batch_targets.astype('float32')
+    
+    return (batch_data, batch_targets)
+
+# example_batch = gen_batch_data_fixations_only(32, 0, human_data,human_data=True) # batch size = 32, idx = 0
+#print(f'The return type is a {type(example_batch)} with length {len(example_batch)}.')
+# print(f'The first item in the tuple is the batch of sequences with shape {example_batch[0].shape}.')
+# print(f'The first element in the batch of sequences is:\n {example_batch[0][0, :, :]}')
+# print(f'The second item in the tuple is the corresponding batch of targets with shape {example_batch[1].shape}.')
+# print(f'The first element in the batch of targets is:\n {example_batch[1][0, :]}')
 
 
 # set up neural networks
