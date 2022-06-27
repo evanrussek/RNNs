@@ -195,76 +195,78 @@ def compute_heldout_correlation(trained_model, test_data_sim, device, batch_size
     return np.corrcoef(output_flat, target_flat)[1][0]
 
 
-# set up folder to save results
-if on_cluster:
-    to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_results'
-else:
-    to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_results'
-    
-if not os.path.exists(to_save_folder):
-    os.mkdir(to_save_folder)
+if __name__ == '__main__':
 
-# load data 
-train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path)
-this_data_func = train_data_funcs[train_setting]
+    # set up folder to save results
+    if on_cluster:
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_results'
+    else:
+        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_results'
 
-# train on a 1 mil. examples, generate learning curves... 
-batch_size  = 32
-n_total_seq = 1e6
-n_batches = int(np.round(n_total_seq/batch_size));
-n_tests = int(np.ceil(n_batches/200)) - 1
+    if not os.path.exists(to_save_folder):
+        os.mkdir(to_save_folder)
 
-input_sizes = [6,3,3]
+    # load data 
+    train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path)
+    this_data_func = train_data_funcs[train_setting]
 
-run_losses = np.zeros(n_tests)
+    # train on a 1 mil. examples, generate learning curves... 
+    batch_size  = 32
+    n_total_seq = 1e6
+    n_batches = int(np.round(n_total_seq/batch_size));
+    n_tests = int(np.ceil(n_batches/200)) - 1
 
-torch.manual_seed(job_idx)
+    input_sizes = [6,3,3]
 
-input_size  = input_sizes[train_setting] # this is the length of the input vector? #train_data_gen.n_symbols
-hidden_size = best_hiddens[train_setting]
-output_size = 3 # 
+    run_losses = np.zeros(n_tests)
 
-if train_setting == 2:
-    model       = SimpleMLP(input_size, hidden_size, output_size)
-else:
-    model       = SimpleLSTM(input_size, hidden_size, output_size)
+    torch.manual_seed(job_idx)
 
-criterion   = torch.nn.MSELoss()
-optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting])
-start_time = time.time()
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-trained_model, loss_res, train_num = train_with_intermediate_tests(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, this_data_func, model_name='LSTM')
+    input_size  = input_sizes[train_setting] # this is the length of the input vector? #train_data_gen.n_symbols
+    hidden_size = best_hiddens[train_setting]
+    output_size = 3 # 
 
-# save loss curve
-loss_file_name = 'loss_res_train_setting_{}_job_{}.npy'.format(train_setting,job_idx)
-loss_full_file_name = os.path.join(to_save_folder, loss_file_name)
+    if train_setting == 2:
+        model       = SimpleMLP(input_size, hidden_size, output_size)
+    else:
+        model       = SimpleLSTM(input_size, hidden_size, output_size)
 
-# save model
-model_full_file_name = os.path.join(to_save_folder, 'model_train_setting_{}_job_{}'.format(train_setting,job_idx))
-torch.save(trained_model, model_full_file_name)
+    criterion   = torch.nn.MSELoss()
+    optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting])
+    start_time = time.time()
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    trained_model, loss_res, train_num = train_with_intermediate_tests(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, this_data_func, model_name='LSTM')
 
-# compute predictive accuracy on held-out simulated data (r)
-n_seq_test = 1e3
-if train_setting < 2:
-    n_back_vals = np.arange(1,20)
-    r_sim_by_n_back = np.zeros(len(n_back_vals))
-    r_human_by_n_back = np.zeros(len(n_back_vals))
-    for nb_idx, nb in enumerate(n_back_vals):
-        r_sim_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, nb)
-        r_human_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, human_data, device, batch_size, n_seq_test,this_data_func, nb, human_data=True)
-else:
-    r_sim_by_n_back = compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True)
-    #human_data_func = lambda x, y, z: this_data_func(x,y,z, human_data=True)
-    r_human_by_n_back = compute_heldout_correlation(trained_model, human_data, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True, human_data=True)
+    # save loss curve
+    loss_file_name = 'loss_res_train_setting_{}_job_{}.npy'.format(train_setting,job_idx)
+    loss_full_file_name = os.path.join(to_save_folder, loss_file_name)
+
+    # save model
+    model_full_file_name = os.path.join(to_save_folder, 'model_train_setting_{}_job_{}'.format(train_setting,job_idx))
+    torch.save(trained_model, model_full_file_name)
+
+    # compute predictive accuracy on held-out simulated data (r)
+    n_seq_test = 1e3
+    if train_setting < 2:
+        n_back_vals = np.arange(1,20)
+        r_sim_by_n_back = np.zeros(len(n_back_vals))
+        r_human_by_n_back = np.zeros(len(n_back_vals))
+        for nb_idx, nb in enumerate(n_back_vals):
+            r_sim_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, nb)
+            r_human_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, human_data, device, batch_size, n_seq_test,this_data_func, nb, human_data=True)
+    else:
+        r_sim_by_n_back = compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True)
+        #human_data_func = lambda x, y, z: this_data_func(x,y,z, human_data=True)
+        r_human_by_n_back = compute_heldout_correlation(trained_model, human_data, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True, human_data=True)
 
 
-# now compute the predictive accuracy on human data (r)...
+    # now compute the predictive accuracy on human data (r)...
 
-# this is ready...
-    
-# save r and mse... 
-with open(loss_full_file_name, 'wb') as f:
-    np.save(f, loss_res)
-    np.save(f, train_num)
-    np.save(f, r_sim_by_n_back)
-    np.save(f, r_human_by_n_back)
+    # this is ready...
+
+    # save r and mse... 
+    with open(loss_full_file_name, 'wb') as f:
+        np.save(f, loss_res)
+        np.save(f, train_num)
+        np.save(f, r_sim_by_n_back)
+        np.save(f, r_human_by_n_back)
