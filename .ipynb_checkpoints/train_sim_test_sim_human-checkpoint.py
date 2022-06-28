@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
-import optuna
+# import optuna
 import time
 import sys
 import torch
@@ -14,7 +14,8 @@ from neural_nets import SimpleLSTM, SimpleMLP
 
 # get job from cluster (we can run 50)... 
 
-is_array_job=False
+is_array_job=True
+on_cluster = True
 
 if is_array_job:
     job_idx = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1
@@ -26,9 +27,6 @@ else:
 # set the random seed.
 random.seed(job_idx)
 
-#2#int(sys.argv[1])
-
-on_cluster = False
 if on_cluster:
     sim_data_path = '/scratch/gpfs/erussek/RNN_project/optimal_fixation_sims'
     human_data_path = '/scratch/gpfs/erussek/RNN_project/human_trials.json'
@@ -207,12 +205,12 @@ if __name__ == '__main__':
         os.mkdir(to_save_folder)
 
     # load data 
-    train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path)
+    train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path,this_seed=job_idx)
     this_data_func = train_data_funcs[train_setting]
 
     # train on a 1 mil. examples, generate learning curves... 
     batch_size  = 32
-    n_total_seq = 1e6
+    n_total_seq = 1.5e6
     n_batches = int(np.round(n_total_seq/batch_size));
     n_tests = int(np.ceil(n_batches/200)) - 1
 
@@ -261,8 +259,6 @@ if __name__ == '__main__':
 
 
     # now compute the predictive accuracy on human data (r)...
-
-    # this is ready...
 
     # save r and mse... 
     with open(loss_full_file_name, 'wb') as f:

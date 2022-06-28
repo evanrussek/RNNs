@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=train_sim_test_sim_hum   # create a short name for your job
+#SBATCH --job-name=train_sim_test_sim_hum_2   # create a short name for your job
 #SBATCH --output=slurm-%A.%a.out # stdout file
 #SBATCH --error=slurm-%A.%a.err  # stderr file
 #SBATCH --nodes=1                # node count
@@ -17,6 +17,6 @@ echo "Executing on the machine:" $(hostname)
 
 module purge
 module load anaconda3/2021.11
-conda activate chess_project
+conda activate pDL
 
-python -u train_sim_test_sim_human.py
+python -u train_sim_test_sim_human.py 2

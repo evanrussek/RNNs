@@ -3,11 +3,14 @@ import os
 import json
 from res.sequential_tasks import pad_sequences, to_categorical
 import numpy as np
+import random
 
-def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5):
+def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5, this_seed = 0):
 
-    train_file_idxs = range(1,16)
-    test_file_idxs = range(16,31)
+    random.seed(this_seed)
+    
+    train_file_idxs = range(1,23)
+    test_file_idxs = range(24,31)
 
     train_files = [os.path.join(sim_data_path, str(i) + '.json') for i in train_file_idxs]
     test_files = [os.path.join(sim_data_path, str(i) + '.json') for i in test_file_idxs]
@@ -15,12 +18,16 @@ def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5):
     a = [json.load(open(train_files[i])) for i in range(15)]
     train_trials = [item for sublist in a for item in sublist]
     del a
-    train_data_sim = train_trials[:int(1e6)]
+    train_data_sim = train_trials[:int(1.5e6)]
 
     test_trials = json.load(open(test_files[0]))
     test_data_sim = test_trials[:int(1e5)]
 
     human_data = json.load(open(human_data_path))
+    
+    random.shuffle(train_data_sim)
+    random.shuffle(test_data_sim)
+    random.shuffle(human_data)
     
     return train_data_sim, test_data_sim, human_data
 
