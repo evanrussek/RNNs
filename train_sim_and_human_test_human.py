@@ -14,15 +14,36 @@ from neural_nets import SimpleLSTM, SimpleMLP
 
 # get job from cluster (we can run 50)... 
 
-is_array_job=True
-on_cluster = True
+is_array_job=False
+on_cluster = False
+
+# run the job from 1-250 (5 levels, each 1-50)
 
 if is_array_job:
-    job_idx = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1
+    job_idx_in = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1 # this is 0 to 249
+    
+    if job_idx_in < 50:
+        prop_pretrain_setting = 0
+        job_idx = job_idx_in
+    elif job_idx_in < 100:
+        prop_pretrain_setting = 1
+        job_idx = job_idx_in-50
+    elif job_idx_in < 150:
+        prop_pretrain_setting = 2
+        job_idx = job_idx_in-100
+    elif job_idx_in < 200:
+        prop_pretrain_setting = 3
+        job_idx = job_idx_in-150
+    elif job_idx_in < 250:
+        prop_pretrain_setting = 4
+        job_idx = job_idx_in-200
+    
     train_setting= int(sys.argv[1])
 else:
     job_idx = 0
     train_setting=2
+    prop_pretrain_setting = 1 # some number 1-5
+
 
 # set the random seed.
 random.seed(job_idx)
@@ -40,11 +61,17 @@ this_data_func = train_data_funcs[train_setting]
 
 #get best learning rates from optuna search - for choice only it didn't matter
 
+
+# vary how much pre-training data to use
+max_pretrain = 1.5e6
+prop_pretrain = np.linspace(0,1,5);
+this_prop_pretrain = prop_pretrain[prop_pretrain_setting]
+
 best_lrs = [0.0019260129757659558, 0.0044066090959512735, .001]# 0.0001002995005652193]
 best_hiddens = [97, 37, 50]
 
 # function to test model...
-def test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_batch_data,human_data = False):
+def test(model, test_sim_data, criterion, device, batch_size, gen_batch_data,human_data = False):
     # Set the model to evaluation mode. This will turn off layers that would
     # otherwise behave differently during training, such as dropout.
     model.eval()
@@ -76,76 +103,111 @@ def test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_b
 
     return np.mean(loss_res)
 
-def train_with_intermediate_tests(model, train_sim_data, test_sim_data, criterion, optimizer, device, batch_size, n_total_seq, gen_batch_data, human_data = False, model_name = "", n_epochs = 1):
-    # Set the model to training mode. This will turn on layers that would
-    # otherwise behave differently during evaluation, such as dropout.
-    model.train()
-    
-    # What metric to store?
-    # num_correct = 0
 
-    # Iterate over every batch of sequences. Note that the length of a data generator
-    # is defined as the number of batches required to produce a total of roughly 1000
-    # sequences given a batch size.
-        
-    # how many batches
-    n_batches = int(np.round(n_total_seq/batch_size));
-    
-    loss_res = []
-    train_loss_res = []
-    train_num = []
-    
-    print('n_epochs: '+str(n_epochs))
-    
-    for epoch_idx in range(n_epochs):
-        print(epoch_idx)
-        for batch_idx in range(n_batches):
-            
-            this_batch_idx = n_batches*epoch_idx + batch_idx
-            #print(this_batch_idx)
+def train_sim_then_human_with_intermediate_tests(model, train_data_sim, train_data_human, test_data_sim, test_data_human, criterion, optimizer, device, batch_size, n_sim_seq, n_human_epochs, gen_batch_data):
+
+    n_human_seq = len(human_train_data) # about 2000
+
+    # now we want to train on some number of 
+    model.train()
+
+    n_batches_sim = int(np.round(n_sim_seq/batch_size));
+    n_batches_human = int(np.round(n_human_seq/batch_size));
+    # first train on sim data...
+
+    sim_loss_res=[]
+    human_loss_res=[]
+    train_num=[]
+
+
+    # train on simulated data...
+    print('Training on simulated data')
+    for batch_idx in range(n_batches_sim):
+
+        # Request a batch of sequences and class labels, convert them into tensors
+        # of the correct type, and then send them to the appropriate device.
+        data, target = gen_batch_data(batch_size, batch_idx, train_data_sim, human_data=False)
+        data, target = torch.from_numpy(data).float().to(device), torch.from_numpy(target).long().to(device)
+
+        # Perform the forward pass of the model
+        output = model(data)
+
+        # make sure target is correct type
+        target = target.to(torch.float32)
+
+        # filter out padding
+        to_keep = target != 0
+        target = target[to_keep]
+        output = output[to_keep]
+
+        # compute loss and backpropogate
+        loss = criterion(output, target)  # Step
+        optimizer.zero_grad()  # Step
+        loss.backward()  # Step
+        optimizer.step()  # Step
+
+        # test every 100 batches... 
+
+        # compute loss on both sim and human
+
+        if ((batch_idx % 100) == 0) & (batch_idx > 0):
+            sim_test_loss = test(model, test_data_sim, criterion, device, batch_size, gen_batch_data, human_data=False)
+            sim_loss_res.append(sim_test_loss)
+
+            human_test_loss = test(model, test_data_human, criterion, device, batch_size, gen_batch_data, human_data=True)
+            human_loss_res.append(human_test_loss)
+
+            train_num.append(32*(batch_idx+1))
+
+            print('batch num' + str(batch_idx) + ' sim test loss: ' + str(sim_test_loss) + ' human test loss ' + str(human_test_loss))
+
+
+    # now train on human data
+    print('Training on human data')
+    for epoch_idx in range(n_human_epochs):
+        print('Human epoch: {}'.format(epoch_idx))
+        for batch_idx in range(n_batches_human):
+
+            this_batch_idx = n_batches_sim + n_batches_human*epoch_idx + batch_idx
 
             # Request a batch of sequences and class labels, convert them into tensors
             # of the correct type, and then send them to the appropriate device.
-            data, target = gen_batch_data(batch_size, batch_idx, train_sim_data, human_data=human_data)
-
+            data, target = gen_batch_data(batch_size, batch_idx, train_data_human, human_data=True)
             data, target = torch.from_numpy(data).float().to(device), torch.from_numpy(target).long().to(device)
 
             # Perform the forward pass of the model
-            output = model(data)  # Step
+            output = model(data)
 
-
-            # for some reason target is an int, and dosn't match the output which is float32
+            # make sure target is correct type
             target = target.to(torch.float32)
 
-            # remove padding (nicely, this is just 0's)
+            # filter out padding
             to_keep = target != 0
             target = target[to_keep]
             output = output[to_keep]
 
-            # need to re-write this function... 
+            # compute loss and backpropogate
             loss = criterion(output, target)  # Step
-
-            # Clear the gradient buffers of the optimized parameters.
-            # Otherwise, gradients from the previous batch would be accumulated.
             optimizer.zero_grad()  # Step
-
             loss.backward()  # Step
-
             optimizer.step()  # Step
 
-            # 
+            # test every 100 batches... 
+
+            # compute loss on both sim and human
+
             if ((this_batch_idx % 100) == 0) & (batch_idx > 0):
-                test_loss = test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_batch_data, human_data=human_data)
-                loss_res.append(test_loss)
+                sim_test_loss = test(model, test_data_sim, criterion, device, batch_size, gen_batch_data, human_data=False)
+                sim_loss_res.append(sim_test_loss)
 
-                train_loss_res.append(loss.item())
-                train_num.append(200*(this_batch_idx+1))
-                
-                print('batch num' + str(batch_idx) + ' loss: ' + str(test_loss))
+                human_test_loss = test(model, test_data_human, criterion, device, batch_size, gen_batch_data, human_data=True)
+                human_loss_res.append(human_test_loss)
 
-        #return num_correct, loss.item()
-    return model, np.array(loss_res), np.array(train_num)#loss.item()
+                train_num.append(32*(this_batch_idx+1))
 
+                print('batch num' + str(batch_idx) + ' sim test loss: ' + str(sim_test_loss) + ' human test loss ' + str(human_test_loss))
+            
+    return np.array(sim_loss_res), np.array(human_loss_res), np.array(train_num), model
 
 # compoute correlation with held-out test data... 
 def test_record_each_output(model, test_sim_data, device, batch_size, n_total_seq, gen_batch_data,out_idx, choice_only=False, human_data=False):
@@ -192,25 +254,26 @@ def compute_heldout_correlation(trained_model, test_data_sim, device, batch_size
 
 
 if __name__ == '__main__':
-
+    
+    
     # set up folder to save results
     if on_cluster:
-        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_results'
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_and_human_results'
     else:
-        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_results'
+        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_and_human_results'
 
     if not os.path.exists(to_save_folder):
         os.mkdir(to_save_folder)
 
-    # load data 
-    train_data_sim, test_data_sim, human_data = load_data(sim_data_path, human_data_path,this_seed=job_idx)
+    # load data
+    train_data_sim, test_data_sim, human_train_data,human_test_data = load_data(sim_data_path, human_data_path,this_seed=job_idx,split_human_data=True)
     this_data_func = train_data_funcs[train_setting]
-
+    
+    # want to pretrain on some number of (1 epoch only) sequences of train_sim_data, and then train fully on some number of epochs of human_test_data...
     # train on a 1 mil. examples, generate learning curves... 
     batch_size  = 32
-    n_total_seq = 1.5e6
-    n_batches = int(np.round(n_total_seq/batch_size));
-    n_tests = int(np.ceil(n_batches/200)) - 1
+#    n_batches = int(np.round(n_total_seq/batch_size));
+#    n_tests = int(np.ceil(n_batches/200)) - 1
 
     input_sizes = [6,3,3]
 
@@ -229,16 +292,25 @@ if __name__ == '__main__':
     optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting])
     start_time = time.time()
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    trained_model, loss_res, train_num = train_with_intermediate_tests(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, this_data_func, model_name='LSTM')
+    
+    n_sim_seq = int(np.round(this_prop_pretrain*max_pretrain)); # split this between 
+    n_human_epochs = 500 # multiply this by 2000 to get effective res... 
+    gen_batch_data = this_data_func
+    train_data_sim = train_data_sim
+    train_data_human = human_train_data
+    test_data_sim = test_data_sim
+    test_data_human = human_test_data
 
+    sim_loss_res, human_loss_res, train_num, trained_model = train_sim_then_human_with_intermediate_tests(model, train_data_sim, train_data_human, test_data_sim, test_data_human, criterion, optimizer, device, batch_size, n_sim_seq, n_human_epochs, gen_batch_data)
+    
     # save loss curve
-    loss_file_name = 'loss_res_train_setting_{}_job_{}.npy'.format(train_setting,job_idx)
+    loss_file_name = 'loss_res_train_setting_{}_pp_{}_job_{}.npy'.format(train_setting,prop_pretrain_setting,job_idx)
     loss_full_file_name = os.path.join(to_save_folder, loss_file_name)
 
     # save model
-    model_full_file_name = os.path.join(to_save_folder, 'model_train_setting_{}_job_{}'.format(train_setting,job_idx))
+    model_full_file_name = os.path.join(to_save_folder, 'model_train_setting_{}_job_{}'.format(train_setting,prop_pretrain_setting,job_idx))
     torch.save(trained_model, model_full_file_name)
-
+    
     # compute predictive accuracy on held-out simulated data (r)
     n_seq_test = 1e3
     if train_setting < 2:
@@ -247,18 +319,18 @@ if __name__ == '__main__':
         r_human_by_n_back = np.zeros(len(n_back_vals))
         for nb_idx, nb in enumerate(n_back_vals):
             r_sim_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, nb)
-            r_human_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, human_data, device, batch_size, n_seq_test,this_data_func, nb, human_data=True)
+            r_human_by_n_back[nb_idx] = compute_heldout_correlation(trained_model, human_test_data, device, batch_size, n_seq_test,this_data_func, nb, human_data=True)
     else:
         r_sim_by_n_back = compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True)
         #human_data_func = lambda x, y, z: this_data_func(x,y,z, human_data=True)
-        r_human_by_n_back = compute_heldout_correlation(trained_model, human_data, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True, human_data=True)
-
+        r_human_by_n_back = compute_heldout_correlation(trained_model, human_test_data, device, batch_size, n_seq_test,this_data_func, 0, choice_only=True, human_data=True)
 
     # now compute the predictive accuracy on human data (r)...
 
     # save r and mse... 
     with open(loss_full_file_name, 'wb') as f:
-        np.save(f, loss_res)
+        np.save(f, sim_loss_res)
+        np.save(f, human_loss_res)
         np.save(f, train_num)
         np.save(f, r_sim_by_n_back)
         np.save(f, r_human_by_n_back)

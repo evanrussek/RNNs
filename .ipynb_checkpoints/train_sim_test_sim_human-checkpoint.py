@@ -106,10 +106,8 @@ def train_with_intermediate_tests(model, train_sim_data, test_sim_data, criterio
 
             # Request a batch of sequences and class labels, convert them into tensors
             # of the correct type, and then send them to the appropriate device.
-            #data, target = train_data_gen[batch_idx] # just alter this to the function that produces the data?
             data, target = gen_batch_data(batch_size, batch_idx, train_sim_data, human_data=human_data)
 
-            # this needs to change... 
             data, target = torch.from_numpy(data).float().to(device), torch.from_numpy(target).long().to(device)
 
             # Perform the forward pass of the model
@@ -215,8 +213,6 @@ if __name__ == '__main__':
     n_tests = int(np.ceil(n_batches/200)) - 1
 
     input_sizes = [6,3,3]
-
-    run_losses = np.zeros(n_tests)
 
     torch.manual_seed(job_idx)
 

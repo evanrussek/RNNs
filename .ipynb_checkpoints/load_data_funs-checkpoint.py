@@ -5,7 +5,7 @@ from res.sequential_tasks import pad_sequences, to_categorical
 import numpy as np
 import random
 
-def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5, this_seed = 0):
+def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed = 0):
 
     random.seed(this_seed)
     
@@ -29,8 +29,14 @@ def load_data(sim_data_path, human_data_path, n_train=1e5, n_test=1e5, this_seed
     random.shuffle(test_data_sim)
     random.shuffle(human_data)
     
-    return train_data_sim, test_data_sim, human_data
+    if split_human_data:
+        n_test=int(np.round(len(human_data)/3)) # test on 1/3
+        human_test_data = human_data[:n_test]
+        human_train_data = human_data[n_test+1:]
 
+        return train_data_sim, test_data_sim, human_train_data, human_test_data
+    else:
+        return train_data_sim, test_data_sim, human_data
 
 def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=False):
 
