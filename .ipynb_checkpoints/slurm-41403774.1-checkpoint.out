@@ -1,0 +1,53 @@
+My SLURM_ARRAY_JOB_ID is 41403774.
+My SLURM_ARRAY_TASK_ID is 1
+Executing on the machine: della-r4c4n15
+Training on simulated data
+batch num100 sim test loss: 5.309323764616443 human test loss 5.986841201782227
+batch num200 sim test loss: 5.330126623953542 human test loss 5.832927765384797
+batch num300 sim test loss: 5.284976989992203 human test loss 6.085845116646059
+batch num400 sim test loss: 5.251713875801332 human test loss 5.748021910267491
+batch num500 sim test loss: 5.198316604860367 human test loss 5.7778504279352
+batch num600 sim test loss: 5.2338366969939205 human test loss 5.861518752190374
+batch num700 sim test loss: 5.164931212702105 human test loss 5.825151412717758
+batch num800 sim test loss: 5.161190202159267 human test loss 5.880594807286417
+batch num900 sim test loss: 5.16553012786373 human test loss 5.675330515830748
+batch num1000 sim test loss: 5.00207095761453 human test loss 5.830371041451731
+batch num1100 sim test loss: 5.056988639216269 human test loss 5.86997329035113
+batch num1200 sim test loss: 4.961295943106374 human test loss 6.05258003357918
+batch num1300 sim test loss: 5.018934042223038 human test loss 5.875617965575187
+batch num1400 sim test loss: 4.9556494374429025 human test loss 5.965735712359028
+batch num1500 sim test loss: 4.968157276030509 human test loss 6.108094969103413
+batch num1600 sim test loss: 5.029713100002658 human test loss 5.91272154162007
+batch num1700 sim test loss: 5.016888672305692 human test loss 6.151913781319895
+batch num1800 sim test loss: 5.006131695162866 human test loss 5.8807123553368355
+batch num1900 sim test loss: 4.956163714008946 human test loss 5.880544447129773
+batch num2000 sim test loss: 4.980363707388601 human test loss 6.068388554357713
+batch num2100 sim test loss: 4.9827117919921875 human test loss 5.8973278537873295
+batch num2200 sim test loss: 4.987405915414134 human test loss 5.87740772001205
+batch num2300 sim test loss: 4.929560476733792 human test loss 6.016836750891901
+batch num2400 sim test loss: 4.938526153564453 human test loss 6.152614147432389
+batch num2500 sim test loss: 4.897673929891279 human test loss 6.051427287440146
+batch num2600 sim test loss: 4.889678685895858 human test loss 6.237426404030092
+batch num2700 sim test loss: 4.895743208546793 human test loss 6.024515859542355
+batch num2800 sim test loss: 4.873688451705441 human test loss 5.959327620844687
+batch num2900 sim test loss: 4.841176225293067 human test loss 5.994629567669284
+batch num3000 sim test loss: 4.892608073449904 human test loss 6.1279822011147775
+batch num3100 sim test loss: 4.824583968808574 human test loss 6.087698874935027
+batch num3200 sim test loss: 4.832581989226803 human test loss 5.9469502664381455
+batch num3300 sim test loss: 4.8847071816844325 human test loss 5.89136125195411
+batch num3400 sim test loss: 4.864313579374744 human test loss 6.05358692907518
+batch num3500 sim test loss: 4.8076954041757896 human test loss 6.004212994729319
+batch num3600 sim test loss: 4.876205282826578 human test loss 6.148476769847255
+batch num3700 sim test loss: 4.82401555584323 human test loss 6.108346616068194
+batch num3800 sim test loss: 4.806431731870098 human test loss 6.03407952093309
+batch num3900 sim test loss: 4.836795114701794 human test loss 6.040549062913464
+batch num4000 sim test loss: 4.859369047226444 human test loss 6.040151488396429
+batch num4100 sim test loss: 4.828524689520559 human test loss 6.006278899408156
+batch num4200 sim test loss: 4.803355040088777 human test loss 5.9610848273000405
+batch num4300 sim test loss: 4.837502802571943 human test loss 5.904803153007261
+batch num4400 sim test loss: 4.856820890980382 human test loss 6.172979800931869
+batch num4500 sim test loss: 4.814132290501749 human test loss 5.8465093028160835
+batch num4600 sim test loss: 4.805112754144976 human test loss 5.919347163169615
+batch num4700 sim test loss: 4.875872619690433 human test loss 5.813203365572037
+batch num4800 sim test loss: 4.942649795163062 human test loss 5.947097424537905
+batch num4900 sim test loss: 4.834162665951636 human test loss 5.861009582396476

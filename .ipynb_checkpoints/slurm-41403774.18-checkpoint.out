@@ -1,0 +1,27 @@
+My SLURM_ARRAY_JOB_ID is 41403774.
+My SLURM_ARRAY_TASK_ID is 18
+Executing on the machine: della-r4c4n5
+Training on simulated data
+batch num100 sim test loss: 5.4517101780060795 human test loss 6.031287347116778
+batch num200 sim test loss: 5.435120198034471 human test loss 5.917930203099405
+batch num300 sim test loss: 5.37337589263916 human test loss 5.895084657976704
+batch num400 sim test loss: 5.327039595573179 human test loss 5.789240914006387
+batch num500 sim test loss: 5.343907633135395 human test loss 5.782562086659093
+batch num600 sim test loss: 5.331501714644894 human test loss 5.838252513639389
+batch num700 sim test loss: 5.2993154756484495 human test loss 5.781281132851878
+batch num800 sim test loss: 5.3567983411973525 human test loss 5.94317348541752
+batch num900 sim test loss: 5.287176878221573 human test loss 5.796254542566115
+batch num1000 sim test loss: 5.269155502319336 human test loss 5.7295707118126655
+batch num1100 sim test loss: 5.310596865992392 human test loss 5.913088129412744
+batch num1200 sim test loss: 5.192180287453436 human test loss 5.747515263095979
+batch num1300 sim test loss: 5.40496172443513 human test loss 6.018376258111769
+batch num1400 sim test loss: 5.159613863114388 human test loss 5.7359151532573085
+batch num1500 sim test loss: 5.136482377206126 human test loss 5.792042609184019
+batch num1600 sim test loss: 5.14186462279289 human test loss 5.872530383448447
+batch num1700 sim test loss: 5.325563430786133 human test loss 5.825233536381876
+batch num1800 sim test loss: 5.124060653871106 human test loss 5.767672154211229
+batch num1900 sim test loss: 5.136605247374503 human test loss 5.884364897204984
+batch num2000 sim test loss: 5.113465124560941 human test loss 5.736418654841762
+batch num2100 sim test loss: 5.101568668119369 human test loss 5.7449230686310795
+batch num2200 sim test loss: 5.321778558915661 human test loss 5.893065867885467
+batch num2300 sim test loss: 5.160712565145185 human test loss 6.0510448948029545

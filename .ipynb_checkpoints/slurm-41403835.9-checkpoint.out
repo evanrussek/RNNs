@@ -1,0 +1,501 @@
+My SLURM_ARRAY_JOB_ID is 41403835.
+My SLURM_ARRAY_TASK_ID is 9
+Executing on the machine: della-r4c2n11
+Training on simulated data
+batch num100 sim test loss: 5.279139164955385 human test loss 6.181774662386987
+batch num200 sim test loss: 5.181361213807137 human test loss 6.121076583862305
+batch num300 sim test loss: 5.177796309994113 human test loss 6.001242668397965
+batch num400 sim test loss: 5.17907884044032 human test loss 6.100685196538126
+batch num500 sim test loss: 5.24514110626713 human test loss 5.937662878344136
+batch num600 sim test loss: 5.198211623776343 human test loss 6.202663913849862
+batch num700 sim test loss: 5.178571908704696 human test loss 6.161019002237627
+batch num800 sim test loss: 5.173766689915811 human test loss 6.020406630731398
+batch num900 sim test loss: 5.19894124615577 human test loss 6.0576962809408865
+batch num1000 sim test loss: 5.142368324341312 human test loss 6.0844368780812905
+batch num1100 sim test loss: 5.225368345937421 human test loss 6.46163571265436
+batch num1200 sim test loss: 5.155116642675092 human test loss 6.0826745802356355
+batch num1300 sim test loss: 5.014133268787015 human test loss 6.152414368044946
+batch num1400 sim test loss: 4.9798331645227245 human test loss 6.264311690484324
+batch num1500 sim test loss: 4.975858634518039 human test loss 6.1601460672193955
+batch num1600 sim test loss: 4.971536482534101 human test loss 6.236208500400666
+batch num1700 sim test loss: 4.966273946146811 human test loss 6.079503197823802
+batch num1800 sim test loss: 4.9482864103009625 human test loss 6.3894996873794065
+batch num1900 sim test loss: 4.939347743988037 human test loss 6.210813506957023
+batch num2000 sim test loss: 4.935916177688107 human test loss 6.236175360218171
+batch num2100 sim test loss: 4.909700585949805 human test loss 6.293623939637215
+batch num2200 sim test loss: 4.954003403263707 human test loss 6.396369772572672
+batch num2300 sim test loss: 4.9748946312935125 human test loss 6.42743872058007
+batch num2400 sim test loss: 4.998404748978153 human test loss 6.520945795120731
+batch num2500 sim test loss: 4.933175832994523 human test loss 6.21118176367975
+batch num2600 sim test loss: 4.899571280325612 human test loss 6.237462282180786
+batch num2700 sim test loss: 4.9065539836883545 human test loss 6.19153719563638
+batch num2800 sim test loss: 4.932517313188122 human test loss 6.1859480565594085
+batch num2900 sim test loss: 4.891184122331681 human test loss 6.275688555932814
+batch num3000 sim test loss: 4.882181990531183 human test loss 6.30628841154037
+batch num3100 sim test loss: 4.842787381141417 human test loss 6.302424707720356
+batch num3200 sim test loss: 4.878395480494345 human test loss 6.372276260006812
+batch num3300 sim test loss: 4.843705046561457 human test loss 6.31741790617666
+batch num3400 sim test loss: 4.877923950072257 human test loss 6.373524073631533
+batch num3500 sim test loss: 4.874972597245248 human test loss 6.172769638799852
+batch num3600 sim test loss: 4.839566846047679 human test loss 6.264227067270586
+batch num3700 sim test loss: 4.8189663041022515 human test loss 6.340384775592435
+batch num3800 sim test loss: 4.8910001477887555 human test loss 6.39601618243802
+batch num3900 sim test loss: 4.864374229984898 human test loss 6.358789105569163
+batch num4000 sim test loss: 4.859437857904742 human test loss 6.2473678435048745
+batch num4100 sim test loss: 4.874356546709614 human test loss 6.2857332075795815
+batch num4200 sim test loss: 4.840876686957575 human test loss 6.221564800508561
+batch num4300 sim test loss: 4.8619063515816965 human test loss 6.372971596256379
+batch num4400 sim test loss: 4.884025466057562 human test loss 6.463218827401438
+batch num4500 sim test loss: 4.890149147279801 human test loss 6.384513039742747
+batch num4600 sim test loss: 4.851833389651391 human test loss 6.283892816112887
+batch num4700 sim test loss: 4.878087312944474 human test loss 6.276496179642216
+batch num4800 sim test loss: 4.854278272198092 human test loss 6.089696638045773
+batch num4900 sim test loss: 4.856579149923017 human test loss 6.256568039617231
+batch num5000 sim test loss: 4.846863408242503 human test loss 6.2003260581724104
+batch num5100 sim test loss: 4.843867171195246 human test loss 6.277906671647103
+batch num5200 sim test loss: 4.915331340605213 human test loss 6.463187140803183
+batch num5300 sim test loss: 4.829841160005139 human test loss 6.205017658971971
+batch num5400 sim test loss: 4.818245618574081 human test loss 6.2324776264929005
+batch num5500 sim test loss: 4.8410933171549155 human test loss 6.097744680220081
+batch num5600 sim test loss: 4.865731131645941 human test loss 6.043554798249276
+batch num5700 sim test loss: 4.842048037436701 human test loss 6.138905925135458
+batch num5800 sim test loss: 4.821774413508754 human test loss 6.136473071190618
+batch num5900 sim test loss: 4.84230786754239 human test loss 6.199571217260053
+batch num6000 sim test loss: 4.841411290630218 human test loss 6.207849302599507
+batch num6100 sim test loss: 4.803239230186708 human test loss 6.105951670677431
+batch num6200 sim test loss: 4.879303124643141 human test loss 6.309079462482083
+batch num6300 sim test loss: 4.819457192574778 human test loss 6.011493013751123
+batch num6400 sim test loss: 4.85862248943698 human test loss 6.15406297868298
+batch num6500 sim test loss: 4.822855287982572 human test loss 6.100988464970743
+batch num6600 sim test loss: 4.8309737790015435 human test loss 6.083432720553491
+batch num6700 sim test loss: 4.832080887209985 human test loss 6.143732501614478
+batch num6800 sim test loss: 4.816591731963619 human test loss 6.150134732646327
+batch num6900 sim test loss: 4.827226146574943 human test loss 6.0945534859934165
+batch num7000 sim test loss: 4.813752912705945 human test loss 6.168780219170355
+batch num7100 sim test loss: 4.830766747074742 human test loss 6.155806641424856
+batch num7200 sim test loss: 4.846200358483099 human test loss 6.146974079070553
+batch num7300 sim test loss: 4.8077385887022945 human test loss 6.186405151121078
+batch num7400 sim test loss: 4.8746535547317995 human test loss 6.221788021825975
+batch num7500 sim test loss: 4.861588524233911 human test loss 6.203088437357256
+batch num7600 sim test loss: 4.870743343907018 human test loss 6.040306045163062
+batch num7700 sim test loss: 4.837245587379702 human test loss 6.214804403243527
+batch num7800 sim test loss: 4.811430661909042 human test loss 6.198258984473444
+batch num7900 sim test loss: 4.806633880061488 human test loss 6.035465363533266
+batch num8000 sim test loss: 4.864287891695576 human test loss 6.294628051019484
+batch num8100 sim test loss: 4.818493043222735 human test loss 6.252994691171954
+batch num8200 sim test loss: 4.7989565710867605 human test loss 6.12906071447557
+batch num8300 sim test loss: 4.816040615881643 human test loss 6.100102224657612
+batch num8400 sim test loss: 4.811276666579708 human test loss 6.14161342190158
+batch num8500 sim test loss: 4.804993375655143 human test loss 6.128948519306798
+batch num8600 sim test loss: 4.812319078753071 human test loss 6.111023179946407
+batch num8700 sim test loss: 4.808454613531789 human test loss 6.123426737323884
+batch num8800 sim test loss: 4.864902473265125 human test loss 6.285911075530514
+batch num8900 sim test loss: 4.806276705957228 human test loss 6.216974919842135
+batch num9000 sim test loss: 4.787552656665925 human test loss 6.096981786912488
+batch num9100 sim test loss: 4.857832677902714 human test loss 6.317138917984501
+batch num9200 sim test loss: 4.802181190060031 human test loss 6.040545232834354
+batch num9300 sim test loss: 4.813643517032746 human test loss 6.029052149864935
+batch num9400 sim test loss: 4.810578353943363 human test loss 6.125041561741983
+batch num9500 sim test loss: 4.833544438885104 human test loss 6.079469988423009
+batch num9600 sim test loss: 4.782521217100082 human test loss 6.042279904888522
+batch num9700 sim test loss: 4.791791308310724 human test loss 6.0152677259137555
+batch num9800 sim test loss: 4.7885584369782475 human test loss 6.081237139240388
+batch num9900 sim test loss: 4.796269224536035 human test loss 6.080869582391554
+batch num10000 sim test loss: 4.810173865287535 human test loss 6.110665582841443
+batch num10100 sim test loss: 4.832250295146819 human test loss 6.171581699002173
+batch num10200 sim test loss: 4.812775035058299 human test loss 6.128411123829503
+batch num10300 sim test loss: 4.815745976663405 human test loss 6.105993609274587
+batch num10400 sim test loss: 4.803487147054365 human test loss 6.152592335977862
+batch num10500 sim test loss: 4.797860337841895 human test loss 6.1986674108812885
+batch num10600 sim test loss: 4.835843540007068 human test loss 6.099467662072951
+batch num10700 sim test loss: 4.797482967376709 human test loss 6.058137801385695
+batch num10800 sim test loss: 4.804415933547482 human test loss 6.065771472069525
+batch num10900 sim test loss: 4.819421537460819 human test loss 6.057001698401667
+batch num11000 sim test loss: 4.805908603052939 human test loss 6.1531586339396815
+batch num11100 sim test loss: 4.8315144738843365 human test loss 6.169158735582905
+batch num11200 sim test loss: 4.797471038756832 human test loss 6.063698460978847
+batch num11300 sim test loss: 4.817682450817477 human test loss 6.140171512480705
+batch num11400 sim test loss: 4.812369531200778 human test loss 6.119619492561586
+batch num11500 sim test loss: 4.826261904931838 human test loss 6.222640483610092
+batch num11600 sim test loss: 4.790649644790157 human test loss 6.120619112445462
+batch num11700 sim test loss: 4.810798937274564 human test loss 6.133597097089214
+batch num11800 sim test loss: 4.790057443803357 human test loss 6.154938374796221
+batch num11900 sim test loss: 4.826332976741176 human test loss 6.171388149261475
+batch num12000 sim test loss: 4.7974823213392686 human test loss 6.062725144047891
+batch num12100 sim test loss: 4.81660315298265 human test loss 6.108317713583669
+batch num12200 sim test loss: 4.819264011998331 human test loss 6.170006213649627
+batch num12300 sim test loss: 4.8107640743255615 human test loss 6.168521319666216
+batch num12400 sim test loss: 4.807120776945545 human test loss 6.171683280698715
+batch num12500 sim test loss: 4.809313289580807 human test loss 6.061046508050734
+batch num12600 sim test loss: 4.828727906750094 human test loss 6.16789968552128
+batch num12700 sim test loss: 4.810847390082575 human test loss 6.097648312968593
+batch num12800 sim test loss: 4.8066481621034685 human test loss 6.081679405704621
+batch num12900 sim test loss: 4.833774720468829 human test loss 6.208556705905545
+batch num13000 sim test loss: 4.804162817616617 human test loss 6.177162924120503
+batch num13100 sim test loss: 4.8142239355271865 human test loss 6.021528259400399
+batch num13200 sim test loss: 4.790991821596699 human test loss 6.079380127691453
+batch num13300 sim test loss: 4.825429462617444 human test loss 5.9636530722341226
+batch num13400 sim test loss: 4.796702284966746 human test loss 6.140312994680097
+batch num13500 sim test loss: 4.810769265697848 human test loss 6.054299631426411
+batch num13600 sim test loss: 4.802156402218726 human test loss 6.151570566238895
+batch num13700 sim test loss: 4.802061196296446 human test loss 6.036249453021634
+batch num13800 sim test loss: 4.805424828683177 human test loss 6.12298531686106
+batch num13900 sim test loss: 4.79330619688957 human test loss 6.017671846574353
+batch num14000 sim test loss: 4.7773253533148 human test loss 6.07737793460969
+batch num14100 sim test loss: 4.7924485206604 human test loss 6.1280597102257515
+batch num14200 sim test loss: 4.786446371386128 human test loss 6.113038170722223
+batch num14300 sim test loss: 4.795205293163177 human test loss 6.103082826060634
+batch num14400 sim test loss: 4.993880425730059 human test loss 6.012776867035897
+batch num14500 sim test loss: 4.789919968574278 human test loss 6.038506877037786
+batch num14600 sim test loss: 4.795265643827377 human test loss 6.093326645512735
+batch num14700 sim test loss: 4.814814559874996 human test loss 6.0225510597229
+batch num14800 sim test loss: 4.809638584813764 human test loss 6.058374881744385
+batch num14900 sim test loss: 4.860398784760506 human test loss 6.2547719094061085
+batch num15000 sim test loss: 4.785531328570459 human test loss 6.021906768122027
+batch num15100 sim test loss: 4.814588108370381 human test loss 6.189545862136349
+batch num15200 sim test loss: 4.775481277896512 human test loss 6.159510366378292
+batch num15300 sim test loss: 4.773334095554967 human test loss 6.114718898650138
+batch num15400 sim test loss: 4.787663082922658 human test loss 6.133912670996882
+batch num15500 sim test loss: 4.809124492829846 human test loss 6.129006185839253
+batch num15600 sim test loss: 4.817451315541422 human test loss 6.1436377186929025
+batch num15700 sim test loss: 4.801508357447963 human test loss 6.0431682525142545
+batch num15800 sim test loss: 4.781673762106126 human test loss 6.087677032716813
+batch num15900 sim test loss: 4.7928582622158915 human test loss 6.108456965415709
+batch num16000 sim test loss: 4.779087981870098 human test loss 6.168064763469081
+batch num16100 sim test loss: 4.792213332268499 human test loss 6.153236635269657
+batch num16200 sim test loss: 4.799907084434263 human test loss 6.129356907260034
+batch num16300 sim test loss: 4.80409179195281 human test loss 6.016616728998
+batch num16400 sim test loss: 4.806940847827542 human test loss 6.039390856219876
+batch num16500 sim test loss: 4.824850236215899 human test loss 6.234216290135538
+batch num16600 sim test loss: 4.8126405900524505 human test loss 6.1294303094187095
+batch num16700 sim test loss: 4.791980904917563 human test loss 6.063256925152194
+batch num16800 sim test loss: 4.800553344911145 human test loss 6.174759572552096
+batch num16900 sim test loss: 4.824006857410554 human test loss 6.194735619329637
+batch num17000 sim test loss: 4.786195270476803 human test loss 6.076564604236234
+batch num17100 sim test loss: 4.783791072906986 human test loss 6.103818970341837
+batch num17200 sim test loss: 4.793350973436909 human test loss 6.201470282769972
+batch num17300 sim test loss: 4.7731483059544715 human test loss 6.206457138061523
+batch num17400 sim test loss: 4.825769993566698 human test loss 6.2447988294786025
+batch num17500 sim test loss: 4.791562887930101 human test loss 6.141682147979736
+batch num17600 sim test loss: 4.818607168812906 human test loss 6.149728482769381
+batch num17700 sim test loss: 4.837077786845546 human test loss 6.241697265255835
+batch num17800 sim test loss: 4.832359798492924 human test loss 6.308628712930987
+batch num17900 sim test loss: 4.805609664609356 human test loss 6.1042528921558015
+batch num18000 sim test loss: 4.8095384490105415 human test loss 6.129578467338316
+batch num18100 sim test loss: 4.786799915375248 human test loss 6.078265636197982
+batch num18200 sim test loss: 4.78771545040992 human test loss 6.168067055363809
+batch num18300 sim test loss: 4.84990922866329 human test loss 6.290574765974475
+batch num18400 sim test loss: 4.789917976625504 human test loss 5.975844906222436
+batch num18500 sim test loss: 4.8125783704942275 human test loss 6.170444703871204
+batch num18600 sim test loss: 4.798794208034392 human test loss 6.087505555921985
+batch num18700 sim test loss: 4.805997217855146 human test loss 6.104631193222538
+batch num18800 sim test loss: 4.834179855162097 human test loss 6.061894709064115
+batch num18900 sim test loss: 4.816637431421587 human test loss 6.154872771232359
+batch num19000 sim test loss: 4.8182367893957325 human test loss 6.147731396459764
+batch num19100 sim test loss: 4.797781559728807 human test loss 6.039744746300482
+batch num19200 sim test loss: 4.809293693111789 human test loss 6.235170825835197
+batch num19300 sim test loss: 4.792720256313201 human test loss 6.121299651361281
+batch num19400 sim test loss: 4.800017833709717 human test loss 6.143659468620054
+batch num19500 sim test loss: 4.770432279955957 human test loss 6.0581725951164
+batch num19600 sim test loss: 4.764363227352019 human test loss 6.069660371349704
+batch num19700 sim test loss: 4.776400512264621 human test loss 6.000126284937704
+batch num19800 sim test loss: 4.803344772708032 human test loss 6.063497374134679
+batch num19900 sim test loss: 4.793664355431834 human test loss 6.063964243858091
+batch num20000 sim test loss: 4.840461961684689 human test loss 6.143877367819509
+batch num20100 sim test loss: 4.801342664226409 human test loss 6.187025547027588
+batch num20200 sim test loss: 4.774753939720892 human test loss 6.058637311381679
+batch num20300 sim test loss: 4.7834436893463135 human test loss 6.060479610197006
+batch num20400 sim test loss: 4.782256833968624 human test loss 5.994628506322061
+batch num20500 sim test loss: 4.777937504553026 human test loss 5.978755135690013
+batch num20600 sim test loss: 4.838573432737781 human test loss 6.167283211984942
+batch num20700 sim test loss: 4.80447030836536 human test loss 6.152162828753071
+batch num20800 sim test loss: 4.786272233532321 human test loss 6.1153123148026
+batch num20900 sim test loss: 4.820754843373453 human test loss 6.16648018744684
+batch num21000 sim test loss: 4.806316344968734 human test loss 6.156749063922513
+batch num21100 sim test loss: 4.775273307677238 human test loss 6.066554730938327
+batch num21200 sim test loss: 4.813707582412228 human test loss 6.190050109740226
+batch num21300 sim test loss: 4.774240493774414 human test loss 6.003659663661834
+batch num21400 sim test loss: 4.809675708893807 human test loss 6.124822201267365
+batch num21500 sim test loss: 4.793872364105717 human test loss 6.014851170201456
+batch num21600 sim test loss: 4.790961050218152 human test loss 6.070922159379529
+batch num21700 sim test loss: 4.805350288268058 human test loss 6.072965360456897
+batch num21800 sim test loss: 4.783049391162011 human test loss 6.154328007851878
+batch num21900 sim test loss: 4.852571310535554 human test loss 6.219888548697194
+batch num22000 sim test loss: 4.816353051893173 human test loss 6.095760068585796
+batch num22100 sim test loss: 4.793544923105547 human test loss 6.095032830392161
+batch num22200 sim test loss: 4.794300294691516 human test loss 6.117978126771988
+batch num22300 sim test loss: 4.79811550724891 human test loss 6.096375911466537
+batch num22400 sim test loss: 4.772622269968832 human test loss 6.147800722429829
+batch num22500 sim test loss: 4.7740543811551985 human test loss 6.063933864716561
+batch num22600 sim test loss: 4.82129632273028 human test loss 6.17468923138034
+batch num22700 sim test loss: 4.7927037515947895 human test loss 6.061421271293394
+batch num22800 sim test loss: 4.791132465485604 human test loss 6.09243405249811
+batch num22900 sim test loss: 4.776495225967899 human test loss 6.070834452106107
+batch num23000 sim test loss: 4.787786360709898 human test loss 6.050459907900903
+batch num23100 sim test loss: 4.79063150190538 human test loss 6.097500462685862
+batch num23200 sim test loss: 4.807245492935181 human test loss 6.246546899118731
+batch num23300 sim test loss: 4.784049880120062 human test loss 6.083188164618708
+batch num23400 sim test loss: 4.798109546784432 human test loss 6.138932320379442
+Training on human data
+Human epoch: 0
+Human epoch: 1
+Human epoch: 2
+batch num38 sim test loss: 4.96583378699518 human test loss 5.800882431768602
+Human epoch: 3
+Human epoch: 4
+batch num14 sim test loss: 4.973415836211173 human test loss 5.801313723287275
+Human epoch: 5
+batch num52 sim test loss: 4.986042684124362 human test loss 5.789336219910653
+Human epoch: 6
+Human epoch: 7
+batch num28 sim test loss: 5.000935646795457 human test loss 5.8108810917023686
+Human epoch: 8
+Human epoch: 9
+batch num4 sim test loss: 5.0564305782318115 human test loss 5.776524589907739
+Human epoch: 10
+batch num42 sim test loss: 5.05957591918207 human test loss 5.803829516133955
+Human epoch: 11
+Human epoch: 12
+batch num18 sim test loss: 5.063390939466415 human test loss 5.839335810753607
+Human epoch: 13
+batch num56 sim test loss: 5.058217748518913 human test loss 5.845602866142027
+Human epoch: 14
+Human epoch: 15
+batch num32 sim test loss: 5.0809260645220355 human test loss 5.811862145700762
+Human epoch: 16
+Human epoch: 17
+batch num8 sim test loss: 5.213178080897177 human test loss 5.885299051961591
+Human epoch: 18
+batch num46 sim test loss: 5.145083542793028 human test loss 5.822184870319981
+Human epoch: 19
+Human epoch: 20
+batch num22 sim test loss: 5.202570061529836 human test loss 5.879789875399682
+Human epoch: 21
+batch num60 sim test loss: 5.168527972313665 human test loss 5.846730201475082
+Human epoch: 22
+Human epoch: 23
+batch num36 sim test loss: 5.219732038436398 human test loss 5.8177485312184976
+Human epoch: 24
+Human epoch: 25
+batch num12 sim test loss: 5.246168151978524 human test loss 5.831410700275052
+Human epoch: 26
+batch num50 sim test loss: 5.282131079704531 human test loss 5.889503771258939
+Human epoch: 27
+Human epoch: 28
+batch num26 sim test loss: 5.300761515094388 human test loss 5.856610436593333
+Human epoch: 29
+Human epoch: 30
+batch num2 sim test loss: 5.28066018319899 human test loss 5.856530927842663
+Human epoch: 31
+batch num40 sim test loss: 5.320497951199932 human test loss 5.885252798757246
+Human epoch: 32
+Human epoch: 33
+batch num16 sim test loss: 5.372352469351984 human test loss 5.9270959438816195
+Human epoch: 34
+batch num54 sim test loss: 5.322225709115306 human test loss 5.914538152756229
+Human epoch: 35
+Human epoch: 36
+batch num30 sim test loss: 5.396806616936961 human test loss 5.916579400339434
+Human epoch: 37
+Human epoch: 38
+batch num6 sim test loss: 5.414906886316115 human test loss 5.908772591621645
+Human epoch: 39
+batch num44 sim test loss: 5.360379826638006 human test loss 5.872693107974145
+Human epoch: 40
+Human epoch: 41
+batch num20 sim test loss: 5.376464420749295 human test loss 6.009316290578535
+Human epoch: 42
+batch num58 sim test loss: 5.340802023487706 human test loss 5.916940112267771
+Human epoch: 43
+Human epoch: 44
+batch num34 sim test loss: 5.310103670243294 human test loss 5.945008693202849
+Human epoch: 45
+Human epoch: 46
+batch num10 sim test loss: 5.38479519659473 human test loss 5.93185107938705
+Human epoch: 47
+batch num48 sim test loss: 5.414452514340801 human test loss 5.910232405508718
+Human epoch: 48
+Human epoch: 49
+batch num24 sim test loss: 5.472516813585835 human test loss 6.010130274680353
+Human epoch: 50
+Human epoch: 51
+Human epoch: 52
+batch num38 sim test loss: 5.43309772399164 human test loss 5.981029018279044
+Human epoch: 53
+Human epoch: 54
+batch num14 sim test loss: 5.561874566539641 human test loss 6.0257413156570925
+Human epoch: 55
+batch num52 sim test loss: 5.522794292819116 human test loss 5.994237069160707
+Human epoch: 56
+Human epoch: 57
+batch num28 sim test loss: 5.42320902116837 human test loss 5.939236164093018
+Human epoch: 58
+Human epoch: 59
+batch num4 sim test loss: 5.5069559851000385 human test loss 5.991629154451432
+Human epoch: 60
+batch num42 sim test loss: 5.4880137135905604 human test loss 5.9935077082726265
+Human epoch: 61
+Human epoch: 62
+batch num18 sim test loss: 5.506470626400363 human test loss 5.998140150500882
+Human epoch: 63
+batch num56 sim test loss: 5.523611745526714 human test loss 6.064733951322494
+Human epoch: 64
+Human epoch: 65
+batch num32 sim test loss: 5.519974939284786 human test loss 6.031415831658148
+Human epoch: 66
+Human epoch: 67
+batch num8 sim test loss: 5.5458804868882705 human test loss 6.02493150772587
+Human epoch: 68
+batch num46 sim test loss: 5.5226104951673936 human test loss 6.053587267475743
+Human epoch: 69
+Human epoch: 70
+batch num22 sim test loss: 5.447728749244444 human test loss 5.983090139204456
+Human epoch: 71
+batch num60 sim test loss: 5.459463365616337 human test loss 5.999658984522665
+Human epoch: 72
+Human epoch: 73
+batch num36 sim test loss: 5.509026296677128 human test loss 6.007707934225759
+Human epoch: 74
+Human epoch: 75
+batch num12 sim test loss: 5.525402815111222 human test loss 6.007023026866298
+Human epoch: 76
+batch num50 sim test loss: 5.493066203209661 human test loss 6.01792049407959
+Human epoch: 77
+Human epoch: 78
+batch num26 sim test loss: 5.552819482741818 human test loss 5.989956578900737
+Human epoch: 79
+Human epoch: 80
+batch num2 sim test loss: 5.596374950101299 human test loss 6.0234000144466275
+Human epoch: 81
+batch num40 sim test loss: 5.598639949675529 human test loss 6.089858408897154
+Human epoch: 82
+Human epoch: 83
+batch num16 sim test loss: 5.6430413030808975 human test loss 6.0794790944745465
+Human epoch: 84
+batch num54 sim test loss: 5.452654300197478 human test loss 6.129953799709197
+Human epoch: 85
+Human epoch: 86
+batch num30 sim test loss: 5.52910783983046 human test loss 6.0178092372032905
+Human epoch: 87
+Human epoch: 88
+batch num6 sim test loss: 5.622051808141893 human test loss 6.031058819063248
+Human epoch: 89
+batch num44 sim test loss: 5.644018942309964 human test loss 6.043486102934806
+Human epoch: 90
+Human epoch: 91
+batch num20 sim test loss: 5.600961792853571 human test loss 6.0655420980145855
+Human epoch: 92
+batch num58 sim test loss: 5.599239449347219 human test loss 6.117256502951345
+Human epoch: 93
+Human epoch: 94
+batch num34 sim test loss: 5.505979999419181 human test loss 6.036004081849129
+Human epoch: 95
+Human epoch: 96
+batch num10 sim test loss: 5.604106580057452 human test loss 6.015070130748134
+Human epoch: 97
+batch num48 sim test loss: 5.699845390935098 human test loss 6.063266892586985
+Human epoch: 98
+Human epoch: 99
+batch num24 sim test loss: 5.5689333792655695 human test loss 6.024323555731004
+Human epoch: 100
+Human epoch: 101
+Human epoch: 102
+batch num38 sim test loss: 5.641364666723436 human test loss 6.025484746502292
+Human epoch: 103
+Human epoch: 104
+batch num14 sim test loss: 5.607010549114596 human test loss 6.031786380275603
+Human epoch: 105
+batch num52 sim test loss: 5.623051335734706 human test loss 6.0776290278280936
+Human epoch: 106
+Human epoch: 107
+batch num28 sim test loss: 5.604397204614455 human test loss 6.057882016704928
+Human epoch: 108
+Human epoch: 109
+batch num4 sim test loss: 5.712657636211764 human test loss 6.028909637082007
+Human epoch: 110
+batch num42 sim test loss: 5.712103228415212 human test loss 6.064914964860486
+Human epoch: 111
+Human epoch: 112
+batch num18 sim test loss: 5.667332372357769 human test loss 6.081193847040976
+Human epoch: 113
+batch num56 sim test loss: 5.765015540584441 human test loss 6.145956393211119
+Human epoch: 114
+Human epoch: 115
+batch num32 sim test loss: 5.7894394628463255 human test loss 6.104287824323101
+Human epoch: 116
+Human epoch: 117
+batch num8 sim test loss: 5.873595068531651 human test loss 6.117061122771232
+Human epoch: 118
+batch num46 sim test loss: 5.844001354709748 human test loss 6.115418511052286
+Human epoch: 119
+Human epoch: 120
+batch num22 sim test loss: 5.750790811354114 human test loss 6.0732509705328175
+Human epoch: 121
+batch num60 sim test loss: 5.8576873963879 human test loss 6.246799884303924
+Human epoch: 122
+Human epoch: 123
+batch num36 sim test loss: 5.887904059502386 human test loss 6.1397555105147825
+Human epoch: 124
+Human epoch: 125
+batch num12 sim test loss: 5.750481067165252 human test loss 6.142306481638262
+Human epoch: 126
+batch num50 sim test loss: 5.748877356129308 human test loss 6.110223139486005
+Human epoch: 127
+Human epoch: 128
+batch num26 sim test loss: 5.723416128466206 human test loss 6.055813420203425
+Human epoch: 129
+Human epoch: 130
+batch num2 sim test loss: 5.851136161435035 human test loss 6.1696263128711335
+Human epoch: 131
+batch num40 sim test loss: 5.756046818148706 human test loss 6.153112703754056
+Human epoch: 132
+Human epoch: 133
+batch num16 sim test loss: 5.7842812691965415 human test loss 6.209845542907715
+Human epoch: 134
+batch num54 sim test loss: 5.866162761565177 human test loss 6.198495157303348
+Human epoch: 135
+Human epoch: 136
+batch num30 sim test loss: 5.4858383440202285 human test loss 6.237916100409723
+Human epoch: 137
+Human epoch: 138
+batch num6 sim test loss: 5.2353927012412775 human test loss 6.013375528397098
+Human epoch: 139
+batch num44 sim test loss: 5.300621448024627 human test loss 5.951387528450258
+Human epoch: 140
+Human epoch: 141
+batch num20 sim test loss: 5.207645000949983 human test loss 6.048257043284755
+Human epoch: 142
+batch num58 sim test loss: 5.179150104522705 human test loss 5.994026876265003
+Human epoch: 143
+Human epoch: 144
+batch num34 sim test loss: 5.26154222026948 human test loss 5.939321887108587
+Human epoch: 145
+Human epoch: 146
+batch num10 sim test loss: 5.2225888159967235 human test loss 5.885516059014105
+Human epoch: 147
+batch num48 sim test loss: 5.204999193068473 human test loss 6.035986238910306
+Human epoch: 148
+Human epoch: 149
+batch num24 sim test loss: 5.238472392482143 human test loss 5.90322785223684
+Human epoch: 150
+Human epoch: 151
+Human epoch: 152
+batch num38 sim test loss: 5.277695002094392 human test loss 5.8524670139435795
+Human epoch: 153
+Human epoch: 154
+batch num14 sim test loss: 5.305447078520252 human test loss 5.866690404953495
+Human epoch: 155
+batch num52 sim test loss: 5.2637518452059835 human test loss 5.823551731724893
+Human epoch: 156
+Human epoch: 157
+batch num28 sim test loss: 5.277035936232536 human test loss 5.876749592442667
+Human epoch: 158
+Human epoch: 159
+batch num4 sim test loss: 5.295952073989376 human test loss 5.855229777674521
+Human epoch: 160
+batch num42 sim test loss: 5.325731423593337 human test loss 5.8979059803870415
+Human epoch: 161
+Human epoch: 162
+batch num18 sim test loss: 5.383277123974215 human test loss 5.987596911768759
+Human epoch: 163
+batch num56 sim test loss: 5.214377733968919 human test loss 6.026890723936019

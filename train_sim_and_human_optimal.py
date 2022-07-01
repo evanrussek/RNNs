@@ -17,27 +17,8 @@ from neural_nets import SimpleLSTM, SimpleMLP
 is_array_job=True
 on_cluster=True
 
-# run the job from 1-250 (5 levels, each 1-50)
-
 if is_array_job:
-    job_idx_in = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1 # this is 0 to 249
-    
-    if job_idx_in < 50:
-        prop_pretrain_setting = 0
-        job_idx = job_idx_in
-    elif job_idx_in < 100:
-        prop_pretrain_setting = 1
-        job_idx = job_idx_in-50
-    elif job_idx_in < 150:
-        prop_pretrain_setting = 2
-        job_idx = job_idx_in-100
-    elif job_idx_in < 200:
-        prop_pretrain_setting = 3
-        job_idx = job_idx_in-150
-    elif job_idx_in < 250:
-        prop_pretrain_setting = 4
-        job_idx = job_idx_in-200
-    
+    job_idx = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1 # this is 0 to 50
     train_setting= int(sys.argv[1])
 else:
     job_idx = 0
@@ -63,12 +44,16 @@ this_data_func = train_data_funcs[train_setting]
 
 
 # vary how much pre-training data to use
-max_pretrain = 1.5e6
-prop_pretrain = np.linspace(0,1,5);
-this_prop_pretrain = prop_pretrain[prop_pretrain_setting]
+
 
 best_lrs = [0.0019260129757659558, 0.0044066090959512735, .001]# 0.0001002995005652193]
 best_hiddens = [97, 37, 50]
+
+#best_n_pretrain = [7.5e5, 7.5e5, 0] # with pretraiing
+best_n_pretrain = [0, 0, 0] # try with no pretraining
+
+# best_n_train = [8432, 5232, 500000] # with pretraining
+best_n_train = [64032, 32032, 924832] #  with no pretraining
 
 # function to test model...
 def test(model, test_sim_data, criterion, device, batch_size, gen_batch_data,human_data = False):
@@ -258,9 +243,9 @@ if __name__ == '__main__':
     
     # set up folder to save results
     if on_cluster:
-        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_and_human_results'
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_and_human_results_optimal_no_pt'
     else:
-        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_and_human_results'
+        to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_and_human_results_optimal_no_pt'
 
     if not os.path.exists(to_save_folder):
         os.mkdir(to_save_folder)
@@ -293,8 +278,12 @@ if __name__ == '__main__':
     start_time = time.time()
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     
-    n_sim_seq = int(np.round(this_prop_pretrain*max_pretrain)); # split this between 
-    n_human_epochs = 500 # multiply this by 2000 to get effective res... 
+    
+ #   best_n_pretrain = [7.5e5, 7.5e5, 0]
+#best_n_train = [8432, 5232, 500000]
+    
+    n_sim_seq = best_n_pretrain[train_setting]; # split this between 
+    n_human_epochs = int(np.ceil(best_n_train[train_setting]/len(human_train_data))) # each epoch is approx a pass through the data
     gen_batch_data = this_data_func
     train_data_sim = train_data_sim
     train_data_human = human_train_data
@@ -304,11 +293,11 @@ if __name__ == '__main__':
     sim_loss_res, human_loss_res, train_num, trained_model = train_sim_then_human_with_intermediate_tests(model, train_data_sim, train_data_human, test_data_sim, test_data_human, criterion, optimizer, device, batch_size, n_sim_seq, n_human_epochs, gen_batch_data)
     
     # save loss curve
-    loss_file_name = 'loss_res_train_setting_{}_pp_{}_job_{}.npy'.format(train_setting,prop_pretrain_setting,job_idx)
+    loss_file_name = 'loss_res_train_setting_{}_job_{}.npy'.format(train_setting,job_idx)
     loss_full_file_name = os.path.join(to_save_folder, loss_file_name)
 
     # save model
-    model_full_file_name = os.path.join(to_save_folder, 'model_train_setting_{}_job_{}'.format(train_setting,prop_pretrain_setting,job_idx))
+    model_full_file_name = os.path.join(to_save_folder, 'model_train_setting_{}_job_{}'.format(train_setting,job_idx))
     torch.save(trained_model, model_full_file_name)
     
     # compute predictive accuracy on held-out simulated data (r)

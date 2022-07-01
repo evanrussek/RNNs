@@ -14,8 +14,8 @@ from neural_nets import SimpleLSTM, SimpleMLP
 
 # get job from cluster (we can run 50)... 
 
-is_array_job=False
-on_cluster = False
+is_array_job=True
+on_cluster=True
 
 # run the job from 1-250 (5 levels, each 1-50)
 
@@ -84,7 +84,7 @@ def test(model, test_sim_data, criterion, device, batch_size, gen_batch_data,hum
 
     # A context manager is used to disable gradient calculations during inference
     # to reduce memory usage, as we typically don't need the gradients at this point.
-    with torch.no_grad():
+    with torch.no_grad():  
         for batch_idx in range(n_batches):
             data, target = gen_batch_data(batch_size, batch_idx, test_sim_data, human_data=human_data)
             data, target = torch.from_numpy(data).float().to(device), torch.from_numpy(target).long().to(device)
