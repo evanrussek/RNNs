@@ -1,7 +1,7 @@
 # functions for loading data, and generating batch data to train neural nets...
 import os
 import json
-from res.sequential_tasks import pad_sequences, to_categorical
+from sequential_tasks import pad_sequences, to_categorical
 import numpy as np
 import random
 
