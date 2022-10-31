@@ -16,6 +16,8 @@ load_data_funs.py: defines a number of functions useful for loading in either si
 
 The following scripts carry out key stages of analysis (and are built to be called in turn by slurm scripts and run on princeton clusters):
 
+note -- probably want to also find the best parameters for all of these?
+
 find_optimal_params_for_train_sim_test_sim.py: uses the Optuna package to identify hyperparameters which maximize performance at training on simulated data, and predicting held-out simulated data. To run on cluster, with GPU, param_search_job.slurm is called.
 
 train_sim_test_sim_and_human_w_optimal_params.py: trains neural networks using previously identified best hyperparameters on simulated data. generates analysis of test performance on both simualted and human data. To run on cluster (cpu though in parallel), use RNN_cpu_parallel.slurm. plots of this analysis are in the following notebooks: analyze_performance_of_trained_networks_w_good_params.ipynb (makes most plots in write up) and analyze_prediction_orderings.ipynb (examines propportion of times correct max vs min utility item is selected).
