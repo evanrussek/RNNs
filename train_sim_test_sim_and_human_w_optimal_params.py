@@ -225,7 +225,7 @@ if __name__ == '__main__':
         model       = SimpleLSTM(input_size, hidden_size, output_size)
 
     criterion   = torch.nn.MSELoss()
-    optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting])
+    optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting]) # switch to adam?
     start_time = time.time()
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     trained_model, loss_res, train_num = train_with_intermediate_tests(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, this_data_func, model_name='LSTM')
