@@ -21,7 +21,7 @@ if is_array_job:
     train_setting= int(sys.argv[1])
 else:
     job_idx = 0
-    train_setting=2
+    train_setting=0
 
 # set the random seed.
 random.seed(job_idx)
@@ -194,7 +194,7 @@ if __name__ == '__main__':
 
     # set up folder to save results
     if on_cluster:
-        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_results'
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/train_on_sim_results_oct'
     else:
         to_save_folder = '/Users/evanrussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/train_on_sim_results'
 

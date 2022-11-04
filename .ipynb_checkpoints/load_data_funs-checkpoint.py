@@ -38,7 +38,7 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
     else:
         return train_data_sim, test_data_sim, human_data
 
-def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=False):
+def gen_batch_data_fixations_choice(batch_size, batch_idx, data, use_human_data=False):
 
     """
     Create sequence and target data for a batch
@@ -59,7 +59,7 @@ def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=Fals
     batch_sim_data = data[batch_idx*batch_size:((batch_idx+1)*(batch_size))]
 
     # all sequences in the batch, attended item is coded as idx (as 0, 1, 2)
-    if human_data:
+    if use_human_data:
         batch_fixation_sequences_idx = [(np.array(trial_data['fixations'])-1).tolist() for trial_data in batch_sim_data]
     else:
         batch_fixation_sequences_idx = [trial_data['fixations'] for trial_data in batch_sim_data]
@@ -91,7 +91,7 @@ def gen_batch_data_fixations_choice(batch_size, batch_idx, data, human_data=Fals
 
 
 # this is for just choice
-def gen_batch_data_choice_only(batch_size, batch_idx, data, human_data=False):
+def gen_batch_data_choice_only(batch_size, batch_idx, data, use_human_data=False):
     # filter list of trials that are in this batch
     batch_sim_data = data[batch_idx*batch_size:((batch_idx+1)*(batch_size))]
 
@@ -114,7 +114,7 @@ def gen_batch_data_choice_only(batch_size, batch_idx, data, human_data=False):
 
 
 # this is for fixations only
-def gen_batch_data_fixations_only(batch_size, batch_idx, data, human_data=False):
+def gen_batch_data_fixations_only(batch_size, batch_idx, data, use_human_data=False):
 
     """
     Create sequence and target data for a batch
@@ -135,7 +135,7 @@ def gen_batch_data_fixations_only(batch_size, batch_idx, data, human_data=False)
     batch_sim_data = data[batch_idx*batch_size:((batch_idx+1)*(batch_size))]
 
     # all sequences in the batch, attended item is coded as idx (as 0, 1, 2)
-    if human_data:
+    if use_human_data:
         batch_fixation_sequences_idx = [(np.array(trial_data['fixations'])-1).tolist() for trial_data in batch_sim_data]
     else:
         batch_fixation_sequences_idx = [trial_data['fixations'] for trial_data in batch_sim_data]

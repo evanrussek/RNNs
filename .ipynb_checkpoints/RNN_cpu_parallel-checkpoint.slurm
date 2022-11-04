@@ -19,4 +19,4 @@ module purge
 module load anaconda3/2021.11
 conda activate pDL
 
-python -u train_sim_and_human_optimal.py 1
+python -u train_sim_test_sim_and_human_w_optimal_params.py 0
