@@ -37,3 +37,16 @@ class SimpleMLP(nn.Module):
         hb = F.relu(ha)
         o = self.hidden_output(hb)
         return o
+
+# set up neural networks
+class SimpleGRU(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):
+        super().__init__()
+        self.gru = torch.nn.GRU(input_size, hidden_size, batch_first=True)
+        self.linear = torch.nn.Linear(hidden_size, output_size)
+
+    def forward(self, x):
+        h = self.gru(x)[0]
+        x = self.linear(h)
+        return x
+    

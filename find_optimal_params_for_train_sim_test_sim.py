@@ -9,12 +9,14 @@ import torch
 
 
 from load_data_funs import load_data, gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only
-from neural_nets import SimpleLSTM, SimpleMLP
+from neural_nets import SimpleLSTM, SimpleMLP, simpleGRU
 
 on_cluster = False
-n_optuna_trials = 150
+n_optuna_trials = 150 # is this enough?
 
-train_setting= 0#int(sys.argv[1])
+train_setting= 0 #int(sys.argv[1])
+RNN_setting = 1 # 0 means LSTM, 1 means GRU
+
 if on_cluster:
     sim_data_path = '/scratch/gpfs/erussek/RNN_project/optimal_fixation_sims'
     human_data_path = '/scratch/gpfs/erussek/RNN_project/human_trials.json'
@@ -24,6 +26,8 @@ else:
 
 train_setting_names = ["fix_and_choice", "fix_only", "choice_only"]
 this_setting_name = train_setting_names[train_setting]
+RNN_models = [SimpleLSTM, SimpleGRU]
+thisRNNModel = RNN_models[]
 
 
 train_data_funcs = [gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only]
@@ -123,7 +127,7 @@ def objective(trial, train_data_sim, test_data_sim, train_setting):
     input_sizes = [6,3,3]
     
     batch_size   = 32
-    n_total_seq = 1e5
+    n_total_seq = 1e5 # could you do it for longer?
 
     n_runs = 4
     run_losses = np.zeros((n_runs))
@@ -139,7 +143,9 @@ def objective(trial, train_data_sim, test_data_sim, train_setting):
         if train_setting == 2:
             model       = SimpleMLP(input_size, hidden_size, output_size)
         else:
-            model       = SimpleLSTM(input_size, hidden_size, output_size)
+            #if RNN_setting == 0:
+                model       = thisRNNModel(input_size, hidden_size, output_size)
+            #else
         
         criterion   = torch.nn.MSELoss() # torch.nn.CrossEntropyLoss()
         optimizer   = torch.optim.RMSprop(model.parameters(), lr=trial.suggest_float('lr', .0001, .01, log=True)) # was previously .001
