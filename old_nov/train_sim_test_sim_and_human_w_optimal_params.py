@@ -9,12 +9,13 @@ import os
 import random
 
 from load_data_funs import load_data, gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only
-from neural_nets import SimpleLSTM, SimpleMLP
+from neural_nets import SimpleLSTM, SimpleMLP, SimpleGRU
 
 # get job from cluster (we can run 50)... 
 
 is_array_job=True
 on_cluster = True
+RNN_setting =  int(sys.argv[2])#  means LSTM, 1 means GRU
 
 if is_array_job:
     job_idx = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1
@@ -36,10 +37,13 @@ else:
 
 train_data_funcs = [gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only]
 this_data_func = train_data_funcs[train_setting]
+RNN_models = [SimpleLSTM, SimpleGRU]
+thisRNNModel = RNN_models[RNN_setting]
 
 #get best learning rates from optuna search - for choice only it didn't matter
 
-best_lrs = [0.0019260129757659558, 0.0044066090959512735, .001]# 0.0001002995005652193]
+# alter the best hiddens and LRs to depend on also teh RNN setting
+best_lrs = np.array([[0.0019260129757659558, 0.0044066090959512735, .001], []])# 0.0001002995005652193]
 best_hiddens = [97, 37, 50]
 
 # function to test model...
@@ -78,6 +82,9 @@ def test(model, test_sim_data, criterion, device, batch_size, n_total_seq, gen_b
 def train_with_intermediate_tests(model, train_sim_data, test_sim_data, criterion, optimizer, device, batch_size, n_total_seq, gen_batch_data, human_data = False, model_name = "", n_epochs = 1):
     # Set the model to training mode. This will turn on layers that would
     # otherwise behave differently during evaluation, such as dropout.
+    
+    model.to(device)
+    
     model.train()
     
     # What metric to store?
@@ -222,10 +229,10 @@ if __name__ == '__main__':
     if train_setting == 2:
         model       = SimpleMLP(input_size, hidden_size, output_size)
     else:
-        model       = SimpleLSTM(input_size, hidden_size, output_size)
+        model       = thisRNNModel(input_size, hidden_size, output_size)
 
     criterion   = torch.nn.MSELoss()
-    optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting])
+    optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting]) # switch to adam?
     start_time = time.time()
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     trained_model, loss_res, train_num = train_with_intermediate_tests(model, train_data_sim, test_data_sim, criterion, optimizer, device, batch_size, n_total_seq, this_data_func, model_name='LSTM')

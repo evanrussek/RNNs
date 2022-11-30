@@ -1,0 +1,13 @@
+# this is for train sim, test sim...
+
+LSTM predicting from fixation and choice: (0, 0) - Trial 125
+'hidden_size': 97, 'lr': 0.0026880848989011543
+
+LSTM predicting from just fixation (1,0): - Trial 105
+'hidden_size': 27, 'lr': 0.00561581939079435
+
+GRU predicting from just fixation (0,1) - Trial 92
+'hidden_size': 112, 'lr': 0.0012493382479271105
+
+GRU predicting from just fixation (1,1) - Trial 96
+'hidden_size': 97, 'lr': 0.0013174111966911969

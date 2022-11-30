@@ -1,0 +1,30 @@
+My SLURM_ARRAY_JOB_ID is 44025696.
+My SLURM_ARRAY_TASK_ID is 149
+Executing on the machine: della-r2c2n15
+{'model_name': 'GRU', 'train_seq_part': 'fix_and_choice', 'n_simulation_sequences_train': 150000.0, 'n_human_epochs_train': 150000.0, 'n_sequences_test': 1000.0, 'n_sequences_final_performance': 1000.0, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'lr': 0.001, 'batch_size': 32, 'run_idx': 1, 'on_cluster': True}
+Loading Data
+SimpleGRU(
+  (gru): GRU(6, 128, batch_first=True)
+  (linear): Linear(in_features=128, out_features=3, bias=True)
+)
+Training the model
+Training on simulated data
+number of simulation seqeuences: 8032number of human seqeuences: 0 sim test loss: 4.902949171681558 human test loss 5.93791740171371
+number of simulation seqeuences: 16032number of human seqeuences: 0 sim test loss: 4.855980665453019 human test loss 5.92063880735828
+number of simulation seqeuences: 24032number of human seqeuences: 0 sim test loss: 4.722359126613986 human test loss 5.823256600287653
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 4.619996332353161 human test loss 5.861707410504741
+number of simulation seqeuences: 40032number of human seqeuences: 0 sim test loss: 4.556695761219148 human test loss 5.921024614764798
+number of simulation seqeuences: 48032number of human seqeuences: 0 sim test loss: 4.551270223432971 human test loss 5.971214225215297
+number of simulation seqeuences: 56032number of human seqeuences: 0 sim test loss: 4.545557206676852 human test loss 6.04730276907644
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 4.528287218463037 human test loss 5.868141566553423
+number of simulation seqeuences: 72032number of human seqeuences: 0 sim test loss: 4.4982043312441915 human test loss 5.9623055304250405
+number of simulation seqeuences: 80032number of human seqeuences: 0 sim test loss: 4.557793524957472 human test loss 5.817966968782486
+number of simulation seqeuences: 88032number of human seqeuences: 0 sim test loss: 4.483113865698537 human test loss 5.944690912000595
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 4.476283227243731 human test loss 6.042988684869582
+number of simulation seqeuences: 104032number of human seqeuences: 0 sim test loss: 4.555233578528127 human test loss 5.845775688848188
+number of simulation seqeuences: 112032number of human seqeuences: 0 sim test loss: 4.4484032969320975 human test loss 5.9381472449148855
+number of simulation seqeuences: 120032number of human seqeuences: 0 sim test loss: 4.449778041531963 human test loss 6.073469015859788
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 4.449584191845309 human test loss 5.8880122246280795
+number of simulation seqeuences: 136032number of human seqeuences: 0 sim test loss: 4.456635182903659 human test loss 5.879446237317977
+number of simulation seqeuences: 144032number of human seqeuences: 0 sim test loss: 4.477623877986785 human test loss 5.872411912487399
+Training on human data

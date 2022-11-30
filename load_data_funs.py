@@ -9,8 +9,8 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
 
     random.seed(this_seed)
     
-    train_file_idxs = range(1,23)
-    test_file_idxs = range(24,31)
+    train_file_idxs = range(1,27)
+    test_file_idxs = range(28,31)
 
     train_files = [os.path.join(sim_data_path, str(i) + '.json') for i in train_file_idxs]
     test_files = [os.path.join(sim_data_path, str(i) + '.json') for i in test_file_idxs]
@@ -18,7 +18,7 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
     a = [json.load(open(train_files[i])) for i in range(15)]
     train_trials = [item for sublist in a for item in sublist]
     del a
-    train_data_sim = train_trials[:int(1.5e6)]
+    train_data_sim = train_trials[:int(1.8e6)]
 
     test_trials = json.load(open(test_files[0]))
     test_data_sim = test_trials[:int(1e5)]
@@ -111,7 +111,6 @@ def gen_batch_data_choice_only(batch_size, batch_idx, data, use_human_data=False
 # print(f'The first element in the batch of sequences is:\n {example_batch[0][0, :]}')
 # print(f'The second item in the tuple is the corresponding batch of targets with shape {example_batch[1].shape}.')
 # print(f'The first element in the batch of targets is:\n {example_batch[1][0, :]}')
-
 
 # this is for fixations only
 def gen_batch_data_fixations_only(batch_size, batch_idx, data, use_human_data=False):

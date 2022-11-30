@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "pref_master_file.py", line 73, in <module>
+    main_as_fun(model_name=job_model_names[job_idx], train_seq_part = job_seq_parts[job_idx], n_simulation_sequences_train = job_n_sim_seqs[job_idx], n_human_sequences_train = job_n_human_seqs[job_idx], run_idx=job_run_idxs[job_idx])
+  File "/home/erussek/projects/RNNs/main_as_fun.py", line 176, in main_as_fun
+    res_file_name = 'res_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_epochs_train_{}_job_{}.pickle'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_epochs_train, run_idx)
+NameError: name 'n_human_epochs_train' is not defined

@@ -1,0 +1,13 @@
+My SLURM_ARRAY_JOB_ID is 44026742.
+My SLURM_ARRAY_TASK_ID is 1
+Executing on the machine: della-r4c3n12
+{'model_name': 'LSTM', 'train_seq_part': 'fix_and_choice', 'n_simulation_sequences_train': 1750000, 'n_human_sequences_train': 0, 'n_sequences_test': 1000.0, 'n_sequences_final_performance': 1000.0, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'lr': 0.001, 'batch_size': 32, 'run_idx': 0, 'on_cluster': True}
+<class 'numpy.int64'>
+Loading Data
+SimpleLSTM(
+  (lstm): LSTM(6, 128, batch_first=True)
+  (linear): Linear(in_features=128, out_features=3, bias=True)
+)
+Training the model
+Training on simulated data
+number of simulation seqeuences: 8032number of human seqeuences: 0 sim test loss: 5.504353615545457 human test loss 6.003209867785054

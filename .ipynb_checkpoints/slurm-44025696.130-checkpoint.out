@@ -1,0 +1,12 @@
+My SLURM_ARRAY_JOB_ID is 44025696.
+My SLURM_ARRAY_TASK_ID is 130
+Executing on the machine: della-r2c2n15
+{'model_name': 'LSTM', 'train_seq_part': 'fix_only', 'n_simulation_sequences_train': 0.0, 'n_human_epochs_train': 150000.0, 'n_sequences_test': 1000.0, 'n_sequences_final_performance': 1000.0, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'lr': 0.001, 'batch_size': 32, 'run_idx': 8, 'on_cluster': True}
+Loading Data
+SimpleLSTM(
+  (lstm): LSTM(3, 128, batch_first=True)
+  (linear): Linear(in_features=128, out_features=3, bias=True)
+)
+Training the model
+Training on simulated data
+Training on human data

@@ -25,7 +25,6 @@ else:
     train_setting=2
     prop_pretrain_setting = 1 # some number 1-5
 
-
 # set the random seed.
 random.seed(job_idx)
 
@@ -93,9 +92,6 @@ def train_sim_then_human_with_intermediate_tests(model, train_data_sim, train_da
 
     n_human_seq = len(human_train_data) # about 2000
 
-    # now we want to train on some number of 
-    model.train()
-
     n_batches_sim = int(np.round(n_sim_seq/batch_size));
     n_batches_human = int(np.round(n_human_seq/batch_size));
     # first train on sim data...
@@ -108,6 +104,9 @@ def train_sim_then_human_with_intermediate_tests(model, train_data_sim, train_da
     # train on simulated data...
     print('Training on simulated data')
     for batch_idx in range(n_batches_sim):
+        
+        # put model in train mode (test should set it to test mode?)
+        model.train()
 
         # Request a batch of sequences and class labels, convert them into tensors
         # of the correct type, and then send them to the appropriate device.
@@ -230,6 +229,9 @@ def test_record_each_output(model, test_sim_data, device, batch_size, n_total_se
 
 
 def compute_heldout_correlation(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, n_back, choice_only=False, human_data=False):
+    
+    trained_model.eval()
+    
     output_all, target_all = test_record_each_output(trained_model, test_data_sim, device, batch_size, n_seq_test,this_data_func, n_back,choice_only=choice_only, human_data=human_data)
     output_flat = output_all.flatten()
     target_flat = target_all.flatten()

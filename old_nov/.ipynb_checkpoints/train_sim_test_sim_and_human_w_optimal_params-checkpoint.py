@@ -9,12 +9,13 @@ import os
 import random
 
 from load_data_funs import load_data, gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only
-from neural_nets import SimpleLSTM, SimpleMLP
+from neural_nets import SimpleLSTM, SimpleMLP, SimpleGRU
 
 # get job from cluster (we can run 50)... 
 
 is_array_job=True
 on_cluster = True
+RNN_setting =  int(sys.argv[2])#  means LSTM, 1 means GRU
 
 if is_array_job:
     job_idx = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1
@@ -36,6 +37,8 @@ else:
 
 train_data_funcs = [gen_batch_data_fixations_choice, gen_batch_data_fixations_only, gen_batch_data_choice_only]
 this_data_func = train_data_funcs[train_setting]
+RNN_models = [SimpleLSTM, SimpleGRU]
+thisRNNModel = RNN_models[RNN_setting]
 
 #get best learning rates from optuna search - for choice only it didn't matter
 
@@ -222,7 +225,7 @@ if __name__ == '__main__':
     if train_setting == 2:
         model       = SimpleMLP(input_size, hidden_size, output_size)
     else:
-        model       = SimpleLSTM(input_size, hidden_size, output_size)
+        model       = thisRNNModel(input_size, hidden_size, output_size)
 
     criterion   = torch.nn.MSELoss()
     optimizer   = torch.optim.RMSprop(model.parameters(), lr=best_lrs[train_setting]) # switch to adam?

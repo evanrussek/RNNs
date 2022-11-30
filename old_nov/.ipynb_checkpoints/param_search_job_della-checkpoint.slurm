@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=param_search_2    # create a short name for your job
+#SBATCH --job-name=param_search_1_0    # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --cpus-per-task=1        # cpu-cores per task (>1 if multi-threaded tasks)
@@ -15,4 +15,4 @@ module purge
 module load anaconda3/2021.11
 conda activate pDL
 
-python predict_sim_find_optimal_params.py 2
+python find_optimal_params_for_train_sim_test_sim.py 1 0

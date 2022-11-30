@@ -1,0 +1,6 @@
+My SLURM_ARRAY_JOB_ID is 44026742.
+My SLURM_ARRAY_TASK_ID is 4
+Executing on the machine: della-r4c1n11
+{'model_name': 'LSTM', 'train_seq_part': 'fix_only', 'n_simulation_sequences_train': 1750000, 'n_human_sequences_train': 0, 'n_sequences_test': 1000.0, 'n_sequences_final_performance': 1000.0, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'lr': 0.001, 'batch_size': 32, 'run_idx': 0, 'on_cluster': True}
+<class 'numpy.int64'>
+Loading Data
