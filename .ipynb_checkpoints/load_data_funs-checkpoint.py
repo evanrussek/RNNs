@@ -7,14 +7,20 @@ import random
 
 def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed = 0):
 
+    # edit this to also return validation data
+    
     random.seed(this_seed)
     
     train_file_idxs = range(1,27)
     test_file_idxs = range(28,31)
 
+    
     train_files = [os.path.join(sim_data_path, str(i) + '.json') for i in train_file_idxs]
     test_files = [os.path.join(sim_data_path, str(i) + '.json') for i in test_file_idxs]
 
+    random.shuffle(train_files)
+    random.shuffle(test_files)
+    
     a = [json.load(open(train_files[i])) for i in range(15)]
     train_trials = [item for sublist in a for item in sublist]
     del a
@@ -22,11 +28,17 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
 
     test_trials = json.load(open(test_files[0]))
     test_data_sim = test_trials[:int(1e5)]
+    del test_trials
+    
+    val_trials = json.load(open(test_files[1]))
+    val_data_sim = test_trials[:int(1e5)]
+    del val_trials
 
     human_data = json.load(open(human_data_path))
     
     random.shuffle(train_data_sim)
     random.shuffle(test_data_sim)
+    random.shuffle(val_data_sim)
     random.shuffle(human_data)
     
     if split_human_data:
