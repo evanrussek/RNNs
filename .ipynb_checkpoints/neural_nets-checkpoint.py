@@ -71,7 +71,8 @@ class PositionalEncoding(nn.Module):
     """
 
     # d_model? 
-    def __init__(self, d_model, dropout=0.1, max_len=5000):
+    # change dropout to 0? -- so it matches RNNs, --- was .1
+    def __init__(self, d_model, dropout=0, max_len=5000):
         super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
 
@@ -105,7 +106,7 @@ class PositionalEncoding(nn.Module):
     
 # now make a transformer - https://github.com/pytorch/examples/blob/main/word_language_model/model.py
 class SimpleTransformer(nn.Module):
-    def __init__(self, n_token, d_model, dim_feedforward, output_size, nlayers = 1, nhead = 1, dropout=.1): # do you want dropout? this was .5 before...
+    def __init__(self, n_token, d_model, dim_feedforward, output_size, nlayers = 1, nhead = 1, dropout=0): # do you want dropout? this was .5 before...
         super().__init__()
         
         try:

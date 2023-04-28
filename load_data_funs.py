@@ -31,7 +31,7 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
     del test_trials
     
     val_trials = json.load(open(test_files[1]))
-    val_data_sim = test_trials[:int(1e5)]
+    val_data_sim = val_trials[:int(1e5)]
     del val_trials
 
     human_data = json.load(open(human_data_path))
@@ -42,14 +42,16 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
     random.shuffle(human_data)
     
     if split_human_data:
-        n_test=int(np.round(len(human_data)/5)) # test on 1/3
-        n_va
-        human_test_data = human_data[:n_test]
-        human_train_data = human_data[n_test+1:]
+        n_test=int(np.round(len(human_data)/5)) # test on 1/5
+        n_val = n_test #
+        test_data_human = human_data[:n_test]
+        val_data_human = human_data[n_test:(n_test+n_val)]
 
-        return train_data_sim, test_data_sim, human_train_data, human_test_data
+        train_data_human = human_data[(n_test+n_val):]
+
+        return train_data_sim, val_data_sim, test_data_sim, train_data_human, val_data_human, test_data_human
     else:
-        return train_data_sim, test_data_sim, human_data
+        return train_data_sim, test_data_sim, val_data_sim, human_data
 
 def gen_batch_data_fixations_choice(batch_size, batch_idx, data, use_human_data=False):
 

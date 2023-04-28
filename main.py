@@ -5,7 +5,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
-import optuna
+# import optuna
 import time
 import sys
 import torch
@@ -25,7 +25,7 @@ from neural_nets import SimpleLSTM, SimpleMLP, SimpleGRU, SimpleTransformer
 #### Set cluster job_idx, folders and random seeds
 #############################################
 
-on_cluster = True
+on_cluster = False
 
 # set path to the human and simulation data
 if on_cluster:
@@ -65,7 +65,7 @@ parser.add_argument('--n_simulation_sequences_train', type=float, default = 1e3,
                    help='numƒber of simulation sequences to train on')
 
 # how many epochs of human data (consisting of 2000 sequences) should we train on?
-parser.add_argument('--n_human_epochs_train', type=float, default = 0,
+parser.add_argument('--n_human_sequences_train', type=float, default = 0,
                    help='how many epochs of human data to train on?')
 
 # is test human or simualted?
@@ -73,11 +73,11 @@ parser.add_argument('--test_data_type', type=str, default = "simulation",
                    help='is test data simulation or human')
 
 # how many sequences to test on (for either human or sim)?
-parser.add_argument('--n_sequences_test', type=float, default = 1e3, # 1000
+parser.add_argument('--n_sequences_test', type=float, default = 500, # 1000
                    help='number of sequences to use for test')
 
 # how many sequences to test on (for either human or sim)?
-parser.add_argument('--n_sequences_final_performance', type=float, default = 1e3, # 1000
+parser.add_argument('--n_sequences_final_performance', type=float, default = 500, # 1000
                    help='number of sequences for final (trained model) performance measures')
 
 
@@ -112,11 +112,16 @@ print(args)
 model_name = args.model
 train_seq_part = args.train_seq_part
 n_simulation_sequences_train = args.n_simulation_sequences_train
-n_human_epochs_train = args.n_human_epochs_train
+n_human_sequences_train = args.n_human_sequences_train
 test_data_type = args.test_data_type
 n_sequences_test = args.n_sequences_test
 n_sequences_final_performance = args.n_sequences_final_performance
 run_idx = args.run_idx
+
+sim_lr = .001
+human_lr = .001
+test_batch_increment_sim = 100
+test_batch_increment_human = 100
 
 
 # model parameteres
@@ -126,8 +131,7 @@ n_head = args.n_head
 lr = args.lr
 batch_size = args.batch_size
 
-
-
+##################
 # set the random seed.
 random.seed(run_idx)
 torch.manual_seed(run_idx)
@@ -144,7 +148,7 @@ n_tokens = n_tokens_by_train_seq_part[train_seq_part]
 ####### LOAD DATA ###
 #####################
 print("Loading Data")
-train_data_sim, test_data_sim, train_data_human, test_data_human = load_data(sim_data_path, human_data_path,this_seed=run_idx,split_human_data=True)
+train_data_sim, val_data_sim, test_data_sim, train_data_human, val_data_human, test_data_human = load_data(sim_data_path, human_data_path,this_seed=run_idx,split_human_data=True)
 
 ##########################
 #### SETUP MODEL #########
@@ -163,17 +167,16 @@ elif model_name == 'LSTM':
     model = SimpleLSTM(n_tokens, d_model, output_size)
 else:
     exit("Invalid model name entered")
-    
-    
-print(model)
+
+
+# print(model)
 
 ##################################
 ### OTHER TRAINING PARAMETERS ####
 ##################################
-    
+
 # non neural net training parameters
 criterion   = torch.nn.MSELoss()
-optimizer   = torch.optim.Adam(model.parameters(), lr=lr) # set learning rate...
 start_time = time.time()
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
@@ -182,7 +185,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 ######################################################
 
 print("Training the model")
-simulation_loss_results, human_loss_results, train_sequence_number,human_sequence_number, simulation_sequence_number, model = train_on_simulation_then_human_with_intermediate_tests(model,train_data_sim, train_data_human,test_data_sim,test_data_human,criterion,optimizer,device,batch_size,n_simulation_sequences_train, n_human_epochs_train, n_sequences_test, gen_data_func)
+simulation_loss_results, human_loss_results, train_sequence_number,human_sequence_number, simulation_sequence_number, model = train_on_simulation_then_human_with_intermediate_tests(model,train_data_sim, train_data_human,val_data_sim,val_data_human,criterion,device,batch_size,n_simulation_sequences_train, n_human_sequences_train, n_sequences_test, gen_data_func, sim_lr = sim_lr, human_lr = human_lr, test_batch_increment_sim=test_batch_increment_sim, test_batch_increment_human=test_batch_increment_human)
 
 # save results of this
 res_dict["simulation_loss_results"] =  simulation_loss_results
@@ -197,33 +200,33 @@ res_dict["simulation_sequence_number"] =  simulation_sequence_number
 
 print("Evaluating trained model performance")
 if train_seq_part != "choice_only":
-    
+
     n_back_vals = np.arange(1,20)
-    
+
     r_sim_by_n_back = np.zeros(len(n_back_vals))
     r_human_by_n_back = np.zeros(len(n_back_vals))
-    
+
     pct_correct_max_sim_by_n_back = np.zeros(len(n_back_vals))
     pct_correct_max_human_by_n_back = np.zeros(len(n_back_vals))
-    
+
     pct_correct_min_sim_by_n_back = np.zeros(len(n_back_vals))
     pct_correct_min_human_by_n_back = np.zeros(len(n_back_vals))
-    
+
     pct_correct_order_sim_by_n_back = np.zeros(len(n_back_vals))
     pct_correct_order_human_by_n_back = np.zeros(len(n_back_vals))
-    
+
     for nb_idx, nb in enumerate(n_back_vals):
-        
+
         r_sim_by_n_back[nb_idx], pct_correct_max_sim_by_n_back[nb_idx], pct_correct_min_sim_by_n_back[nb_idx], pct_correct_order_sim_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=False)
-        
+
         r_human_by_n_back[nb_idx], pct_correct_max_human_by_n_back[nb_idx], pct_correct_min_human_by_n_back[nb_idx], pct_correct_order_human_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=True)
-        
+
 else:
-    
-    r_sim_by_n_back, pct_correct_max_sim_by_n_back, pct_correct_min_sim_by_n_back, pct_correct_order_sim_by_n_back = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, 0, choice_only=True, use_human_data=True)
-    
+
+    r_sim_by_n_back, pct_correct_max_sim_by_n_back, pct_correct_min_sim_by_n_back, pct_correct_order_sim_by_n_back = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, 0, choice_only=True, use_human_data=False)
+
     r_human_by_n_back, pct_correct_max_human_by_n_back, pct_correct_min_human_by_n_back, pct_correct_order_human_by_n_back = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance, gen_data_func, 0, choice_only=True, use_human_data=True)
-    
+
 
 # store these results
 res_dict["r_sim_by_n_back"] = r_sim_by_n_back
@@ -235,7 +238,7 @@ res_dict["r_human_by_n_back"] = r_human_by_n_back
 res_dict["pct_correct_max_human_by_n_back"] = pct_correct_max_human_by_n_back
 res_dict["pct_correct_min_human_by_n_back"] = pct_correct_min_human_by_n_back
 res_dict["pct_correct_order_human_by_n_back"] = pct_correct_order_human_by_n_back
-    
+
 ########################
 ### SAVE RESULTS #######
 ########################
@@ -243,14 +246,14 @@ res_dict["pct_correct_order_human_by_n_back"] = pct_correct_order_human_by_n_bac
 print("Saving the model and results")
 
 # save the model with torch
-model_file_name = 'model_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_epochs_train_{}_job_{}'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_epochs_train, run_idx)
+model_file_name = 'model_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_sequences_train_{}_job_{}'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_sequences_train, run_idx)
 model_full_file_name = os.path.join(to_save_folder, model_file_name)
 torch.save(model, model_full_file_name)
 
 # save the results dict with np.save 
-res_file_name = 'res_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_epochs_train_{}_job_{}.pickle'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_epochs_train, run_idx)
-loss_full_file_name = os.path.join(to_save_folder, res_file_name)
+res_file_name = 'res_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_sequences_train_{}_job_{}.pickle'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_sequences_train, run_idx)
+res_full_file_name = os.path.join(to_save_folder, res_file_name)
 
 # save results file
-with open(res_file_name, 'wb') as f:    
+with open(res_full_file_name, 'wb') as f:    
     pickle.dump(res_dict, f) 

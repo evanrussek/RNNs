@@ -21,7 +21,7 @@ from load_data_funs import load_data, gen_batch_data_fixations_choice, gen_batch
 from train_and_test_funs import test, train_on_simulation_then_human_with_intermediate_tests, test_record_each_output, compute_heldout_performance
 from neural_nets import SimpleLSTM, SimpleMLP, SimpleGRU, SimpleTransformer
 
-def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice', n_simulation_sequences_train: int = 1e3, n_human_sequences_train: int = 0, n_sequences_test: int = 1e3, n_sequences_final_performance: int = 1e3, d_model: int = 128, n_layers: int = 2, n_head: int = 2, sim_lr: float = .001, human_lr: float = .001, batch_size: int = 32, run_idx: int = 0, on_cluster: bool = True, test_batch_increment_sim: int = 100, test_batch_increment_human: int = 100):
+def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice', n_simulation_sequences_train: int = 1e3, n_human_sequences_train: int = 0, n_sequences_test: int = 500, n_sequences_final_performance: int = 500, d_model: int = 128, n_layers: int = 2, n_head: int = 2, sim_lr: float = .001, human_lr: float = .001, batch_size: int = 32, run_idx: int = 0, on_cluster: bool = True, test_batch_increment_sim: int = 1e3, test_batch_increment_human: int = 1e3, save_folder_name = 'Hyper_Param_Search', save_file_name = ''):
         
     print(locals())
     
@@ -40,9 +40,9 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
 
     # set up folder to save results
     if on_cluster:
-        to_save_folder = '/scratch/gpfs/erussek/RNN_project/preference_model_results_nov20'
+        to_save_folder = '/scratch/gpfs/erussek/RNN_project/'+save_folder_name
     else:
-        to_save_folder = '/Users/erussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/preference_model_results_nov20'
+        to_save_folder = '/Users/erussek/Dropbox/Griffiths_Lab_Stuff/Code/RNNs/'+save_folder_name
 
     if not os.path.exists(to_save_folder):
         os.mkdir(to_save_folder)
@@ -69,7 +69,7 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     ####### LOAD DATA ###
     #####################
     print("Loading Data")
-    train_data_sim, test_data_sim, train_data_human, test_data_human = load_data(sim_data_path, human_data_path,this_seed=run_idx,split_human_data=True)
+    train_data_sim, val_data_sim, test_data_sim, train_data_human, val_data_human, test_data_human = load_data(sim_data_path, human_data_path,this_seed=run_idx,split_human_data=True)
 
     ##########################
     #### SETUP MODEL #########
@@ -106,7 +106,7 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     ######################################################
 
     print("Training the model")
-    simulation_loss_results, human_loss_results, train_sequence_number,human_sequence_number, simulation_sequence_number, model = train_on_simulation_then_human_with_intermediate_tests(model,train_data_sim, train_data_human,test_data_sim,test_data_human,criterion,device,batch_size,n_simulation_sequences_train, n_human_sequences_train, n_sequences_test, gen_data_func, sim_lr = sim_lr, human_lr = human_lr, test_batch_increment_sim=test_batch_increment_sim, test_batch_increment_human=test_batch_increment_human)
+    simulation_loss_results, human_loss_results, train_sequence_number,human_sequence_number, simulation_sequence_number, model = train_on_simulation_then_human_with_intermediate_tests(model,train_data_sim, train_data_human,val_data_sim,val_data_human,criterion,device,batch_size,n_simulation_sequences_train, n_human_sequences_train, n_sequences_test, gen_data_func, sim_lr = sim_lr, human_lr = human_lr, test_batch_increment_sim=test_batch_increment_sim, test_batch_increment_human=test_batch_increment_human)
 
     # save results of this
     res_dict["simulation_loss_results"] =  simulation_loss_results
@@ -140,11 +140,13 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
 
             r_sim_by_n_back[nb_idx], pct_correct_max_sim_by_n_back[nb_idx], pct_correct_min_sim_by_n_back[nb_idx], pct_correct_order_sim_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=False)
 
+            # print('Human data length: {}'.format(len(test_data_human)))
+            
             r_human_by_n_back[nb_idx], pct_correct_max_human_by_n_back[nb_idx], pct_correct_min_human_by_n_back[nb_idx], pct_correct_order_human_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=True)
 
     else:
 
-        r_sim_by_n_back, pct_correct_max_sim_by_n_back, pct_correct_min_sim_by_n_back, pct_correct_order_sim_by_n_back = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, 0, choice_only=True, use_human_data=True)
+        r_sim_by_n_back, pct_correct_max_sim_by_n_back, pct_correct_min_sim_by_n_back, pct_correct_order_sim_by_n_back = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, 0, choice_only=True, use_human_data=False)
 
         r_human_by_n_back, pct_correct_max_human_by_n_back, pct_correct_min_human_by_n_back, pct_correct_order_human_by_n_back = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance, gen_data_func, 0, choice_only=True, use_human_data=True)
 
@@ -167,14 +169,15 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     print("Saving the model and results")
 
     # save the model with torch
-    model_file_name = 'model_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_sequences_train_{}_job_{}'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_sequences_train, run_idx)
+    model_file_name = save_file_name+'.pt'
     model_full_file_name = os.path.join(to_save_folder, model_file_name)
     torch.save(model, model_full_file_name)
 
     # save the results dict with np.save 
-    res_file_name = 'res_model_name_{}_train_seq_part_{}_n_simulation_sequences_train_{}_n_human_sequences_train_{}_job_{}.pickle'.format(model_name,train_seq_part, n_simulation_sequences_train, n_human_sequences_train, run_idx)
+    res_file_name = save_file_name+'.pickle'
     res_full_file_name = os.path.join(to_save_folder, res_file_name)
 
     # save results file
     with open(res_full_file_name, 'wb') as f:    
         pickle.dump(res_dict, f) 
+
