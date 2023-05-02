@@ -38,7 +38,7 @@ transformer_layers = [2,4]
 
 # ...
 # take an average over 3 runs...
-n_runs = 1
+n_runs = 3
 
 # vary model name, hidden size, learning rate, (transformer stuff if transformer), run
 job_model_names = []
