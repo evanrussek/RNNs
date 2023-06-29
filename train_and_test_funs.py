@@ -118,6 +118,7 @@ def train_on_simulation_then_human_with_intermediate_tests(model, train_data_sim
     
     
     for batch_idx in range(n_batches_simulation):
+                
         # set model to train mode
         model.train()
         
@@ -155,7 +156,8 @@ def train_on_simulation_then_human_with_intermediate_tests(model, train_data_sim
     for epoch_idx in range(n_human_epochs_train):
         #print('Human epoch: {}'.format(epoch_idx))
         for batch_idx in range(n_batches_human):
-            
+            # print(batch_idx)
+
             # set model to train mode
             model.train()
             
@@ -242,8 +244,8 @@ def test_record_each_output(model, test_data, device, batch_size, n_sequences_te
                 output = output[:, -n_back, :]
                 target = target[:,-n_back,:]
 
-            output_all = np.concatenate((output_all, output.numpy()))
-            target_all = np.concatenate((target_all, target.numpy()))
+            output_all = np.concatenate((output_all, output.cpu().numpy()))
+            target_all = np.concatenate((target_all, target.cpu().numpy()))
 
     return (output_all, target_all)
 

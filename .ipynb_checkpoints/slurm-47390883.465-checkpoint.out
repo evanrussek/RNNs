@@ -1,0 +1,92 @@
+My SLURM_ARRAY_JOB_ID is 47390883.
+My SLURM_ARRAY_TASK_ID is 465
+Executing on the machine: della-r4c2n15
+{'model_name': 'Transformer', 'train_seq_part': 'fix_and_choice', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 500000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 64, 'n_layers': 4, 'n_head': 4, 'sim_lr': 0, 'human_lr': 1e-05, 'batch_size': 32, 'run_idx': 2, 'on_cluster': True, 'test_batch_increment_sim': 1000.0, 'test_batch_increment_human': 1000.0, 'save_folder_name': 'Hyper_Param_Search1', 'save_file_name': 'run_2_model_name_Transformer_d_model_64_sim_lr_0_human_lr_1e-05_n_head_4_n_layers_4_nsim_300000.0_nhum_500000.0'}
+<class 'float'>
+Loading Data
+SimpleTransformer(
+  (encoder): Linear(in_features=6, out_features=64, bias=True)
+  (pos_encoder): PositionalEncoding(
+    (dropout): Dropout(p=0, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=256, bias=True)
+        (dropout): Dropout(p=0, inplace=False)
+        (linear2): Linear(in_features=256, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0, inplace=False)
+        (dropout2): Dropout(p=0, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=256, bias=True)
+        (dropout): Dropout(p=0, inplace=False)
+        (linear2): Linear(in_features=256, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0, inplace=False)
+        (dropout2): Dropout(p=0, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=256, bias=True)
+        (dropout): Dropout(p=0, inplace=False)
+        (linear2): Linear(in_features=256, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0, inplace=False)
+        (dropout2): Dropout(p=0, inplace=False)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=256, bias=True)
+        (dropout): Dropout(p=0, inplace=False)
+        (linear2): Linear(in_features=256, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0, inplace=False)
+        (dropout2): Dropout(p=0, inplace=False)
+      )
+    )
+  )
+  (decoder): Linear(in_features=64, out_features=3, bias=True)
+)
+Training the model
+Training on simulated data
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 17.83260476589203 human test loss 20.70221573114395
+Training on human data
+number of simulation seqeuences: 288032number of human seqeuences: 32000 sim test loss: 6.275060087442398 human test loss 7.529643133282661
+number of simulation seqeuences: 288032number of human seqeuences: 64000 sim test loss: 5.541583597660065 human test loss 6.495725110173225
+number of simulation seqeuences: 288032number of human seqeuences: 96000 sim test loss: 5.2610911428928375 human test loss 5.969715505838394
+number of simulation seqeuences: 288032number of human seqeuences: 128000 sim test loss: 5.234548449516296 human test loss 5.7635239362716675
+number of simulation seqeuences: 288032number of human seqeuences: 160000 sim test loss: 5.289714515209198 human test loss 5.709521144628525
+number of simulation seqeuences: 288032number of human seqeuences: 192000 sim test loss: 5.337486684322357 human test loss 5.705507159233093
+number of simulation seqeuences: 288032number of human seqeuences: 256000 sim test loss: 5.371269643306732 human test loss 5.704212844371796
+number of simulation seqeuences: 288032number of human seqeuences: 288000 sim test loss: 5.380567818880081 human test loss 5.7019935846328735
+number of simulation seqeuences: 288032number of human seqeuences: 320000 sim test loss: 5.387234151363373 human test loss 5.699693456292152
+number of simulation seqeuences: 288032number of human seqeuences: 352000 sim test loss: 5.388889044523239 human test loss 5.698080480098724
+number of simulation seqeuences: 288032number of human seqeuences: 384000 sim test loss: 5.391550660133362 human test loss 5.6972557455301285
+number of simulation seqeuences: 288032number of human seqeuences: 416000 sim test loss: 5.394164800643921 human test loss 5.696994662284851
+number of simulation seqeuences: 288032number of human seqeuences: 480000 sim test loss: 5.41021990776062 human test loss 5.695711106061935
+Evaluating trained model performance
+Saving the model and results

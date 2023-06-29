@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "hyper_param_testing.py", line 189, in <module>
+    main_as_fun(
+  File "/home/erussek/projects/RNNs/main_as_fun.py", line 84, in main_as_fun
+    model = SimpleTransformer(n_tokens,d_model,dim_feedforward,output_size,nlayers = n_layers, nhead = n_head)
+  File "/home/erussek/projects/RNNs/neural_nets.py", line 127, in __init__
+    self.transformer_encoder = TransformerEncoder(encoder_layers, nlayers)
+  File "/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/torch/nn/modules/transformer.py", line 180, in __init__
+    self.layers = _get_clones(encoder_layer, num_layers)
+  File "/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/torch/nn/modules/transformer.py", line 482, in _get_clones
+    return ModuleList([copy.deepcopy(module) for i in range(N)])
+TypeError: 'list' object cannot be interpreted as an integer

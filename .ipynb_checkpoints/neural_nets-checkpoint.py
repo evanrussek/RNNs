@@ -5,9 +5,9 @@ import math
 
 # set up neural networks
 class SimpleLSTM(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size, output_size, dropout=0):
         super().__init__()
-        self.lstm = torch.nn.LSTM(input_size, hidden_size, batch_first=True)
+        self.lstm = torch.nn.LSTM(input_size, hidden_size, batch_first=True, dropout=dropout)
         self.linear = torch.nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
@@ -28,7 +28,7 @@ class SimpleLSTM(nn.Module):
         return h, c
     
 class SimpleMLP(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size, output_size, dropout=0):
         super().__init__()
 
         self.input_hidden = nn.Linear(input_size, hidden_size)
@@ -41,7 +41,7 @@ class SimpleMLP(nn.Module):
 
 # set up neural networks
 class SimpleGRU(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size, output_size, dropout=0):
         super().__init__()
         self.gru = torch.nn.GRU(input_size, hidden_size, batch_first=True)
         self.linear = torch.nn.Linear(hidden_size, output_size)
@@ -72,7 +72,7 @@ class PositionalEncoding(nn.Module):
 
     # d_model? 
     # change dropout to 0? -- so it matches RNNs, --- was .1
-    def __init__(self, d_model, dropout=0, max_len=5000):
+    def __init__(self, d_model, dropout=0, max_len=300): # what if you change this to the max length? ? - what is the max length?
         super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
 
@@ -86,7 +86,7 @@ class PositionalEncoding(nn.Module):
             pe[:, 1::2] = torch.cos(position * div_term)[:,0:-1]
         else:
             pe[:, 1::2] = torch.cos(position * div_term)
-        pe = pe.unsqueeze(0).transpose(0, 1)
+        pe = pe.unsqueeze(0)#.transpose(0, 1)
         self.register_buffer('pe', pe)
 
     def forward(self, x):
@@ -99,8 +99,11 @@ class PositionalEncoding(nn.Module):
         Examples:
             >>> output = pos_encoder(x)
         """
-
-        x = x + self.pe[:x.size(0), :]
+        
+        # print(x.shape)
+        # print(self.pe.shape)
+        # x = x + self.pe[:x.size(0), :]
+        x = x + self.pe[:, :x.size(1)]
         return self.dropout(x)
 
     
@@ -123,7 +126,7 @@ class SimpleTransformer(nn.Module):
         self.pos_encoder = PositionalEncoding(d_model, dropout = dropout)
         
         # Transformer (embedding -> multihead_attention -> 
-        encoder_layers = TransformerEncoderLayer(d_model, nhead, dim_feedforward=dim_feedforward, dropout=dropout) # nhead???
+        encoder_layers = TransformerEncoderLayer(d_model, nhead, dim_feedforward=dim_feedforward, dropout=dropout, batch_first = True) # nhead???
         self.transformer_encoder = TransformerEncoder(encoder_layers, nlayers)
         self.ninp = d_model
         self.decoder = nn.Linear(d_model, output_size)
@@ -136,9 +139,12 @@ class SimpleTransformer(nn.Module):
     def forward(self, src, has_mask=True):
         if has_mask:
             device = src.device
-            if self.src_mask is None or self.src_mask.size(0) != len(src):
-                mask = self._generate_square_subsequent_mask(len(src)).to(device)
+            if self.src_mask is None or self.src_mask.size(0) != src.shape[1]:
+                mask = self._generate_square_subsequent_mask(src.shape[1]).to(device)
                 self.src_mask = mask
+            # if self.src_mask is None or self.src_mask.size(0) != len(src):
+                # mask = self._generate_square_subsequent_mask(len(src)).to(device)
+                # self.src_mask = mask
         else:
             self.src_mask = None
 

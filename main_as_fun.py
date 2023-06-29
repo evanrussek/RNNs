@@ -21,8 +21,11 @@ from load_data_funs import load_data, gen_batch_data_fixations_choice, gen_batch
 from train_and_test_funs import test, train_on_simulation_then_human_with_intermediate_tests, test_record_each_output, compute_heldout_performance
 from neural_nets import SimpleLSTM, SimpleMLP, SimpleGRU, SimpleTransformer
 
-def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice', n_simulation_sequences_train: int = 1e3, n_human_sequences_train: int = 0, n_sequences_test: int = 500, n_sequences_final_performance: int = 500, d_model: int = 128, n_layers: int = 2, n_head: int = 2, sim_lr: float = .001, human_lr: float = .001, batch_size: int = 32, run_idx: int = 0, on_cluster: bool = True, test_batch_increment_sim: int = 1e3, test_batch_increment_human: int = 1e3, save_folder_name = 'Hyper_Param_Search', save_file_name = ''):
+def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice', n_simulation_sequences_train: int = 1e3, n_human_sequences_train: int = 0, n_sequences_test: int = 500, n_sequences_final_performance: int = 500, d_model: int = 128, n_layers: int = 2, n_head: int = 2, sim_lr: float = .001, human_lr: float = .001, batch_size: int = 32, dropout = 0, run_idx: int = 0, on_cluster: bool = True, test_batch_increment_sim: int = 200, test_batch_increment_human: int = 200, save_folder_name = 'Hyper_Param_Search', fix_unit = 'ID', save_file_name = ''):
         
+        
+    # add a 4th train_seq_part... choice_then_fix...
+    
     print(locals())
     
     print(type(n_simulation_sequences_train))
@@ -47,7 +50,6 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     if not os.path.exists(to_save_folder):
         os.mkdir(to_save_folder)
 
-
     ###########################
     ### initialize results dictionary
     res_dict = {}
@@ -58,11 +60,18 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     torch.manual_seed(run_idx)
 
     # Functions to generate data
-    gen_data_func_by_train_seq_part = {"fix_and_choice": gen_batch_data_fixations_choice, "fix_only": gen_batch_data_fixations_only, "choice_only": gen_batch_data_choice_only}
-    gen_data_func = gen_data_func_by_train_seq_part[train_seq_part]
-
-    # Number of input tokens depends on task
-    n_tokens_by_train_seq_part = {"fix_and_choice": 6, "fix_only": 3, "choice_only": 3}
+    gen_data_func_by_train_seq_part = {"fix_and_choice": gen_batch_data_fixations_choice, "fix_only": gen_batch_data_fixations_only, "choice_only": gen_batch_data_choice_only, "choice_then_fix": gen_batch_data_choice_only}
+    gen_data_func_pre = gen_data_func_by_train_seq_part[train_seq_part]
+    # set the fix unit
+    gen_data_func = lambda a, b, c, use_human_data=False : gen_data_func_pre(a, b, c, fix_unit = fix_unit, use_human_data = use_human_data)
+    
+    # Number of input tokens depends on task and fix_unit
+    
+    if fix_unit == 'all':
+        n_tokens_by_train_seq_part = {"fix_and_choice": 12, "fix_only": 9, "choice_only": 3, "choice_then_fix": 3}
+    else:
+        n_tokens_by_train_seq_part = {"fix_and_choice": 6, "fix_only": 3, "choice_only": 3, "choice_then_fix": 3}
+        
     n_tokens = n_tokens_by_train_seq_part[train_seq_part]
 
     ######################
@@ -81,16 +90,16 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
         model       = SimpleMLP(n_tokens, d_model, output_size)
     elif model_name == 'Transformer':    
         dim_feedforward = 4*d_model
-        model = SimpleTransformer(n_tokens,d_model,dim_feedforward,output_size,nlayers = n_layers, nhead = n_head)
+        model = SimpleTransformer(n_tokens,d_model,dim_feedforward,output_size,nlayers = n_layers, nhead = n_head, dropout = dropout)
     elif model_name == 'GRU':
-        model = SimpleGRU(n_tokens, d_model, output_size)
+        model = SimpleGRU(n_tokens, d_model, output_size, dropout = dropout)
     elif model_name == 'LSTM':
-        model = SimpleLSTM(n_tokens, d_model, output_size)
+        model = SimpleLSTM(n_tokens, d_model, output_size, dropout = dropout)
     else:
         exit("Invalid model name entered")
 
 
-    print(model)
+    # print(model)
 
     ##################################
     ### OTHER TRAINING PARAMETERS ####
@@ -100,6 +109,7 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     criterion   = torch.nn.MSELoss()
     start_time = time.time()
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    print(device)
 
     #######################################################
     ##### Train the model and record learning curves #####
@@ -121,6 +131,9 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
 
     print("Evaluating trained model performance")
     if train_seq_part != "choice_only":
+        
+        if train_seq_part == "choice_then_fix":
+            gen_data_func = gen_batch_data_fixations_only
 
         n_back_vals = np.arange(1,20)
 

@@ -1,0 +1,6 @@
+My SLURM_ARRAY_JOB_ID is 47390883.
+My SLURM_ARRAY_TASK_ID is 310
+Executing on the machine: della-r2c2n8
+{'model_name': 'Transformer', 'train_seq_part': 'fix_and_choice', 'n_simulation_sequences_train': 0, 'n_human_sequences_train': 500000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 64, 'n_layers': 2, 'n_head': 8, 'sim_lr': 0, 'human_lr': 0.01, 'batch_size': 32, 'run_idx': 2, 'on_cluster': True, 'test_batch_increment_sim': 1000.0, 'test_batch_increment_human': 1000.0, 'save_folder_name': 'Hyper_Param_Search1', 'save_file_name': 'run_2_model_name_Transformer_d_model_64_sim_lr_0_human_lr_0.01_n_head_8_n_layers_2_nsim_0_nhum_500000.0'}
+<class 'int'>
+Loading Data
