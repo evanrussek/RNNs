@@ -5,7 +5,7 @@ import math
 
 # set up neural networks
 class SimpleLSTM(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, dropout=0):
+    def __init__(self, input_size, hidden_size, output_size, dropout=.2):
         super().__init__()
         self.lstm = torch.nn.LSTM(input_size, hidden_size, batch_first=True, dropout=dropout)
         self.linear = torch.nn.Linear(hidden_size, output_size)
@@ -28,7 +28,7 @@ class SimpleLSTM(nn.Module):
         return h, c
     
 class SimpleMLP(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, dropout=0):
+    def __init__(self, input_size, hidden_size, output_size, dropout=.2):
         super().__init__()
 
         self.input_hidden = nn.Linear(input_size, hidden_size)
@@ -41,7 +41,7 @@ class SimpleMLP(nn.Module):
 
 # set up neural networks
 class SimpleGRU(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, dropout=0):
+    def __init__(self, input_size, hidden_size, output_size, dropout=.2):
         super().__init__()
         self.gru = torch.nn.GRU(input_size, hidden_size, batch_first=True)
         self.linear = torch.nn.Linear(hidden_size, output_size)
