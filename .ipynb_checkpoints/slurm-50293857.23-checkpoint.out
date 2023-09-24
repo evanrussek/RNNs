@@ -1,0 +1,14 @@
+My SLURM_ARRAY_JOB_ID is 50293857.
+My SLURM_ARRAY_TASK_ID is 23
+Executing on the machine: della-l01g1
+{'model_name': 'Transformer', 'train_seq_part': 'fix_and_choice', 'n_simulation_sequences_train': 0, 'n_human_sequences_train': 12800, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 256, 'n_layers': 2, 'n_head': 4, 'sim_lr': 0, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0.1, 'run_idx': 0, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Sequential_Best_Param_Results', 'save_file_name': 'fix_and_choice_Human_Only_Transformer_ID_run_0', 'fix_unit': 'ID'}
+<class 'numpy.int64'>
+Loading Data
+cuda:0
+Training the model
+Training on simulated data
+Training on human data
+number of simulation seqeuences: 0number of human seqeuences: 6400 sim test loss: 5.685505837202072 human test loss 5.924862951040268
+number of simulation seqeuences: 0number of human seqeuences: 12800 sim test loss: 4.977191120386124 human test loss 5.5101379454135895
+Evaluating trained model performance
+Saving results

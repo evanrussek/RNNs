@@ -92,8 +92,6 @@ def train_on_simulation_then_human_with_intermediate_tests(model, train_data_sim
     # move the model to the device
     model.to(device)
     
-
-
     # number of batches to run to get through all simulation sequences
     n_batches_simulation = int(np.round(n_simulation_sequences_train/batch_size));
     
@@ -252,6 +250,8 @@ def test_record_each_output(model, test_data, device, batch_size, n_sequences_te
 # compute correlations by time-step back...
 def compute_heldout_performance(trained_model, test_data, device, batch_size, n_sequences_test,gen_batch_data, n_back, choice_only=False, use_human_data=False):
     
+    # also compute fixation and choice MSE...
+    
     output_all, target_all = test_record_each_output(trained_model, test_data, device, batch_size, n_sequences_test,gen_batch_data, n_back,choice_only=choice_only, use_human_data=use_human_data)
     
     # compute the correlation
@@ -261,6 +261,10 @@ def compute_heldout_performance(trained_model, test_data, device, batch_size, n_
     target_flat = target_flat[target_flat != 0]
     
     this_corr = np.corrcoef(output_flat, target_flat)[1][0]
+    
+    # also compute summed squared error...
+    this_mse = np.mean(np.power(output_flat - target_flat,2))
+    this_nitems = len(output_flat)
     
     # compute pct correct max and min and order
     target_all_FILT = target_all[target_all[:,1] != 0, :]
@@ -277,4 +281,4 @@ def compute_heldout_performance(trained_model, test_data, device, batch_size, n_
     correct_order = (output_min_item == target_min_item) & (output_max_item == target_max_item)
     pct_correct_order = np.sum(correct_order)/len(correct_order)
     
-    return this_corr, pct_correct_max, pct_correct_min, pct_correct_order
+    return this_corr, pct_correct_max, pct_correct_min, pct_correct_order, this_mse, this_nitems

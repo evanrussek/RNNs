@@ -9,19 +9,25 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
 
     # edit this to also return validation data
     
-    random.seed(this_seed)
     
+    
+    # load simulation data and shuffle files
     train_file_idxs = range(1,27)
     test_file_idxs = range(28,31)
     
     train_files = [os.path.join(sim_data_path, str(i) + '.json') for i in train_file_idxs]
     test_files = [os.path.join(sim_data_path, str(i) + '.json') for i in test_file_idxs]
-
+    
+    # want this shuffle to be the same every time
+    random.seed(1010)
     random.shuffle(train_files)
+    
+    random.seed(1010)
     random.shuffle(test_files)
     
     a = [json.load(open(train_files[i])) for i in range(15)]
     train_trials = [item for sublist in a for item in sublist]
+    
     del a
     train_data_sim = train_trials[:int(1.8e6)]
 
@@ -32,12 +38,16 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
     val_trials = json.load(open(test_files[1]))
     val_data_sim = val_trials[:int(1e5)]
     del val_trials
-
-    human_data = json.load(open(human_data_path))
     
+    # remaining splits can be based on seed
+    random.seed(this_seed)
     random.shuffle(train_data_sim)
     random.shuffle(test_data_sim)
     random.shuffle(val_data_sim)
+
+    # want first shuffle of human data to always be the same to define constant train/test/val splits
+    human_data = json.load(open(human_data_path))
+    random.seed(1010)
     random.shuffle(human_data)
     
     if split_human_data:
@@ -47,6 +57,11 @@ def load_data(sim_data_path, human_data_path,split_human_data=False, this_seed =
         val_data_human = human_data[n_test:(n_test+n_val)]
 
         train_data_human = human_data[(n_test+n_val):]
+        
+        random.seed(this_seed)
+        random.shuffle(train_data_human)
+        random.shuffle(val_data_human)
+        random.shuffle(test_data_human)
 
         return train_data_sim, val_data_sim, test_data_sim, train_data_human, val_data_human, test_data_human
     else:

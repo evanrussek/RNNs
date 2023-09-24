@@ -5,7 +5,7 @@ import numpy as np
 
 from main_as_fun import main_as_fun
 
-is_array_job=True
+is_array_job=False
 
 if is_array_job:
     job_idx = int(os.environ["SLURM_ARRAY_TASK_ID"]) - 1

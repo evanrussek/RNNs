@@ -148,20 +148,26 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
 
         pct_correct_order_sim_by_n_back = np.zeros(len(n_back_vals))
         pct_correct_order_human_by_n_back = np.zeros(len(n_back_vals))
+        
+        mse_human_by_n_back = np.zeros(len(n_back_vals))
+        n_items_human_by_n_back = np.zeros(len(n_back_vals))
+        
+        mse_sim_by_n_back = np.zeros(len(n_back_vals))
+        n_items_sim_by_n_back = np.zeros(len(n_back_vals))
 
         for nb_idx, nb in enumerate(n_back_vals):
 
-            r_sim_by_n_back[nb_idx], pct_correct_max_sim_by_n_back[nb_idx], pct_correct_min_sim_by_n_back[nb_idx], pct_correct_order_sim_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=False)
+            r_sim_by_n_back[nb_idx], pct_correct_max_sim_by_n_back[nb_idx], pct_correct_min_sim_by_n_back[nb_idx], pct_correct_order_sim_by_n_back[nb_idx], mse_sim_by_n_back[nb_idx], n_items_sim_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=False)
 
             # print('Human data length: {}'.format(len(test_data_human)))
             
-            r_human_by_n_back[nb_idx], pct_correct_max_human_by_n_back[nb_idx], pct_correct_min_human_by_n_back[nb_idx], pct_correct_order_human_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=True)
+            r_human_by_n_back[nb_idx], pct_correct_max_human_by_n_back[nb_idx], pct_correct_min_human_by_n_back[nb_idx], pct_correct_order_human_by_n_back[nb_idx],  mse_human_by_n_back[nb_idx], n_items_human_by_n_back[nb_idx] = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance,gen_data_func, nb, use_human_data=True)
 
     else:
 
-        r_sim_by_n_back, pct_correct_max_sim_by_n_back, pct_correct_min_sim_by_n_back, pct_correct_order_sim_by_n_back = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, 0, choice_only=True, use_human_data=False)
+        r_sim_by_n_back, pct_correct_max_sim_by_n_back, pct_correct_min_sim_by_n_back, pct_correct_order_sim_by_n_back, mse_sim_by_n_back, n_items_sim_by_n_back = compute_heldout_performance(model, test_data_sim, device, batch_size, n_sequences_final_performance,gen_data_func, 0, choice_only=True, use_human_data=False)
 
-        r_human_by_n_back, pct_correct_max_human_by_n_back, pct_correct_min_human_by_n_back, pct_correct_order_human_by_n_back = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance, gen_data_func, 0, choice_only=True, use_human_data=True)
+        r_human_by_n_back, pct_correct_max_human_by_n_back, pct_correct_min_human_by_n_back, pct_correct_order_human_by_n_back, mse_human_by_n_back, n_items_human_by_n_back = compute_heldout_performance(model, test_data_human, device, batch_size, n_sequences_final_performance, gen_data_func, 0, choice_only=True, use_human_data=True)
 
 
     # store these results
@@ -174,17 +180,24 @@ def main_as_fun(model_name: str ='LSTM', train_seq_part: str = 'fix_and_choice',
     res_dict["pct_correct_max_human_by_n_back"] = pct_correct_max_human_by_n_back
     res_dict["pct_correct_min_human_by_n_back"] = pct_correct_min_human_by_n_back
     res_dict["pct_correct_order_human_by_n_back"] = pct_correct_order_human_by_n_back
+    
+    res_dict["mse_human_by_n_back"] = mse_human_by_n_back
+    res_dict["n_items_human_by_n_back"] = n_items_human_by_n_back
+    res_dict["mse_sim_by_n_back"] = mse_human_by_n_back
+    res_dict["n_items_sim_by_n_back"] = n_items_human_by_n_back
+
 
     ########################
     ### SAVE RESULTS #######
     ########################
 
-    print("Saving the model and results")
+    print("Saving results")
 
-    # save the model with torch
-    model_file_name = save_file_name+'.pt'
-    model_full_file_name = os.path.join(to_save_folder, model_file_name)
-    torch.save(model, model_full_file_name)
+    # Don't save the model because it takes up too much space... 
+    ## save the model with torch
+    # model_file_name = save_file_name+'.pt'
+    # model_full_file_name = os.path.join(to_save_folder, model_file_name)
+    # torch.save(model, model_full_file_name)
 
     # save the results dict with np.save 
     res_file_name = save_file_name+'.pickle'
