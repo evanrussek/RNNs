@@ -1,0 +1,712 @@
+My SLURM_ARRAY_JOB_ID is 50634968.
+My SLURM_ARRAY_TASK_ID is 1
+Executing on the machine: della-h17n4
+0
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 0, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_Only_run_0', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 18.337559163570404 human test loss 18.309876918792725
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 16.440300226211548 human test loss 16.42364501953125
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 14.74902629852295 human test loss 14.742946743965149
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 13.246495366096497 human test loss 13.250642597675323
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 11.909634530544281 human test loss 11.923765003681183
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 10.742034643888474 human test loss 10.765681266784668
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 9.725805163383484 human test loss 9.75859135389328
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 8.848016738891602 human test loss 8.889349848031998
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 8.087542206048965 human test loss 8.13704138994217
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 7.435775935649872 human test loss 7.493095517158508
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 6.884558290243149 human test loss 6.949130952358246
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 6.4301822781562805 human test loss 6.5015895664691925
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 6.054180324077606 human test loss 6.131631314754486
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 5.7384480237960815 human test loss 5.8219757080078125
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 5.491028681397438 human test loss 5.580119073390961
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 5.311879739165306 human test loss 5.405791997909546
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 5.1774598360061646 human test loss 5.275420427322388
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 5.069252207875252 human test loss 5.170943081378937
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 4.998969212174416 human test loss 5.103673011064529
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 4.9510388523340225 human test loss 5.0574721693992615
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 4.9212992042303085 human test loss 5.029123455286026
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 4.899988085031509 human test loss 5.008688747882843
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 4.887431085109711 human test loss 4.99667951464653
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 4.880706965923309 human test loss 4.9899585247039795
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 4.877201735973358 human test loss 4.985861659049988
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 4.874596953392029 human test loss 4.983572006225586
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 4.874197527766228 human test loss 4.9828120470047
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 4.874465748667717 human test loss 4.981799870729446
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 4.874677240848541 human test loss 4.981391131877899
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.874827727675438 human test loss 4.981256604194641
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.875035509467125 human test loss 4.981182038784027
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.8752883821725845 human test loss 4.98099872469902
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.876119330525398 human test loss 4.980318337678909
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.876406520605087 human test loss 4.980090916156769
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.876440867781639 human test loss 4.980032414197922
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.877471521496773 human test loss 4.979724109172821
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.877318307757378 human test loss 4.979949563741684
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.87762263417244 human test loss 4.979359328746796
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.876791551709175 human test loss 4.9797303676605225
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.8777972757816315 human test loss 4.979089856147766
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.87813800573349 human test loss 4.978978931903839
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.8781208992004395 human test loss 4.979174256324768
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.8770086616277695 human test loss 4.979973703622818
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.8770603984594345 human test loss 4.980056047439575
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.877861499786377 human test loss 4.979182571172714
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.879071190953255 human test loss 4.978468149900436
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.880987584590912 human test loss 4.977868765592575
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.882814481854439 human test loss 4.977295786142349
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.884352698922157 human test loss 4.977022141218185
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.88533142209053 human test loss 4.976869523525238
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.88637088239193 human test loss 4.9767729341983795
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.886956349015236 human test loss 4.976724684238434
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.8878999054431915 human test loss 4.976677864789963
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.888170585036278 human test loss 4.976650148630142
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.888478443026543 human test loss 4.976671725511551
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.888464316725731 human test loss 4.97665536403656
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.888762876391411 human test loss 4.976659774780273
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.888761729001999 human test loss 4.976654917001724
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.888927221298218 human test loss 4.976654201745987
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.88894210755825 human test loss 4.9766349494457245
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.889059603214264 human test loss 4.97666397690773
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.888898015022278 human test loss 4.976648688316345
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.889089643955231 human test loss 4.976656764745712
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.889005959033966 human test loss 4.976652443408966
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.889064699411392 human test loss 4.976653158664703
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.889044806361198 human test loss 4.976634174585342
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.889136493206024 human test loss 4.976663440465927
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.888955220580101 human test loss 4.97664800286293
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.889132648706436 human test loss 4.976656675338745
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.889037698507309 human test loss 4.976652055978775
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.889082238078117 human test loss 4.976652920246124
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.889058023691177 human test loss 4.976633787155151
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.889146655797958 human test loss 4.9766636192798615
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.888962909579277 human test loss 4.9766479432582855
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.889138713479042 human test loss 4.976656585931778
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.889042675495148 human test loss 4.976652145385742
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.889085158705711 human test loss 4.976653099060059
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.889060214161873 human test loss 4.976633906364441
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.889148369431496 human test loss 4.976663440465927
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.888964414596558 human test loss 4.9766479432582855
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.889139756560326 human test loss 4.9766567051410675
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.8890436589717865 human test loss 4.976652026176453
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.889085918664932 human test loss 4.9766532480716705
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.889060825109482 human test loss 4.976633995771408
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.889148861169815 human test loss 4.9766634702682495
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.88896481692791 human test loss 4.97664812207222
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.889140039682388 human test loss 4.976656645536423
+Evaluating trained model performance
+Saving results
+1
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 0, 'n_human_sequences_train': 0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 0, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Human_Only_run_0', 'fix_unit': 'ID'}
+<class 'int'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+Training on human data
+Evaluating trained model performance
+Saving results
+2
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 0, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_and_Human_run_0', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 18.337559163570404 human test loss 18.309876918792725
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 16.440300226211548 human test loss 16.42364501953125
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 14.74902629852295 human test loss 14.742946743965149
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 13.246495366096497 human test loss 13.250642597675323
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 11.909634530544281 human test loss 11.923765003681183
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 10.742034643888474 human test loss 10.765681266784668
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 9.725805163383484 human test loss 9.75859135389328
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 8.848016738891602 human test loss 8.889349848031998
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 8.087542206048965 human test loss 8.13704138994217
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 7.435775935649872 human test loss 7.493095517158508
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 6.884558290243149 human test loss 6.949130952358246
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 6.4301822781562805 human test loss 6.5015895664691925
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 6.054180324077606 human test loss 6.131631314754486
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 5.7384480237960815 human test loss 5.8219757080078125
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 5.491028681397438 human test loss 5.580119073390961
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 5.311879739165306 human test loss 5.405791997909546
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 5.1774598360061646 human test loss 5.275420427322388
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 5.069252207875252 human test loss 5.170943081378937
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 4.998969212174416 human test loss 5.103673011064529
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 4.9510388523340225 human test loss 5.0574721693992615
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 4.9212992042303085 human test loss 5.029123455286026
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 4.899988085031509 human test loss 5.008688747882843
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 4.887431085109711 human test loss 4.99667951464653
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 4.880706965923309 human test loss 4.9899585247039795
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 4.877201735973358 human test loss 4.985861659049988
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 4.874596953392029 human test loss 4.983572006225586
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 4.874197527766228 human test loss 4.9828120470047
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 4.874465748667717 human test loss 4.981799870729446
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 4.874677240848541 human test loss 4.981391131877899
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.874827727675438 human test loss 4.981256604194641
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.875035509467125 human test loss 4.981182038784027
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.8752883821725845 human test loss 4.98099872469902
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.876119330525398 human test loss 4.980318337678909
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.876406520605087 human test loss 4.980090916156769
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.876440867781639 human test loss 4.980032414197922
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.877471521496773 human test loss 4.979724109172821
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.877318307757378 human test loss 4.979949563741684
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.87762263417244 human test loss 4.979359328746796
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.876791551709175 human test loss 4.9797303676605225
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.8777972757816315 human test loss 4.979089856147766
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.87813800573349 human test loss 4.978978931903839
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.8781208992004395 human test loss 4.979174256324768
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.8770086616277695 human test loss 4.979973703622818
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.8770603984594345 human test loss 4.980056047439575
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.877861499786377 human test loss 4.979182571172714
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.879071190953255 human test loss 4.978468149900436
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.880987584590912 human test loss 4.977868765592575
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.882814481854439 human test loss 4.977295786142349
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.884352698922157 human test loss 4.977022141218185
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.88533142209053 human test loss 4.976869523525238
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.88637088239193 human test loss 4.9767729341983795
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.886956349015236 human test loss 4.976724684238434
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.8878999054431915 human test loss 4.976677864789963
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.888170585036278 human test loss 4.976650148630142
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.888478443026543 human test loss 4.976671725511551
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.888464316725731 human test loss 4.97665536403656
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.888762876391411 human test loss 4.976659774780273
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.888761729001999 human test loss 4.976654917001724
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.888927221298218 human test loss 4.976654201745987
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.88894210755825 human test loss 4.9766349494457245
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.889059603214264 human test loss 4.97666397690773
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.888898015022278 human test loss 4.976648688316345
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.889089643955231 human test loss 4.976656764745712
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.889005959033966 human test loss 4.976652443408966
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.889064699411392 human test loss 4.976653158664703
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.889044806361198 human test loss 4.976634174585342
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.889136493206024 human test loss 4.976663440465927
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.888955220580101 human test loss 4.97664800286293
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.889132648706436 human test loss 4.976656675338745
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.889037698507309 human test loss 4.976652055978775
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.889082238078117 human test loss 4.976652920246124
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.889058023691177 human test loss 4.976633787155151
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.889146655797958 human test loss 4.9766636192798615
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.888962909579277 human test loss 4.9766479432582855
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.889138713479042 human test loss 4.976656585931778
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.889042675495148 human test loss 4.976652145385742
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.889085158705711 human test loss 4.976653099060059
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.889060214161873 human test loss 4.976633906364441
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.889148369431496 human test loss 4.976663440465927
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.888964414596558 human test loss 4.9766479432582855
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.889139756560326 human test loss 4.9766567051410675
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.8890436589717865 human test loss 4.976652026176453
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.889085918664932 human test loss 4.9766532480716705
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.889060825109482 human test loss 4.976633995771408
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.889148861169815 human test loss 4.9766634702682495
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.88896481692791 human test loss 4.97664812207222
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.889140039682388 human test loss 4.976656645536423
+Evaluating trained model performance
+Saving results
+3
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 1, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_Only_run_1', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 24.77659785747528 human test loss 23.80283284187317
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 22.466675877571106 human test loss 21.550501346588135
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 20.36521178483963 human test loss 19.50494945049286
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 18.452571094036102 human test loss 17.64670866727829
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 16.735766351222992 human test loss 15.982231080532074
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 15.174011468887329 human test loss 14.471634924411774
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 13.755321621894836 human test loss 13.103055834770203
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 12.49697881937027 human test loss 11.892787516117096
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 11.37495106458664 human test loss 10.81729918718338
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 10.384675413370132 human test loss 9.871781140565872
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 9.507216364145279 human test loss 9.03774106502533
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 8.74802541732788 human test loss 8.319860458374023
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 8.084078252315521 human test loss 7.695898562669754
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 7.516466319561005 human test loss 7.16624653339386
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 7.031197279691696 human test loss 6.717194736003876
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 6.6243670880794525 human test loss 6.3444894552230835
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 6.27465495467186 human test loss 6.027965188026428
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 5.991464614868164 human test loss 5.77545702457428
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 5.7656843066215515 human test loss 5.577627778053284
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 5.579612895846367 human test loss 5.417930260300636
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 5.432850182056427 human test loss 5.295061305165291
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 5.313111811876297 human test loss 5.197800114750862
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 5.220958054065704 human test loss 5.125376597046852
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 5.14969265460968 human test loss 5.071101114153862
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 5.0935981422662735 human test loss 5.029506430029869
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 5.045313000679016 human test loss 4.995188370347023
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 5.0041176825761795 human test loss 4.966629430651665
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 4.973590046167374 human test loss 4.945621892809868
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 4.947947859764099 human test loss 4.927681311964989
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.919921398162842 human test loss 4.910989284515381
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.904064282774925 human test loss 4.899552226066589
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.888329952955246 human test loss 4.889589920639992
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.875021860003471 human test loss 4.882355973124504
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.863889619708061 human test loss 4.876567721366882
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.855344370007515 human test loss 4.870786502957344
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.851546987891197 human test loss 4.86697156727314
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.843396604061127 human test loss 4.864339396357536
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.836866557598114 human test loss 4.862816408276558
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.831369638442993 human test loss 4.861200258135796
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.830282539129257 human test loss 4.859628468751907
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.826155602931976 human test loss 4.860448256134987
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.824843272566795 human test loss 4.859589800238609
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.828003242611885 human test loss 4.857951804995537
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.826058104634285 human test loss 4.85829259455204
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.8271616995334625 human test loss 4.857832908630371
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.82853002846241 human test loss 4.857569515705109
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.8230926394462585 human test loss 4.857917159795761
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.821566507220268 human test loss 4.858132675290108
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.819669991731644 human test loss 4.858758747577667
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.819755673408508 human test loss 4.858824864029884
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.818832203745842 human test loss 4.859350576996803
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.818914294242859 human test loss 4.859508708119392
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.818234398961067 human test loss 4.860152646899223
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.8185000866651535 human test loss 4.860185518860817
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.817686587572098 human test loss 4.8606560081243515
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.818383485078812 human test loss 4.860480383038521
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.817892506718636 human test loss 4.860805734992027
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.8182350397109985 human test loss 4.860738188028336
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.817875266075134 human test loss 4.861016392707825
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.818224906921387 human test loss 4.8608910739421844
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.817482575774193 human test loss 4.861238583922386
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.818224534392357 human test loss 4.86095255613327
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.817774847149849 human test loss 4.861194059252739
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.818142130970955 human test loss 4.861051440238953
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.817819356918335 human test loss 4.861222222447395
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.818179741501808 human test loss 4.861055701971054
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.8174474984407425 human test loss 4.86137193441391
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.818195641040802 human test loss 4.861059322953224
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.817752793431282 human test loss 4.861280769109726
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.818124607205391 human test loss 4.861120760440826
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.81780880689621 human test loss 4.861267223954201
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.81817039847374 human test loss 4.861091896891594
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.817439958453178 human test loss 4.861401230096817
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.8181896805763245 human test loss 4.861082226037979
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.817748665809631 human test loss 4.86129966378212
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.8181207329034805 human test loss 4.861135616898537
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.817806676030159 human test loss 4.861277163028717
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.818168997764587 human test loss 4.861099272966385
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.817439094185829 human test loss 4.861407145857811
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.8181890696287155 human test loss 4.861087039113045
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.817747712135315 human test loss 4.861303344368935
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.818120360374451 human test loss 4.861138612031937
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.817805930972099 human test loss 4.86127869784832
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.8181683868169785 human test loss 4.861100539565086
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.817438691854477 human test loss 4.861408248543739
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.818188443779945 human test loss 4.861088067293167
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.817747071385384 human test loss 4.861304119229317
+Evaluating trained model performance
+Saving results
+4
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 0, 'n_human_sequences_train': 0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 1, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Human_Only_run_1', 'fix_unit': 'ID'}
+<class 'int'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+Training on human data
+Evaluating trained model performance
+Saving results
+5
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 1, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_and_Human_run_1', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 24.77659785747528 human test loss 23.80283284187317
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 22.466675877571106 human test loss 21.550501346588135
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 20.36521178483963 human test loss 19.50494945049286
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 18.452571094036102 human test loss 17.64670866727829
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 16.735766351222992 human test loss 15.982231080532074
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 15.174011468887329 human test loss 14.471634924411774
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 13.755321621894836 human test loss 13.103055834770203
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 12.49697881937027 human test loss 11.892787516117096
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 11.37495106458664 human test loss 10.81729918718338
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 10.384675413370132 human test loss 9.871781140565872
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 9.507216364145279 human test loss 9.03774106502533
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 8.74802541732788 human test loss 8.319860458374023
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 8.084078252315521 human test loss 7.695898562669754
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 7.516466319561005 human test loss 7.16624653339386
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 7.031197279691696 human test loss 6.717194736003876
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 6.6243670880794525 human test loss 6.3444894552230835
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 6.27465495467186 human test loss 6.027965188026428
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 5.991464614868164 human test loss 5.77545702457428
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 5.7656843066215515 human test loss 5.577627778053284
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 5.579612895846367 human test loss 5.417930260300636
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 5.432850182056427 human test loss 5.295061305165291
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 5.313111811876297 human test loss 5.197800114750862
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 5.220958054065704 human test loss 5.125376597046852
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 5.14969265460968 human test loss 5.071101114153862
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 5.0935981422662735 human test loss 5.029506430029869
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 5.045313000679016 human test loss 4.995188370347023
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 5.0041176825761795 human test loss 4.966629430651665
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 4.973590046167374 human test loss 4.945621892809868
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 4.947947859764099 human test loss 4.927681311964989
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.919921398162842 human test loss 4.910989284515381
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.904064282774925 human test loss 4.899552226066589
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.888329952955246 human test loss 4.889589920639992
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.875021860003471 human test loss 4.882355973124504
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.863889619708061 human test loss 4.876567721366882
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.855344370007515 human test loss 4.870786502957344
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.851546987891197 human test loss 4.86697156727314
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.843396604061127 human test loss 4.864339396357536
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.836866557598114 human test loss 4.862816408276558
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.831369638442993 human test loss 4.861200258135796
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.830282539129257 human test loss 4.859628468751907
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.826155602931976 human test loss 4.860448256134987
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.824843272566795 human test loss 4.859589800238609
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.828003242611885 human test loss 4.857951804995537
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.826058104634285 human test loss 4.85829259455204
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.8271616995334625 human test loss 4.857832908630371
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.82853002846241 human test loss 4.857569515705109
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.8230926394462585 human test loss 4.857917159795761
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.821566507220268 human test loss 4.858132675290108
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.819669991731644 human test loss 4.858758747577667
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.819755673408508 human test loss 4.858824864029884
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.818832203745842 human test loss 4.859350576996803
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.818914294242859 human test loss 4.859508708119392
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.818234398961067 human test loss 4.860152646899223
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.8185000866651535 human test loss 4.860185518860817
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.817686587572098 human test loss 4.8606560081243515
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.818383485078812 human test loss 4.860480383038521
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.817892506718636 human test loss 4.860805734992027
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.8182350397109985 human test loss 4.860738188028336
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.817875266075134 human test loss 4.861016392707825
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.818224906921387 human test loss 4.8608910739421844
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.817482575774193 human test loss 4.861238583922386
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.818224534392357 human test loss 4.86095255613327
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.817774847149849 human test loss 4.861194059252739
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.818142130970955 human test loss 4.861051440238953
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.817819356918335 human test loss 4.861222222447395
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.818179741501808 human test loss 4.861055701971054
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.8174474984407425 human test loss 4.86137193441391
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.818195641040802 human test loss 4.861059322953224
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.817752793431282 human test loss 4.861280769109726
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.818124607205391 human test loss 4.861120760440826
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.81780880689621 human test loss 4.861267223954201
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.81817039847374 human test loss 4.861091896891594
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.817439958453178 human test loss 4.861401230096817
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.8181896805763245 human test loss 4.861082226037979
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.817748665809631 human test loss 4.86129966378212
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.8181207329034805 human test loss 4.861135616898537
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.817806676030159 human test loss 4.861277163028717
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.818168997764587 human test loss 4.861099272966385
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.817439094185829 human test loss 4.861407145857811
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.8181890696287155 human test loss 4.861087039113045
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.817747712135315 human test loss 4.861303344368935
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.818120360374451 human test loss 4.861138612031937
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.817805930972099 human test loss 4.86127869784832
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.8181683868169785 human test loss 4.861100539565086
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.817438691854477 human test loss 4.861408248543739
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.818188443779945 human test loss 4.861088067293167
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.817747071385384 human test loss 4.861304119229317
+Evaluating trained model performance
+Saving results
+6
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 2, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_Only_run_2', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 23.08105957508087 human test loss 22.80341911315918
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 20.838515043258667 human test loss 20.584320068359375
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 18.803491950035095 human test loss 18.57206016778946
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 16.969694554805756 human test loss 16.760195016860962
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 15.312900483608246 human test loss 15.124681770801544
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 13.822429180145264 human test loss 13.654836773872375
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 12.4981010556221 human test loss 12.350301623344421
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 11.314899772405624 human test loss 11.186255395412445
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 10.26276496052742 human test loss 10.152676045894623
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 9.322738528251648 human test loss 9.230752676725388
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 8.517566949129105 human test loss 8.44264566898346
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 7.823903560638428 human test loss 7.765157371759415
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 7.242263942956924 human test loss 7.198530703783035
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 6.739998131990433 human test loss 6.710772842168808
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 6.298294395208359 human test loss 6.283353120088577
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 5.9469378143548965 human test loss 5.944842219352722
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 5.662977382540703 human test loss 5.672736436128616
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 5.4320638328790665 human test loss 5.4527802765369415
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 5.246517822146416 human test loss 5.277515158057213
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 5.104028254747391 human test loss 5.144135609269142
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 4.996381551027298 human test loss 5.04439714550972
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 4.916796892881393 human test loss 4.97169354557991
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 4.863355189561844 human test loss 4.92331625521183
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 4.822621241211891 human test loss 4.886664763092995
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 4.7910435795784 human test loss 4.859058693051338
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 4.769099459052086 human test loss 4.839862689375877
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 4.7527593821287155 human test loss 4.825554504990578
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 4.74142125248909 human test loss 4.815557271242142
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 4.731963902711868 human test loss 4.806822821497917
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.725083217024803 human test loss 4.800612658262253
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.719569265842438 human test loss 4.79547218978405
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.715684622526169 human test loss 4.791104391217232
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.713714569807053 human test loss 4.78929777443409
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.711661383509636 human test loss 4.786658495664597
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.709881156682968 human test loss 4.784307584166527
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.709101617336273 human test loss 4.783078655600548
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.708731383085251 human test loss 4.782555550336838
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.708395466208458 human test loss 4.78147754073143
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.708235412836075 human test loss 4.780601069331169
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.708277627825737 human test loss 4.780139580368996
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.708967596292496 human test loss 4.7818592339754105
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.7086654007434845 human test loss 4.780257910490036
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.70860156416893 human test loss 4.7792414873838425
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.70879890024662 human test loss 4.77818489074707
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.709206074476242 human test loss 4.777953580021858
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.709177747368813 human test loss 4.779451787471771
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.709971487522125 human test loss 4.77980974316597
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.710994705557823 human test loss 4.780754521489143
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.7118091732263565 human test loss 4.780817985534668
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.712629675865173 human test loss 4.78171481192112
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.7132548391819 human test loss 4.781947702169418
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.713733524084091 human test loss 4.782275766134262
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.714502885937691 human test loss 4.782582059502602
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.71490478515625 human test loss 4.783158227801323
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.71510648727417 human test loss 4.782881110906601
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.715350389480591 human test loss 4.783446595072746
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.715484574437141 human test loss 4.783391058444977
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.715531945228577 human test loss 4.783451929688454
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.715666726231575 human test loss 4.783357754349709
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.7158370316028595 human test loss 4.783784210681915
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.715852677822113 human test loss 4.783385515213013
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.715941995382309 human test loss 4.78384767472744
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.715954884886742 human test loss 4.783710867166519
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.715902611613274 human test loss 4.783704072237015
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.715899154543877 human test loss 4.783516272902489
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.716021195054054 human test loss 4.783910393714905
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.715998962521553 human test loss 4.783485919237137
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.716057181358337 human test loss 4.78392668068409
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.716046035289764 human test loss 4.783773437142372
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.715973883867264 human test loss 4.7837527841329575
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.7159435003995895 human test loss 4.783546730875969
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.7160563468933105 human test loss 4.783934324979782
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.716026619076729 human test loss 4.783504828810692
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.716078728437424 human test loss 4.783941388130188
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.716062903404236 human test loss 4.783784881234169
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.715987145900726 human test loss 4.783761769533157
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.715951398015022 human test loss 4.783551871776581
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.716062143445015 human test loss 4.78393816947937
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.716031223535538 human test loss 4.783508002758026
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.716082394123077 human test loss 4.783943831920624
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.716065660119057 human test loss 4.783786952495575
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.715989604592323 human test loss 4.783763647079468
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.715953454375267 human test loss 4.783553391695023
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.716064065694809 human test loss 4.783939629793167
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.716032698750496 human test loss 4.783509135246277
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.716083616018295 human test loss 4.783944711089134
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.716066747903824 human test loss 4.783787503838539
+Evaluating trained model performance
+Saving results
+7
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 0, 'n_human_sequences_train': 0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 2, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Human_Only_run_2', 'fix_unit': 'ID'}
+<class 'int'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+Training on human data
+Evaluating trained model performance
+Saving results
+8
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 2, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_and_Human_run_2', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 23.08105957508087 human test loss 22.80341911315918
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 20.838515043258667 human test loss 20.584320068359375
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 18.803491950035095 human test loss 18.57206016778946
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 16.969694554805756 human test loss 16.760195016860962
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 15.312900483608246 human test loss 15.124681770801544
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 13.822429180145264 human test loss 13.654836773872375
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 12.4981010556221 human test loss 12.350301623344421
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 11.314899772405624 human test loss 11.186255395412445
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 10.26276496052742 human test loss 10.152676045894623
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 9.322738528251648 human test loss 9.230752676725388
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 8.517566949129105 human test loss 8.44264566898346
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 7.823903560638428 human test loss 7.765157371759415
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 7.242263942956924 human test loss 7.198530703783035
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 6.739998131990433 human test loss 6.710772842168808
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 6.298294395208359 human test loss 6.283353120088577
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 5.9469378143548965 human test loss 5.944842219352722
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 5.662977382540703 human test loss 5.672736436128616
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 5.4320638328790665 human test loss 5.4527802765369415
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 5.246517822146416 human test loss 5.277515158057213
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 5.104028254747391 human test loss 5.144135609269142
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 4.996381551027298 human test loss 5.04439714550972
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 4.916796892881393 human test loss 4.97169354557991
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 4.863355189561844 human test loss 4.92331625521183
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 4.822621241211891 human test loss 4.886664763092995
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 4.7910435795784 human test loss 4.859058693051338
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 4.769099459052086 human test loss 4.839862689375877
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 4.7527593821287155 human test loss 4.825554504990578
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 4.74142125248909 human test loss 4.815557271242142
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 4.731963902711868 human test loss 4.806822821497917
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.725083217024803 human test loss 4.800612658262253
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.719569265842438 human test loss 4.79547218978405
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.715684622526169 human test loss 4.791104391217232
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.713714569807053 human test loss 4.78929777443409
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.711661383509636 human test loss 4.786658495664597
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.709881156682968 human test loss 4.784307584166527
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.709101617336273 human test loss 4.783078655600548
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.708731383085251 human test loss 4.782555550336838
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.708395466208458 human test loss 4.78147754073143
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.708235412836075 human test loss 4.780601069331169
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.708277627825737 human test loss 4.780139580368996
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.708967596292496 human test loss 4.7818592339754105
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.7086654007434845 human test loss 4.780257910490036
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.70860156416893 human test loss 4.7792414873838425
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.70879890024662 human test loss 4.77818489074707
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.709206074476242 human test loss 4.777953580021858
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.709177747368813 human test loss 4.779451787471771
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.709971487522125 human test loss 4.77980974316597
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.710994705557823 human test loss 4.780754521489143
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.7118091732263565 human test loss 4.780817985534668
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.712629675865173 human test loss 4.78171481192112
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.7132548391819 human test loss 4.781947702169418
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.713733524084091 human test loss 4.782275766134262
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.714502885937691 human test loss 4.782582059502602
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.71490478515625 human test loss 4.783158227801323
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.71510648727417 human test loss 4.782881110906601
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.715350389480591 human test loss 4.783446595072746
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.715484574437141 human test loss 4.783391058444977
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.715531945228577 human test loss 4.783451929688454
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.715666726231575 human test loss 4.783357754349709
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.7158370316028595 human test loss 4.783784210681915
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.715852677822113 human test loss 4.783385515213013
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.715941995382309 human test loss 4.78384767472744
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.715954884886742 human test loss 4.783710867166519
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.715902611613274 human test loss 4.783704072237015
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.715899154543877 human test loss 4.783516272902489
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.716021195054054 human test loss 4.783910393714905
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.715998962521553 human test loss 4.783485919237137
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.716057181358337 human test loss 4.78392668068409
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.716046035289764 human test loss 4.783773437142372
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.715973883867264 human test loss 4.7837527841329575
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.7159435003995895 human test loss 4.783546730875969
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.7160563468933105 human test loss 4.783934324979782
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.716026619076729 human test loss 4.783504828810692
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.716078728437424 human test loss 4.783941388130188
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.716062903404236 human test loss 4.783784881234169
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.715987145900726 human test loss 4.783761769533157
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.715951398015022 human test loss 4.783551871776581
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.716062143445015 human test loss 4.78393816947937
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.716031223535538 human test loss 4.783508002758026
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.716082394123077 human test loss 4.783943831920624
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.716065660119057 human test loss 4.783786952495575
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.715989604592323 human test loss 4.783763647079468
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.715953454375267 human test loss 4.783553391695023
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.716064065694809 human test loss 4.783939629793167
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.716032698750496 human test loss 4.783509135246277
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.716083616018295 human test loss 4.783944711089134
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.716066747903824 human test loss 4.783787503838539
+Evaluating trained model performance
+Saving results
+9
+{'model_name': 'Choice2P', 'train_seq_part': 'choice_only', 'n_simulation_sequences_train': 300000.0, 'n_human_sequences_train': 300000.0, 'n_sequences_test': 500, 'n_sequences_final_performance': 500, 'd_model': 128, 'n_layers': 2, 'n_head': 2, 'sim_lr': 0.001, 'human_lr': 0.001, 'batch_size': 32, 'dropout': 0, 'run_idx': 3, 'on_cluster': True, 'test_batch_increment_sim': 200, 'test_batch_increment_human': 200, 'save_folder_name': 'Choice_Only_2P_Results', 'save_file_name': 'Simulated_Only_run_3', 'fix_unit': 'ID'}
+<class 'float'>
+Loading Data
+cpu
+Training the model
+Training on simulated data
+number of simulation seqeuences: 6432number of human seqeuences: 0 sim test loss: 35.802632212638855 human test loss 33.190441846847534
+number of simulation seqeuences: 12832number of human seqeuences: 0 sim test loss: 32.85954165458679 human test loss 30.386324048042297
+number of simulation seqeuences: 19232number of human seqeuences: 0 sim test loss: 30.117778062820435 human test loss 27.78068220615387
+number of simulation seqeuences: 25632number of human seqeuences: 0 sim test loss: 27.575600385665894 human test loss 25.371561884880066
+number of simulation seqeuences: 32032number of human seqeuences: 0 sim test loss: 25.20667004585266 human test loss 23.1333349943161
+number of simulation seqeuences: 38432number of human seqeuences: 0 sim test loss: 23.039831042289734 human test loss 21.092981934547424
+number of simulation seqeuences: 44832number of human seqeuences: 0 sim test loss: 21.03289496898651 human test loss 19.210088849067688
+number of simulation seqeuences: 51232number of human seqeuences: 0 sim test loss: 19.176848709583282 human test loss 17.475818276405334
+number of simulation seqeuences: 57632number of human seqeuences: 0 sim test loss: 17.487980723381042 human test loss 15.904728651046753
+number of simulation seqeuences: 64032number of human seqeuences: 0 sim test loss: 15.945955455303192 human test loss 14.477261364459991
+number of simulation seqeuences: 70432number of human seqeuences: 0 sim test loss: 14.535678029060364 human test loss 13.178924918174744
+number of simulation seqeuences: 76832number of human seqeuences: 0 sim test loss: 13.2528395652771 human test loss 12.00525277853012
+number of simulation seqeuences: 83232number of human seqeuences: 0 sim test loss: 12.106724977493286 human test loss 10.963899552822113
+number of simulation seqeuences: 89632number of human seqeuences: 0 sim test loss: 11.050690650939941 human test loss 10.012070000171661
+number of simulation seqeuences: 96032number of human seqeuences: 0 sim test loss: 10.128324329853058 human test loss 9.187991797924042
+number of simulation seqeuences: 102432number of human seqeuences: 0 sim test loss: 9.301761656999588 human test loss 8.456932187080383
+number of simulation seqeuences: 108832number of human seqeuences: 0 sim test loss: 8.572138011455536 human test loss 7.819371581077576
+number of simulation seqeuences: 115232number of human seqeuences: 0 sim test loss: 7.917208045721054 human test loss 7.255074203014374
+number of simulation seqeuences: 121632number of human seqeuences: 0 sim test loss: 7.351672738790512 human test loss 6.775886565446854
+number of simulation seqeuences: 128032number of human seqeuences: 0 sim test loss: 6.884292870759964 human test loss 6.387263178825378
+number of simulation seqeuences: 134432number of human seqeuences: 0 sim test loss: 6.482725888490677 human test loss 6.060749679803848
+number of simulation seqeuences: 140832number of human seqeuences: 0 sim test loss: 6.139398485422134 human test loss 5.789134383201599
+number of simulation seqeuences: 147232number of human seqeuences: 0 sim test loss: 5.862345784902573 human test loss 5.577099829912186
+number of simulation seqeuences: 153632number of human seqeuences: 0 sim test loss: 5.624685123562813 human test loss 5.402475744485855
+number of simulation seqeuences: 160032number of human seqeuences: 0 sim test loss: 5.438449844717979 human test loss 5.271926522254944
+number of simulation seqeuences: 166432number of human seqeuences: 0 sim test loss: 5.2917812913656235 human test loss 5.175043523311615
+number of simulation seqeuences: 172832number of human seqeuences: 0 sim test loss: 5.1797744780778885 human test loss 5.106891185045242
+number of simulation seqeuences: 179232number of human seqeuences: 0 sim test loss: 5.095519095659256 human test loss 5.059926748275757
+number of simulation seqeuences: 185632number of human seqeuences: 0 sim test loss: 5.031368359923363 human test loss 5.027652859687805
+number of simulation seqeuences: 192032number of human seqeuences: 0 sim test loss: 4.9833212196826935 human test loss 5.00653275847435
+number of simulation seqeuences: 198432number of human seqeuences: 0 sim test loss: 4.949311509728432 human test loss 4.994626402854919
+number of simulation seqeuences: 204832number of human seqeuences: 0 sim test loss: 4.92338353395462 human test loss 4.986315011978149
+number of simulation seqeuences: 211232number of human seqeuences: 0 sim test loss: 4.907209888100624 human test loss 4.981966286897659
+number of simulation seqeuences: 217632number of human seqeuences: 0 sim test loss: 4.8928568959236145 human test loss 4.979127377271652
+number of simulation seqeuences: 224032number of human seqeuences: 0 sim test loss: 4.883338928222656 human test loss 4.977085262537003
+number of simulation seqeuences: 230432number of human seqeuences: 0 sim test loss: 4.8803104013204575 human test loss 4.975352883338928
+number of simulation seqeuences: 236832number of human seqeuences: 0 sim test loss: 4.882297545671463 human test loss 4.972442239522934
+number of simulation seqeuences: 243232number of human seqeuences: 0 sim test loss: 4.877443492412567 human test loss 4.9712188839912415
+number of simulation seqeuences: 249632number of human seqeuences: 0 sim test loss: 4.869989633560181 human test loss 4.971494227647781
+number of simulation seqeuences: 256032number of human seqeuences: 0 sim test loss: 4.867859810590744 human test loss 4.97096773982048
+number of simulation seqeuences: 262432number of human seqeuences: 0 sim test loss: 4.8678846806287766 human test loss 4.970185071229935
+number of simulation seqeuences: 268832number of human seqeuences: 0 sim test loss: 4.86839334666729 human test loss 4.969537138938904
+number of simulation seqeuences: 275232number of human seqeuences: 0 sim test loss: 4.868760332465172 human test loss 4.968916654586792
+number of simulation seqeuences: 281632number of human seqeuences: 0 sim test loss: 4.867845505475998 human test loss 4.969194620847702
+number of simulation seqeuences: 288032number of human seqeuences: 0 sim test loss: 4.864560663700104 human test loss 4.970170259475708
+number of simulation seqeuences: 294432number of human seqeuences: 0 sim test loss: 4.873371854424477 human test loss 4.966048777103424
+Training on human data
+number of simulation seqeuences: 294432number of human seqeuences: 6400 sim test loss: 4.874371021986008 human test loss 4.963253855705261
+number of simulation seqeuences: 294432number of human seqeuences: 12800 sim test loss: 4.877493530511856 human test loss 4.961322069168091
+number of simulation seqeuences: 294432number of human seqeuences: 19200 sim test loss: 4.878088042140007 human test loss 4.96070596575737
+number of simulation seqeuences: 294432number of human seqeuences: 25600 sim test loss: 4.88069424033165 human test loss 4.95965775847435
+number of simulation seqeuences: 294432number of human seqeuences: 32000 sim test loss: 4.881231725215912 human test loss 4.9594563245773315
+number of simulation seqeuences: 294432number of human seqeuences: 38400 sim test loss: 4.8829473704099655 human test loss 4.958923101425171
+number of simulation seqeuences: 294432number of human seqeuences: 51200 sim test loss: 4.88363479077816 human test loss 4.958856821060181
+number of simulation seqeuences: 294432number of human seqeuences: 57600 sim test loss: 4.8854604959487915 human test loss 4.9583097994327545
+number of simulation seqeuences: 294432number of human seqeuences: 64000 sim test loss: 4.884717673063278 human test loss 4.9586398005485535
+number of simulation seqeuences: 294432number of human seqeuences: 70400 sim test loss: 4.886112481355667 human test loss 4.958226770162582
+number of simulation seqeuences: 294432number of human seqeuences: 76800 sim test loss: 4.885588705539703 human test loss 4.958437383174896
+number of simulation seqeuences: 294432number of human seqeuences: 83200 sim test loss: 4.886452421545982 human test loss 4.958210080862045
+number of simulation seqeuences: 294432number of human seqeuences: 96000 sim test loss: 4.885847806930542 human test loss 4.958480656147003
+number of simulation seqeuences: 294432number of human seqeuences: 102400 sim test loss: 4.8872111439704895 human test loss 4.958030790090561
+number of simulation seqeuences: 294432number of human seqeuences: 108800 sim test loss: 4.886100381612778 human test loss 4.9584320187568665
+number of simulation seqeuences: 294432number of human seqeuences: 115200 sim test loss: 4.887203693389893 human test loss 4.958071082830429
+number of simulation seqeuences: 294432number of human seqeuences: 121600 sim test loss: 4.886443600058556 human test loss 4.958316951990128
+number of simulation seqeuences: 294432number of human seqeuences: 128000 sim test loss: 4.887127622961998 human test loss 4.9581203162670135
+number of simulation seqeuences: 294432number of human seqeuences: 140800 sim test loss: 4.886264115571976 human test loss 4.958427131175995
+number of simulation seqeuences: 294432number of human seqeuences: 147200 sim test loss: 4.887537270784378 human test loss 4.957989573478699
+number of simulation seqeuences: 294432number of human seqeuences: 153600 sim test loss: 4.886356085538864 human test loss 4.958400189876556
+number of simulation seqeuences: 294432number of human seqeuences: 160000 sim test loss: 4.887404218316078 human test loss 4.958046346902847
+number of simulation seqeuences: 294432number of human seqeuences: 166400 sim test loss: 4.886600822210312 human test loss 4.958297401666641
+number of simulation seqeuences: 294432number of human seqeuences: 172800 sim test loss: 4.8872507363557816 human test loss 4.958105504512787
+number of simulation seqeuences: 294432number of human seqeuences: 185600 sim test loss: 4.886339485645294 human test loss 4.958418250083923
+number of simulation seqeuences: 294432number of human seqeuences: 192000 sim test loss: 4.887597173452377 human test loss 4.957982301712036
+number of simulation seqeuences: 294432number of human seqeuences: 198400 sim test loss: 4.886402383446693 human test loss 4.9583945870399475
+number of simulation seqeuences: 294432number of human seqeuences: 204800 sim test loss: 4.887440279126167 human test loss 4.958041727542877
+number of simulation seqeuences: 294432number of human seqeuences: 211200 sim test loss: 4.886629372835159 human test loss 4.958293586969376
+number of simulation seqeuences: 294432number of human seqeuences: 217600 sim test loss: 4.8872732520103455 human test loss 4.958102732896805
+number of simulation seqeuences: 294432number of human seqeuences: 230400 sim test loss: 4.886354640126228 human test loss 4.95841583609581
+number of simulation seqeuences: 294432number of human seqeuences: 236800 sim test loss: 4.887608960270882 human test loss 4.9579804837703705
+number of simulation seqeuences: 294432number of human seqeuences: 243200 sim test loss: 4.886411398649216 human test loss 4.958393007516861
+number of simulation seqeuences: 294432number of human seqeuences: 249600 sim test loss: 4.887447997927666 human test loss 4.958040833473206
+number of simulation seqeuences: 294432number of human seqeuences: 256000 sim test loss: 4.886635482311249 human test loss 4.958292543888092
+number of simulation seqeuences: 294432number of human seqeuences: 262400 sim test loss: 4.887278437614441 human test loss 4.958101868629456
+number of simulation seqeuences: 294432number of human seqeuences: 275200 sim test loss: 4.886357367038727 human test loss 4.9584155678749084
+number of simulation seqeuences: 294432number of human seqeuences: 281600 sim test loss: 4.887610629200935 human test loss 4.957980275154114
+number of simulation seqeuences: 294432number of human seqeuences: 288000 sim test loss: 4.886413514614105 human test loss 4.958392888307571
+number of simulation seqeuences: 294432number of human seqeuences: 294400 sim test loss: 4.887449488043785 human test loss 4.958040744066238
+number of simulation seqeuences: 294432number of human seqeuences: 300800 sim test loss: 4.886636704206467 human test loss 4.958292573690414
+Evaluating trained model performance
+Saving results

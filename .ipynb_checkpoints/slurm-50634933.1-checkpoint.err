@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "TrainChoice2P.py", line 40, in <module>
+    which_jobs = np.reshape(np.arange(600), (int(600/10),6))
+  File "<__array_function__ internals>", line 5, in reshape
+  File "/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 298, in reshape
+    return _wrapfunc(a, 'reshape', newshape, order=order)
+  File "/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: cannot reshape array of size 600 into shape (60,6)

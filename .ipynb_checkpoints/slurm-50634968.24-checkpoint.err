@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "TrainChoice2P.py", line 49, in <module>
+    main_as_fun(
+  File "/home/erussek/projects/RNNs/main_as_fun.py", line 121, in main_as_fun
+    simulation_loss_results, human_loss_results, train_sequence_number,human_sequence_number, simulation_sequence_number, model = train_on_simulation_then_human_with_intermediate_tests(model,train_data_sim, train_data_human,val_data_sim,val_data_human,criterion,device,batch_size,n_simulation_sequences_train, n_human_sequences_train, n_sequences_test, gen_data_func, sim_lr = sim_lr, human_lr = human_lr, test_batch_increment_sim=test_batch_increment_sim, test_batch_increment_human=test_batch_increment_human)
+  File "/home/erussek/projects/RNNs/train_and_test_funs.py", line 124, in train_on_simulation_then_human_with_intermediate_tests
+    model = run_batch_update_model(model,train_data_sim, gen_batch_data, batch_size,batch_idx, optimizer, criterion, device, use_human_data=False)
+  File "/home/erussek/projects/RNNs/train_and_test_funs.py", line 194, in run_batch_update_model
+    output = model(data) # step 1
+  File "/home/erussek/.conda/envs/pDL/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/erussek/projects/RNNs/neural_nets.py", line 68, in forward
+    a[:,0] = x[:,item]
+IndexError: index 2 is out of bounds for dimension 1 with size 2

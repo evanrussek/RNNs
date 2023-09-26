@@ -50,7 +50,26 @@ class SimpleGRU(nn.Module):
         h = self.gru(x)[0]
         x = self.linear(h)
         return x
-    
+
+# 2 parameter model for the choice-only
+class SimpleChoiceOnly(nn.Module):
+    def __init__(self):
+        super().__init__()
+        
+        self.input_output = nn.Linear(1,1)
+
+    def forward(self, x):
+        
+        
+        o = torch.zeros(x.shape)
+        for item in range(3):
+            
+            a = torch.zeros(x.shape[0],1)
+            a[:,0] = x[:,item]
+            o[:,item] = torch.squeeze(self.input_output(a))
+
+        return o
+
     
 #### now create the transfoermer model 
 # we want a embedding -> position encoding -> transformer encoder -> linear readout -- for now, just a single layer
